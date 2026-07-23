@@ -1,0 +1,10 @@
+{
+  "files": {
+    "cursor_default.png": "gauntlet pointing finger",
+    "cursor_default_glow.png": "gauntlet pointing finger, glow",
+    "cursor_attack.png": "grey sword",
+    "cursor_attack_glow.png": "blue glowing sword",
+    "cursor_hand.png": "open blue hand",
+    "cursor_hand_glow.png": "open cyan glowing hand"
+  }
+}

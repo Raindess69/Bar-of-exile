@@ -1,0 +1,2989 @@
+{
+ "meta": {
+  "kind": "skills_and_runes",
+  "game": "Bar of Exile",
+  "version": 2,
+  "total_skills": 35,
+  "per_class": {
+   "warrior": 7,
+   "barbarian": 7,
+   "archer": 7,
+   "mage": 7,
+   "cleric": 7
+  },
+  "rules": {
+   "gems": "every skill exists only as an owned gem; rank 1..16 via gem XP (30% of hero kill XP while socketed); see V2 step 7 spec",
+   "sockets": "each skill gets 1 rune socket at skill rank 5, a 2nd at rank 10; the same rune cannot be socketed twice in one skill",
+   "unlocks": "unlock_level gates when a gem can be offered/dropped: 1/4/8/12/16 base, 24/28 endgame (from skills_new)",
+   "ailments": "skill effects reference the Wave-2 ailment system (ignite/bleed/poison/freeze/shock/stun)"
+  }
+ },
+ "skills": [
+  {
+   "id": "cleave",
+   "class": "warrior",
+   "unlock_level": 1,
+   "name": "Cleave",
+   "type": "attack",
+   "damage_type": "physical",
+   "base_damage_pct": 115,
+   "per_rank_pct": 9,
+   "mana_cost": 3,
+   "cooldown_s": 1.2,
+   "tags": [
+    "melee",
+    "aoe"
+   ],
+   "effect": "Hits up to 3 enemies in front.",
+   "rank_rule": "gem xp system (V2 step 7): rank 1..16 via gem XP, cap 16",
+   "rank_table": [
+    {
+     "rank": 1,
+     "value_pct": 115
+    },
+    {
+     "rank": 2,
+     "value_pct": 124
+    },
+    {
+     "rank": 3,
+     "value_pct": 133
+    },
+    {
+     "rank": 4,
+     "value_pct": 142
+    },
+    {
+     "rank": 5,
+     "value_pct": 151
+    },
+    {
+     "rank": 6,
+     "value_pct": 160
+    },
+    {
+     "rank": 7,
+     "value_pct": 169
+    },
+    {
+     "rank": 8,
+     "value_pct": 178
+    },
+    {
+     "rank": 9,
+     "value_pct": 187
+    },
+    {
+     "rank": 10,
+     "value_pct": 196
+    },
+    {
+     "rank": 11,
+     "value_pct": 205
+    },
+    {
+     "rank": 12,
+     "value_pct": 214
+    },
+    {
+     "rank": 13,
+     "value_pct": 223
+    },
+    {
+     "rank": 14,
+     "value_pct": 232
+    },
+    {
+     "rank": 15,
+     "value_pct": 241
+    },
+    {
+     "rank": 16,
+     "value_pct": 250
+    }
+   ]
+  },
+  {
+   "id": "crushing_blow",
+   "class": "warrior",
+   "unlock_level": 4,
+   "name": "Crushing Blow",
+   "type": "attack",
+   "damage_type": "physical",
+   "base_damage_pct": 150,
+   "per_rank_pct": 11,
+   "mana_cost": 5,
+   "cooldown_s": 3.0,
+   "tags": [
+    "melee"
+   ],
+   "effect": "25% chance to Stun for 0.5s.",
+   "rank_rule": "gem xp system (V2 step 7): rank 1..16 via gem XP, cap 16",
+   "rank_table": [
+    {
+     "rank": 1,
+     "value_pct": 150
+    },
+    {
+     "rank": 2,
+     "value_pct": 161
+    },
+    {
+     "rank": 3,
+     "value_pct": 172
+    },
+    {
+     "rank": 4,
+     "value_pct": 183
+    },
+    {
+     "rank": 5,
+     "value_pct": 194
+    },
+    {
+     "rank": 6,
+     "value_pct": 205
+    },
+    {
+     "rank": 7,
+     "value_pct": 216
+    },
+    {
+     "rank": 8,
+     "value_pct": 227
+    },
+    {
+     "rank": 9,
+     "value_pct": 238
+    },
+    {
+     "rank": 10,
+     "value_pct": 249
+    },
+    {
+     "rank": 11,
+     "value_pct": 260
+    },
+    {
+     "rank": 12,
+     "value_pct": 271
+    },
+    {
+     "rank": 13,
+     "value_pct": 282
+    },
+    {
+     "rank": 14,
+     "value_pct": 293
+    },
+    {
+     "rank": 15,
+     "value_pct": 304
+    },
+    {
+     "rank": 16,
+     "value_pct": 315
+    }
+   ]
+  },
+  {
+   "id": "war_cry",
+   "class": "warrior",
+   "unlock_level": 8,
+   "name": "War Cry",
+   "type": "buff",
+   "damage_type": null,
+   "base_damage_pct": 0,
+   "per_rank_pct": 0,
+   "mana_cost": 10,
+   "cooldown_s": 12.0,
+   "tags": [
+    "shout"
+   ],
+   "effect": "+20% Physical Damage and +10% Armor for 6s. Rank adds +1% each.",
+   "rank_rule": "gem xp system (V2 step 7): rank 1..16 via gem XP, cap 16",
+   "rank_table": [
+    {
+     "rank": 1,
+     "value_pct": 0
+    },
+    {
+     "rank": 2,
+     "value_pct": 0
+    },
+    {
+     "rank": 3,
+     "value_pct": 0
+    },
+    {
+     "rank": 4,
+     "value_pct": 0
+    },
+    {
+     "rank": 5,
+     "value_pct": 0
+    },
+    {
+     "rank": 6,
+     "value_pct": 0
+    },
+    {
+     "rank": 7,
+     "value_pct": 0
+    },
+    {
+     "rank": 8,
+     "value_pct": 0
+    },
+    {
+     "rank": 9,
+     "value_pct": 0
+    },
+    {
+     "rank": 10,
+     "value_pct": 0
+    },
+    {
+     "rank": 11,
+     "value_pct": 0
+    },
+    {
+     "rank": 12,
+     "value_pct": 0
+    },
+    {
+     "rank": 13,
+     "value_pct": 0
+    },
+    {
+     "rank": 14,
+     "value_pct": 0
+    },
+    {
+     "rank": 15,
+     "value_pct": 0
+    },
+    {
+     "rank": 16,
+     "value_pct": 0
+    }
+   ]
+  },
+  {
+   "id": "sunder",
+   "class": "warrior",
+   "unlock_level": 12,
+   "name": "Sunder",
+   "type": "attack",
+   "damage_type": "physical",
+   "base_damage_pct": 130,
+   "per_rank_pct": 10,
+   "mana_cost": 8,
+   "cooldown_s": 5.0,
+   "tags": [
+    "melee",
+    "aoe"
+   ],
+   "effect": "Hits all enemies in melee range; -15% enemy Armor for 4s.",
+   "rank_rule": "gem xp system (V2 step 7): rank 1..16 via gem XP, cap 16",
+   "rank_table": [
+    {
+     "rank": 1,
+     "value_pct": 130
+    },
+    {
+     "rank": 2,
+     "value_pct": 140
+    },
+    {
+     "rank": 3,
+     "value_pct": 150
+    },
+    {
+     "rank": 4,
+     "value_pct": 160
+    },
+    {
+     "rank": 5,
+     "value_pct": 170
+    },
+    {
+     "rank": 6,
+     "value_pct": 180
+    },
+    {
+     "rank": 7,
+     "value_pct": 190
+    },
+    {
+     "rank": 8,
+     "value_pct": 200
+    },
+    {
+     "rank": 9,
+     "value_pct": 210
+    },
+    {
+     "rank": 10,
+     "value_pct": 220
+    },
+    {
+     "rank": 11,
+     "value_pct": 230
+    },
+    {
+     "rank": 12,
+     "value_pct": 240
+    },
+    {
+     "rank": 13,
+     "value_pct": 250
+    },
+    {
+     "rank": 14,
+     "value_pct": 260
+    },
+    {
+     "rank": 15,
+     "value_pct": 270
+    },
+    {
+     "rank": 16,
+     "value_pct": 280
+    }
+   ]
+  },
+  {
+   "id": "earthshatter",
+   "class": "warrior",
+   "unlock_level": 16,
+   "name": "Earthshatter",
+   "type": "attack",
+   "damage_type": "physical",
+   "base_damage_pct": 170,
+   "per_rank_pct": 13,
+   "mana_cost": 12,
+   "cooldown_s": 8.0,
+   "tags": [
+    "melee",
+    "aoe"
+   ],
+   "effect": "Shockwave across the strip: 40% chance to Stun for 0.6s.",
+   "rank_rule": "gem xp system (V2 step 7): rank 1..16 via gem XP, cap 16",
+   "rank_table": [
+    {
+     "rank": 1,
+     "value_pct": 170
+    },
+    {
+     "rank": 2,
+     "value_pct": 183
+    },
+    {
+     "rank": 3,
+     "value_pct": 196
+    },
+    {
+     "rank": 4,
+     "value_pct": 209
+    },
+    {
+     "rank": 5,
+     "value_pct": 222
+    },
+    {
+     "rank": 6,
+     "value_pct": 235
+    },
+    {
+     "rank": 7,
+     "value_pct": 248
+    },
+    {
+     "rank": 8,
+     "value_pct": 261
+    },
+    {
+     "rank": 9,
+     "value_pct": 274
+    },
+    {
+     "rank": 10,
+     "value_pct": 287
+    },
+    {
+     "rank": 11,
+     "value_pct": 300
+    },
+    {
+     "rank": 12,
+     "value_pct": 313
+    },
+    {
+     "rank": 13,
+     "value_pct": 326
+    },
+    {
+     "rank": 14,
+     "value_pct": 339
+    },
+    {
+     "rank": 15,
+     "value_pct": 352
+    },
+    {
+     "rank": 16,
+     "value_pct": 365
+    }
+   ]
+  },
+  {
+   "id": "savage_strike",
+   "class": "barbarian",
+   "unlock_level": 1,
+   "name": "Savage Strike",
+   "type": "attack",
+   "damage_type": "physical",
+   "base_damage_pct": 125,
+   "per_rank_pct": 9,
+   "mana_cost": 3,
+   "cooldown_s": 1.1,
+   "tags": [
+    "melee"
+   ],
+   "effect": "+15% damage if you killed within the last 2s.",
+   "rank_rule": "gem xp system (V2 step 7): rank 1..16 via gem XP, cap 16",
+   "rank_table": [
+    {
+     "rank": 1,
+     "value_pct": 125
+    },
+    {
+     "rank": 2,
+     "value_pct": 134
+    },
+    {
+     "rank": 3,
+     "value_pct": 143
+    },
+    {
+     "rank": 4,
+     "value_pct": 152
+    },
+    {
+     "rank": 5,
+     "value_pct": 161
+    },
+    {
+     "rank": 6,
+     "value_pct": 170
+    },
+    {
+     "rank": 7,
+     "value_pct": 179
+    },
+    {
+     "rank": 8,
+     "value_pct": 188
+    },
+    {
+     "rank": 9,
+     "value_pct": 197
+    },
+    {
+     "rank": 10,
+     "value_pct": 206
+    },
+    {
+     "rank": 11,
+     "value_pct": 215
+    },
+    {
+     "rank": 12,
+     "value_pct": 224
+    },
+    {
+     "rank": 13,
+     "value_pct": 233
+    },
+    {
+     "rank": 14,
+     "value_pct": 242
+    },
+    {
+     "rank": 15,
+     "value_pct": 251
+    },
+    {
+     "rank": 16,
+     "value_pct": 260
+    }
+   ]
+  },
+  {
+   "id": "frenzy",
+   "class": "barbarian",
+   "unlock_level": 4,
+   "name": "Frenzy",
+   "type": "buff",
+   "damage_type": null,
+   "base_damage_pct": 0,
+   "per_rank_pct": 0,
+   "mana_cost": 8,
+   "cooldown_s": 10.0,
+   "tags": [],
+   "effect": "+15% Attack Speed for 5s, +1% per rank. Kills extend by 0.5s.",
+   "rank_rule": "gem xp system (V2 step 7): rank 1..16 via gem XP, cap 16",
+   "rank_table": [
+    {
+     "rank": 1,
+     "value_pct": 0
+    },
+    {
+     "rank": 2,
+     "value_pct": 0
+    },
+    {
+     "rank": 3,
+     "value_pct": 0
+    },
+    {
+     "rank": 4,
+     "value_pct": 0
+    },
+    {
+     "rank": 5,
+     "value_pct": 0
+    },
+    {
+     "rank": 6,
+     "value_pct": 0
+    },
+    {
+     "rank": 7,
+     "value_pct": 0
+    },
+    {
+     "rank": 8,
+     "value_pct": 0
+    },
+    {
+     "rank": 9,
+     "value_pct": 0
+    },
+    {
+     "rank": 10,
+     "value_pct": 0
+    },
+    {
+     "rank": 11,
+     "value_pct": 0
+    },
+    {
+     "rank": 12,
+     "value_pct": 0
+    },
+    {
+     "rank": 13,
+     "value_pct": 0
+    },
+    {
+     "rank": 14,
+     "value_pct": 0
+    },
+    {
+     "rank": 15,
+     "value_pct": 0
+    },
+    {
+     "rank": 16,
+     "value_pct": 0
+    }
+   ]
+  },
+  {
+   "id": "rending_swipe",
+   "class": "barbarian",
+   "unlock_level": 8,
+   "name": "Rending Swipe",
+   "type": "attack",
+   "damage_type": "physical",
+   "base_damage_pct": 140,
+   "per_rank_pct": 10,
+   "mana_cost": 6,
+   "cooldown_s": 3.5,
+   "tags": [
+    "melee"
+   ],
+   "effect": "60% chance to inflict Bleed.",
+   "rank_rule": "gem xp system (V2 step 7): rank 1..16 via gem XP, cap 16",
+   "rank_table": [
+    {
+     "rank": 1,
+     "value_pct": 140
+    },
+    {
+     "rank": 2,
+     "value_pct": 150
+    },
+    {
+     "rank": 3,
+     "value_pct": 160
+    },
+    {
+     "rank": 4,
+     "value_pct": 170
+    },
+    {
+     "rank": 5,
+     "value_pct": 180
+    },
+    {
+     "rank": 6,
+     "value_pct": 190
+    },
+    {
+     "rank": 7,
+     "value_pct": 200
+    },
+    {
+     "rank": 8,
+     "value_pct": 210
+    },
+    {
+     "rank": 9,
+     "value_pct": 220
+    },
+    {
+     "rank": 10,
+     "value_pct": 230
+    },
+    {
+     "rank": 11,
+     "value_pct": 240
+    },
+    {
+     "rank": 12,
+     "value_pct": 250
+    },
+    {
+     "rank": 13,
+     "value_pct": 260
+    },
+    {
+     "rank": 14,
+     "value_pct": 270
+    },
+    {
+     "rank": 15,
+     "value_pct": 280
+    },
+    {
+     "rank": 16,
+     "value_pct": 290
+    }
+   ]
+  },
+  {
+   "id": "blood_roar",
+   "class": "barbarian",
+   "unlock_level": 12,
+   "name": "Blood Roar",
+   "type": "buff",
+   "damage_type": null,
+   "base_damage_pct": 0,
+   "per_rank_pct": 0,
+   "mana_cost": 12,
+   "cooldown_s": 14.0,
+   "tags": [
+    "shout"
+   ],
+   "effect": "Leech 3% of damage as Life for 6s (+0.1%/rank). Fear: trash briefly retreats.",
+   "rank_rule": "gem xp system (V2 step 7): rank 1..16 via gem XP, cap 16",
+   "rank_table": [
+    {
+     "rank": 1,
+     "value_pct": 0
+    },
+    {
+     "rank": 2,
+     "value_pct": 0
+    },
+    {
+     "rank": 3,
+     "value_pct": 0
+    },
+    {
+     "rank": 4,
+     "value_pct": 0
+    },
+    {
+     "rank": 5,
+     "value_pct": 0
+    },
+    {
+     "rank": 6,
+     "value_pct": 0
+    },
+    {
+     "rank": 7,
+     "value_pct": 0
+    },
+    {
+     "rank": 8,
+     "value_pct": 0
+    },
+    {
+     "rank": 9,
+     "value_pct": 0
+    },
+    {
+     "rank": 10,
+     "value_pct": 0
+    },
+    {
+     "rank": 11,
+     "value_pct": 0
+    },
+    {
+     "rank": 12,
+     "value_pct": 0
+    },
+    {
+     "rank": 13,
+     "value_pct": 0
+    },
+    {
+     "rank": 14,
+     "value_pct": 0
+    },
+    {
+     "rank": 15,
+     "value_pct": 0
+    },
+    {
+     "rank": 16,
+     "value_pct": 0
+    }
+   ]
+  },
+  {
+   "id": "rampage",
+   "class": "barbarian",
+   "unlock_level": 16,
+   "name": "Rampage",
+   "type": "attack",
+   "damage_type": "physical",
+   "base_damage_pct": 185,
+   "per_rank_pct": 14,
+   "mana_cost": 14,
+   "cooldown_s": 9.0,
+   "tags": [
+    "melee",
+    "aoe"
+   ],
+   "effect": "Three sweeping hits; each kill during Rampage heals 2% Life.",
+   "rank_rule": "gem xp system (V2 step 7): rank 1..16 via gem XP, cap 16",
+   "rank_table": [
+    {
+     "rank": 1,
+     "value_pct": 185
+    },
+    {
+     "rank": 2,
+     "value_pct": 199
+    },
+    {
+     "rank": 3,
+     "value_pct": 213
+    },
+    {
+     "rank": 4,
+     "value_pct": 227
+    },
+    {
+     "rank": 5,
+     "value_pct": 241
+    },
+    {
+     "rank": 6,
+     "value_pct": 255
+    },
+    {
+     "rank": 7,
+     "value_pct": 269
+    },
+    {
+     "rank": 8,
+     "value_pct": 283
+    },
+    {
+     "rank": 9,
+     "value_pct": 297
+    },
+    {
+     "rank": 10,
+     "value_pct": 311
+    },
+    {
+     "rank": 11,
+     "value_pct": 325
+    },
+    {
+     "rank": 12,
+     "value_pct": 339
+    },
+    {
+     "rank": 13,
+     "value_pct": 353
+    },
+    {
+     "rank": 14,
+     "value_pct": 367
+    },
+    {
+     "rank": 15,
+     "value_pct": 381
+    },
+    {
+     "rank": 16,
+     "value_pct": 395
+    }
+   ]
+  },
+  {
+   "id": "quick_shot",
+   "class": "archer",
+   "unlock_level": 1,
+   "name": "Quick Shot",
+   "type": "attack",
+   "damage_type": "physical",
+   "base_damage_pct": 110,
+   "per_rank_pct": 8,
+   "mana_cost": 2,
+   "cooldown_s": 0.9,
+   "tags": [
+    "projectile"
+   ],
+   "effect": "Fast basic shot.",
+   "rank_rule": "gem xp system (V2 step 7): rank 1..16 via gem XP, cap 16",
+   "rank_table": [
+    {
+     "rank": 1,
+     "value_pct": 110
+    },
+    {
+     "rank": 2,
+     "value_pct": 118
+    },
+    {
+     "rank": 3,
+     "value_pct": 126
+    },
+    {
+     "rank": 4,
+     "value_pct": 134
+    },
+    {
+     "rank": 5,
+     "value_pct": 142
+    },
+    {
+     "rank": 6,
+     "value_pct": 150
+    },
+    {
+     "rank": 7,
+     "value_pct": 158
+    },
+    {
+     "rank": 8,
+     "value_pct": 166
+    },
+    {
+     "rank": 9,
+     "value_pct": 174
+    },
+    {
+     "rank": 10,
+     "value_pct": 182
+    },
+    {
+     "rank": 11,
+     "value_pct": 190
+    },
+    {
+     "rank": 12,
+     "value_pct": 198
+    },
+    {
+     "rank": 13,
+     "value_pct": 206
+    },
+    {
+     "rank": 14,
+     "value_pct": 214
+    },
+    {
+     "rank": 15,
+     "value_pct": 222
+    },
+    {
+     "rank": 16,
+     "value_pct": 230
+    }
+   ]
+  },
+  {
+   "id": "piercing_arrow",
+   "class": "archer",
+   "unlock_level": 4,
+   "name": "Piercing Arrow",
+   "type": "attack",
+   "damage_type": "physical",
+   "base_damage_pct": 145,
+   "per_rank_pct": 11,
+   "mana_cost": 5,
+   "cooldown_s": 3.0,
+   "tags": [
+    "projectile"
+   ],
+   "effect": "Pierces all enemies in a line; +20% Crit Chance.",
+   "rank_rule": "gem xp system (V2 step 7): rank 1..16 via gem XP, cap 16",
+   "rank_table": [
+    {
+     "rank": 1,
+     "value_pct": 145
+    },
+    {
+     "rank": 2,
+     "value_pct": 156
+    },
+    {
+     "rank": 3,
+     "value_pct": 167
+    },
+    {
+     "rank": 4,
+     "value_pct": 178
+    },
+    {
+     "rank": 5,
+     "value_pct": 189
+    },
+    {
+     "rank": 6,
+     "value_pct": 200
+    },
+    {
+     "rank": 7,
+     "value_pct": 211
+    },
+    {
+     "rank": 8,
+     "value_pct": 222
+    },
+    {
+     "rank": 9,
+     "value_pct": 233
+    },
+    {
+     "rank": 10,
+     "value_pct": 244
+    },
+    {
+     "rank": 11,
+     "value_pct": 255
+    },
+    {
+     "rank": 12,
+     "value_pct": 266
+    },
+    {
+     "rank": 13,
+     "value_pct": 277
+    },
+    {
+     "rank": 14,
+     "value_pct": 288
+    },
+    {
+     "rank": 15,
+     "value_pct": 299
+    },
+    {
+     "rank": 16,
+     "value_pct": 310
+    }
+   ]
+  },
+  {
+   "id": "multishot",
+   "class": "archer",
+   "unlock_level": 8,
+   "name": "Multishot",
+   "type": "attack",
+   "damage_type": "physical",
+   "base_damage_pct": 95,
+   "per_rank_pct": 8,
+   "mana_cost": 7,
+   "cooldown_s": 4.0,
+   "tags": [
+    "projectile",
+    "aoe"
+   ],
+   "effect": "Fires 3 arrows (5 at rank 8, 7 at rank 14).",
+   "rank_rule": "gem xp system (V2 step 7): rank 1..16 via gem XP, cap 16",
+   "rank_table": [
+    {
+     "rank": 1,
+     "value_pct": 95
+    },
+    {
+     "rank": 2,
+     "value_pct": 103
+    },
+    {
+     "rank": 3,
+     "value_pct": 111
+    },
+    {
+     "rank": 4,
+     "value_pct": 119
+    },
+    {
+     "rank": 5,
+     "value_pct": 127
+    },
+    {
+     "rank": 6,
+     "value_pct": 135
+    },
+    {
+     "rank": 7,
+     "value_pct": 143
+    },
+    {
+     "rank": 8,
+     "value_pct": 151
+    },
+    {
+     "rank": 9,
+     "value_pct": 159
+    },
+    {
+     "rank": 10,
+     "value_pct": 167
+    },
+    {
+     "rank": 11,
+     "value_pct": 175
+    },
+    {
+     "rank": 12,
+     "value_pct": 183
+    },
+    {
+     "rank": 13,
+     "value_pct": 191
+    },
+    {
+     "rank": 14,
+     "value_pct": 199
+    },
+    {
+     "rank": 15,
+     "value_pct": 207
+    },
+    {
+     "rank": 16,
+     "value_pct": 215
+    }
+   ]
+  },
+  {
+   "id": "poison_barb",
+   "class": "archer",
+   "unlock_level": 12,
+   "name": "Poison Barb",
+   "type": "attack",
+   "damage_type": "physical",
+   "base_damage_pct": 120,
+   "per_rank_pct": 9,
+   "mana_cost": 8,
+   "cooldown_s": 5.0,
+   "tags": [
+    "projectile"
+   ],
+   "effect": "80% chance to Poison; Poison from this skill can stack twice per hit.",
+   "rank_rule": "gem xp system (V2 step 7): rank 1..16 via gem XP, cap 16",
+   "rank_table": [
+    {
+     "rank": 1,
+     "value_pct": 120
+    },
+    {
+     "rank": 2,
+     "value_pct": 129
+    },
+    {
+     "rank": 3,
+     "value_pct": 138
+    },
+    {
+     "rank": 4,
+     "value_pct": 147
+    },
+    {
+     "rank": 5,
+     "value_pct": 156
+    },
+    {
+     "rank": 6,
+     "value_pct": 165
+    },
+    {
+     "rank": 7,
+     "value_pct": 174
+    },
+    {
+     "rank": 8,
+     "value_pct": 183
+    },
+    {
+     "rank": 9,
+     "value_pct": 192
+    },
+    {
+     "rank": 10,
+     "value_pct": 201
+    },
+    {
+     "rank": 11,
+     "value_pct": 210
+    },
+    {
+     "rank": 12,
+     "value_pct": 219
+    },
+    {
+     "rank": 13,
+     "value_pct": 228
+    },
+    {
+     "rank": 14,
+     "value_pct": 237
+    },
+    {
+     "rank": 15,
+     "value_pct": 246
+    },
+    {
+     "rank": 16,
+     "value_pct": 255
+    }
+   ]
+  },
+  {
+   "id": "split_volley",
+   "class": "archer",
+   "unlock_level": 16,
+   "name": "Split Volley",
+   "type": "attack",
+   "damage_type": "physical",
+   "base_damage_pct": 160,
+   "per_rank_pct": 12,
+   "mana_cost": 12,
+   "cooldown_s": 7.5,
+   "tags": [
+    "projectile",
+    "aoe"
+   ],
+   "effect": "Volley that splits on first hit into 4 fragments (50% damage each).",
+   "rank_rule": "gem xp system (V2 step 7): rank 1..16 via gem XP, cap 16",
+   "rank_table": [
+    {
+     "rank": 1,
+     "value_pct": 160
+    },
+    {
+     "rank": 2,
+     "value_pct": 172
+    },
+    {
+     "rank": 3,
+     "value_pct": 184
+    },
+    {
+     "rank": 4,
+     "value_pct": 196
+    },
+    {
+     "rank": 5,
+     "value_pct": 208
+    },
+    {
+     "rank": 6,
+     "value_pct": 220
+    },
+    {
+     "rank": 7,
+     "value_pct": 232
+    },
+    {
+     "rank": 8,
+     "value_pct": 244
+    },
+    {
+     "rank": 9,
+     "value_pct": 256
+    },
+    {
+     "rank": 10,
+     "value_pct": 268
+    },
+    {
+     "rank": 11,
+     "value_pct": 280
+    },
+    {
+     "rank": 12,
+     "value_pct": 292
+    },
+    {
+     "rank": 13,
+     "value_pct": 304
+    },
+    {
+     "rank": 14,
+     "value_pct": 316
+    },
+    {
+     "rank": 15,
+     "value_pct": 328
+    },
+    {
+     "rank": 16,
+     "value_pct": 340
+    }
+   ]
+  },
+  {
+   "id": "firebolt",
+   "class": "mage",
+   "unlock_level": 1,
+   "name": "Firebolt",
+   "type": "spell",
+   "damage_type": "fire",
+   "base_damage_pct": 120,
+   "per_rank_pct": 9,
+   "mana_cost": 4,
+   "cooldown_s": 1.3,
+   "tags": [
+    "projectile"
+   ],
+   "effect": "25% chance to Ignite.",
+   "rank_rule": "gem xp system (V2 step 7): rank 1..16 via gem XP, cap 16",
+   "rank_table": [
+    {
+     "rank": 1,
+     "value_pct": 120
+    },
+    {
+     "rank": 2,
+     "value_pct": 129
+    },
+    {
+     "rank": 3,
+     "value_pct": 138
+    },
+    {
+     "rank": 4,
+     "value_pct": 147
+    },
+    {
+     "rank": 5,
+     "value_pct": 156
+    },
+    {
+     "rank": 6,
+     "value_pct": 165
+    },
+    {
+     "rank": 7,
+     "value_pct": 174
+    },
+    {
+     "rank": 8,
+     "value_pct": 183
+    },
+    {
+     "rank": 9,
+     "value_pct": 192
+    },
+    {
+     "rank": 10,
+     "value_pct": 201
+    },
+    {
+     "rank": 11,
+     "value_pct": 210
+    },
+    {
+     "rank": 12,
+     "value_pct": 219
+    },
+    {
+     "rank": 13,
+     "value_pct": 228
+    },
+    {
+     "rank": 14,
+     "value_pct": 237
+    },
+    {
+     "rank": 15,
+     "value_pct": 246
+    },
+    {
+     "rank": 16,
+     "value_pct": 255
+    }
+   ]
+  },
+  {
+   "id": "frost_shard",
+   "class": "mage",
+   "unlock_level": 4,
+   "name": "Frost Shard",
+   "type": "spell",
+   "damage_type": "cold",
+   "base_damage_pct": 135,
+   "per_rank_pct": 10,
+   "mana_cost": 6,
+   "cooldown_s": 2.5,
+   "tags": [
+    "projectile"
+   ],
+   "effect": "30% chance to Freeze for 0.5s.",
+   "rank_rule": "gem xp system (V2 step 7): rank 1..16 via gem XP, cap 16",
+   "rank_table": [
+    {
+     "rank": 1,
+     "value_pct": 135
+    },
+    {
+     "rank": 2,
+     "value_pct": 145
+    },
+    {
+     "rank": 3,
+     "value_pct": 155
+    },
+    {
+     "rank": 4,
+     "value_pct": 165
+    },
+    {
+     "rank": 5,
+     "value_pct": 175
+    },
+    {
+     "rank": 6,
+     "value_pct": 185
+    },
+    {
+     "rank": 7,
+     "value_pct": 195
+    },
+    {
+     "rank": 8,
+     "value_pct": 205
+    },
+    {
+     "rank": 9,
+     "value_pct": 215
+    },
+    {
+     "rank": 10,
+     "value_pct": 225
+    },
+    {
+     "rank": 11,
+     "value_pct": 235
+    },
+    {
+     "rank": 12,
+     "value_pct": 245
+    },
+    {
+     "rank": 13,
+     "value_pct": 255
+    },
+    {
+     "rank": 14,
+     "value_pct": 265
+    },
+    {
+     "rank": 15,
+     "value_pct": 275
+    },
+    {
+     "rank": 16,
+     "value_pct": 285
+    }
+   ]
+  },
+  {
+   "id": "spark",
+   "class": "mage",
+   "unlock_level": 8,
+   "name": "Spark",
+   "type": "spell",
+   "damage_type": "lightning",
+   "base_damage_pct": 100,
+   "per_rank_pct": 8,
+   "mana_cost": 5,
+   "cooldown_s": 1.8,
+   "tags": [
+    "projectile"
+   ],
+   "effect": "Forks to a second enemy at 60% damage; 30% chance to Shock.",
+   "rank_rule": "gem xp system (V2 step 7): rank 1..16 via gem XP, cap 16",
+   "rank_table": [
+    {
+     "rank": 1,
+     "value_pct": 100
+    },
+    {
+     "rank": 2,
+     "value_pct": 108
+    },
+    {
+     "rank": 3,
+     "value_pct": 116
+    },
+    {
+     "rank": 4,
+     "value_pct": 124
+    },
+    {
+     "rank": 5,
+     "value_pct": 132
+    },
+    {
+     "rank": 6,
+     "value_pct": 140
+    },
+    {
+     "rank": 7,
+     "value_pct": 148
+    },
+    {
+     "rank": 8,
+     "value_pct": 156
+    },
+    {
+     "rank": 9,
+     "value_pct": 164
+    },
+    {
+     "rank": 10,
+     "value_pct": 172
+    },
+    {
+     "rank": 11,
+     "value_pct": 180
+    },
+    {
+     "rank": 12,
+     "value_pct": 188
+    },
+    {
+     "rank": 13,
+     "value_pct": 196
+    },
+    {
+     "rank": 14,
+     "value_pct": 204
+    },
+    {
+     "rank": 15,
+     "value_pct": 212
+    },
+    {
+     "rank": 16,
+     "value_pct": 220
+    }
+   ]
+  },
+  {
+   "id": "fireball",
+   "class": "mage",
+   "unlock_level": 12,
+   "name": "Fireball",
+   "type": "spell",
+   "damage_type": "fire",
+   "base_damage_pct": 165,
+   "per_rank_pct": 13,
+   "mana_cost": 10,
+   "cooldown_s": 4.5,
+   "tags": [
+    "projectile",
+    "aoe"
+   ],
+   "effect": "Explodes for 60% splash; 50% chance to Ignite.",
+   "rank_rule": "gem xp system (V2 step 7): rank 1..16 via gem XP, cap 16",
+   "rank_table": [
+    {
+     "rank": 1,
+     "value_pct": 165
+    },
+    {
+     "rank": 2,
+     "value_pct": 178
+    },
+    {
+     "rank": 3,
+     "value_pct": 191
+    },
+    {
+     "rank": 4,
+     "value_pct": 204
+    },
+    {
+     "rank": 5,
+     "value_pct": 217
+    },
+    {
+     "rank": 6,
+     "value_pct": 230
+    },
+    {
+     "rank": 7,
+     "value_pct": 243
+    },
+    {
+     "rank": 8,
+     "value_pct": 256
+    },
+    {
+     "rank": 9,
+     "value_pct": 269
+    },
+    {
+     "rank": 10,
+     "value_pct": 282
+    },
+    {
+     "rank": 11,
+     "value_pct": 295
+    },
+    {
+     "rank": 12,
+     "value_pct": 308
+    },
+    {
+     "rank": 13,
+     "value_pct": 321
+    },
+    {
+     "rank": 14,
+     "value_pct": 334
+    },
+    {
+     "rank": 15,
+     "value_pct": 347
+    },
+    {
+     "rank": 16,
+     "value_pct": 360
+    }
+   ]
+  },
+  {
+   "id": "blizzard",
+   "class": "mage",
+   "unlock_level": 16,
+   "name": "Blizzard",
+   "type": "spell",
+   "damage_type": "cold",
+   "base_damage_pct": 90,
+   "per_rank_pct": 8,
+   "mana_cost": 14,
+   "cooldown_s": 8.0,
+   "tags": [
+    "aoe",
+    "dot"
+   ],
+   "effect": "Storm over the strip for 3s, ticks 4/s; each tick 15% chance to Freeze.",
+   "rank_rule": "gem xp system (V2 step 7): rank 1..16 via gem XP, cap 16",
+   "rank_table": [
+    {
+     "rank": 1,
+     "value_pct": 90
+    },
+    {
+     "rank": 2,
+     "value_pct": 98
+    },
+    {
+     "rank": 3,
+     "value_pct": 106
+    },
+    {
+     "rank": 4,
+     "value_pct": 114
+    },
+    {
+     "rank": 5,
+     "value_pct": 122
+    },
+    {
+     "rank": 6,
+     "value_pct": 130
+    },
+    {
+     "rank": 7,
+     "value_pct": 138
+    },
+    {
+     "rank": 8,
+     "value_pct": 146
+    },
+    {
+     "rank": 9,
+     "value_pct": 154
+    },
+    {
+     "rank": 10,
+     "value_pct": 162
+    },
+    {
+     "rank": 11,
+     "value_pct": 170
+    },
+    {
+     "rank": 12,
+     "value_pct": 178
+    },
+    {
+     "rank": 13,
+     "value_pct": 186
+    },
+    {
+     "rank": 14,
+     "value_pct": 194
+    },
+    {
+     "rank": 15,
+     "value_pct": 202
+    },
+    {
+     "rank": 16,
+     "value_pct": 210
+    }
+   ]
+  },
+  {
+   "id": "smite",
+   "class": "cleric",
+   "unlock_level": 1,
+   "name": "Smite",
+   "type": "spell",
+   "damage_type": "fire",
+   "base_damage_pct": 115,
+   "per_rank_pct": 9,
+   "mana_cost": 3,
+   "cooldown_s": 1.2,
+   "tags": [],
+   "effect": "Holy strike; +20% damage vs undead and demons.",
+   "rank_rule": "gem xp system (V2 step 7): rank 1..16 via gem XP, cap 16",
+   "rank_table": [
+    {
+     "rank": 1,
+     "value_pct": 115
+    },
+    {
+     "rank": 2,
+     "value_pct": 124
+    },
+    {
+     "rank": 3,
+     "value_pct": 133
+    },
+    {
+     "rank": 4,
+     "value_pct": 142
+    },
+    {
+     "rank": 5,
+     "value_pct": 151
+    },
+    {
+     "rank": 6,
+     "value_pct": 160
+    },
+    {
+     "rank": 7,
+     "value_pct": 169
+    },
+    {
+     "rank": 8,
+     "value_pct": 178
+    },
+    {
+     "rank": 9,
+     "value_pct": 187
+    },
+    {
+     "rank": 10,
+     "value_pct": 196
+    },
+    {
+     "rank": 11,
+     "value_pct": 205
+    },
+    {
+     "rank": 12,
+     "value_pct": 214
+    },
+    {
+     "rank": 13,
+     "value_pct": 223
+    },
+    {
+     "rank": 14,
+     "value_pct": 232
+    },
+    {
+     "rank": 15,
+     "value_pct": 241
+    },
+    {
+     "rank": 16,
+     "value_pct": 250
+    }
+   ]
+  },
+  {
+   "id": "mending_light",
+   "class": "cleric",
+   "unlock_level": 4,
+   "name": "Mending Light",
+   "type": "heal",
+   "damage_type": null,
+   "base_damage_pct": 0,
+   "per_rank_pct": 0,
+   "mana_cost": 9,
+   "cooldown_s": 8.0,
+   "tags": [],
+   "effect": "Heals 12% of max Life (+0.5%/rank). Scaled by healing_inc_pct.",
+   "rank_rule": "gem xp system (V2 step 7): rank 1..16 via gem XP, cap 16",
+   "rank_table": [
+    {
+     "rank": 1,
+     "value_pct": 0
+    },
+    {
+     "rank": 2,
+     "value_pct": 0
+    },
+    {
+     "rank": 3,
+     "value_pct": 0
+    },
+    {
+     "rank": 4,
+     "value_pct": 0
+    },
+    {
+     "rank": 5,
+     "value_pct": 0
+    },
+    {
+     "rank": 6,
+     "value_pct": 0
+    },
+    {
+     "rank": 7,
+     "value_pct": 0
+    },
+    {
+     "rank": 8,
+     "value_pct": 0
+    },
+    {
+     "rank": 9,
+     "value_pct": 0
+    },
+    {
+     "rank": 10,
+     "value_pct": 0
+    },
+    {
+     "rank": 11,
+     "value_pct": 0
+    },
+    {
+     "rank": 12,
+     "value_pct": 0
+    },
+    {
+     "rank": 13,
+     "value_pct": 0
+    },
+    {
+     "rank": 14,
+     "value_pct": 0
+    },
+    {
+     "rank": 15,
+     "value_pct": 0
+    },
+    {
+     "rank": 16,
+     "value_pct": 0
+    }
+   ]
+  },
+  {
+   "id": "holy_bolt",
+   "class": "cleric",
+   "unlock_level": 8,
+   "name": "Holy Bolt",
+   "type": "spell",
+   "damage_type": "lightning",
+   "base_damage_pct": 130,
+   "per_rank_pct": 10,
+   "mana_cost": 6,
+   "cooldown_s": 2.8,
+   "tags": [
+    "projectile"
+   ],
+   "effect": "Pierces; heals hero for 15% of damage dealt.",
+   "rank_rule": "gem xp system (V2 step 7): rank 1..16 via gem XP, cap 16",
+   "rank_table": [
+    {
+     "rank": 1,
+     "value_pct": 130
+    },
+    {
+     "rank": 2,
+     "value_pct": 140
+    },
+    {
+     "rank": 3,
+     "value_pct": 150
+    },
+    {
+     "rank": 4,
+     "value_pct": 160
+    },
+    {
+     "rank": 5,
+     "value_pct": 170
+    },
+    {
+     "rank": 6,
+     "value_pct": 180
+    },
+    {
+     "rank": 7,
+     "value_pct": 190
+    },
+    {
+     "rank": 8,
+     "value_pct": 200
+    },
+    {
+     "rank": 9,
+     "value_pct": 210
+    },
+    {
+     "rank": 10,
+     "value_pct": 220
+    },
+    {
+     "rank": 11,
+     "value_pct": 230
+    },
+    {
+     "rank": 12,
+     "value_pct": 240
+    },
+    {
+     "rank": 13,
+     "value_pct": 250
+    },
+    {
+     "rank": 14,
+     "value_pct": 260
+    },
+    {
+     "rank": 15,
+     "value_pct": 270
+    },
+    {
+     "rank": 16,
+     "value_pct": 280
+    }
+   ]
+  },
+  {
+   "id": "consecration",
+   "class": "cleric",
+   "unlock_level": 12,
+   "name": "Consecration",
+   "type": "buff",
+   "damage_type": null,
+   "base_damage_pct": 0,
+   "per_rank_pct": 0,
+   "mana_cost": 12,
+   "cooldown_s": 12.0,
+   "tags": [
+    "aoe"
+   ],
+   "effect": "Ground blessing 5s: hero regens 2% Life/s, enemies inside take +10% damage.",
+   "rank_rule": "gem xp system (V2 step 7): rank 1..16 via gem XP, cap 16",
+   "rank_table": [
+    {
+     "rank": 1,
+     "value_pct": 0
+    },
+    {
+     "rank": 2,
+     "value_pct": 0
+    },
+    {
+     "rank": 3,
+     "value_pct": 0
+    },
+    {
+     "rank": 4,
+     "value_pct": 0
+    },
+    {
+     "rank": 5,
+     "value_pct": 0
+    },
+    {
+     "rank": 6,
+     "value_pct": 0
+    },
+    {
+     "rank": 7,
+     "value_pct": 0
+    },
+    {
+     "rank": 8,
+     "value_pct": 0
+    },
+    {
+     "rank": 9,
+     "value_pct": 0
+    },
+    {
+     "rank": 10,
+     "value_pct": 0
+    },
+    {
+     "rank": 11,
+     "value_pct": 0
+    },
+    {
+     "rank": 12,
+     "value_pct": 0
+    },
+    {
+     "rank": 13,
+     "value_pct": 0
+    },
+    {
+     "rank": 14,
+     "value_pct": 0
+    },
+    {
+     "rank": 15,
+     "value_pct": 0
+    },
+    {
+     "rank": 16,
+     "value_pct": 0
+    }
+   ]
+  },
+  {
+   "id": "wrath_of_dawn",
+   "class": "cleric",
+   "unlock_level": 16,
+   "name": "Wrath of Dawn",
+   "type": "spell",
+   "damage_type": "fire",
+   "base_damage_pct": 175,
+   "per_rank_pct": 13,
+   "mana_cost": 14,
+   "cooldown_s": 9.0,
+   "tags": [
+    "aoe"
+   ],
+   "effect": "Column of light: heavy holy damage, 30% chance to Stun undead/demons.",
+   "rank_rule": "gem xp system (V2 step 7): rank 1..16 via gem XP, cap 16",
+   "rank_table": [
+    {
+     "rank": 1,
+     "value_pct": 175
+    },
+    {
+     "rank": 2,
+     "value_pct": 188
+    },
+    {
+     "rank": 3,
+     "value_pct": 201
+    },
+    {
+     "rank": 4,
+     "value_pct": 214
+    },
+    {
+     "rank": 5,
+     "value_pct": 227
+    },
+    {
+     "rank": 6,
+     "value_pct": 240
+    },
+    {
+     "rank": 7,
+     "value_pct": 253
+    },
+    {
+     "rank": 8,
+     "value_pct": 266
+    },
+    {
+     "rank": 9,
+     "value_pct": 279
+    },
+    {
+     "rank": 10,
+     "value_pct": 292
+    },
+    {
+     "rank": 11,
+     "value_pct": 305
+    },
+    {
+     "rank": 12,
+     "value_pct": 318
+    },
+    {
+     "rank": 13,
+     "value_pct": 331
+    },
+    {
+     "rank": 14,
+     "value_pct": 344
+    },
+    {
+     "rank": 15,
+     "value_pct": 357
+    },
+    {
+     "rank": 16,
+     "value_pct": 370
+    }
+   ]
+  },
+  {
+   "id": "shield_slam",
+   "class": "warrior",
+   "unlock_level": 24,
+   "name": "Shield Slam",
+   "type": "attack",
+   "damage_type": "physical",
+   "base_damage_pct": 180,
+   "per_rank_pct": 12,
+   "mana_cost": 8,
+   "cooldown_s": 4.0,
+   "effect": "Stuns for 1s. Damage +1% per 50 Armor.",
+   "rank_rule": "rank = 1 + (hero_level - unlock_level) // 5, capped at 16",
+   "rank_table": [
+    {
+     "rank": 1,
+     "value_pct": 180
+    },
+    {
+     "rank": 2,
+     "value_pct": 192
+    },
+    {
+     "rank": 3,
+     "value_pct": 204
+    },
+    {
+     "rank": 4,
+     "value_pct": 216
+    },
+    {
+     "rank": 5,
+     "value_pct": 228
+    },
+    {
+     "rank": 6,
+     "value_pct": 240
+    },
+    {
+     "rank": 7,
+     "value_pct": 252
+    },
+    {
+     "rank": 8,
+     "value_pct": 264
+    },
+    {
+     "rank": 9,
+     "value_pct": 276
+    },
+    {
+     "rank": 10,
+     "value_pct": 288
+    },
+    {
+     "rank": 11,
+     "value_pct": 300
+    },
+    {
+     "rank": 12,
+     "value_pct": 312
+    },
+    {
+     "rank": 13,
+     "value_pct": 324
+    },
+    {
+     "rank": 14,
+     "value_pct": 336
+    },
+    {
+     "rank": 15,
+     "value_pct": 348
+    },
+    {
+     "rank": 16,
+     "value_pct": 360
+    }
+   ],
+   "tags": []
+  },
+  {
+   "id": "avatar_of_war",
+   "class": "warrior",
+   "unlock_level": 40,
+   "name": "Avatar of War",
+   "type": "buff",
+   "base_effect_pct": 20,
+   "per_rank_pct": 2,
+   "duration_s": 10,
+   "cooldown_s": 30,
+   "mana_cost": 20,
+   "effect": "+X% Physical Damage and +X/2% Armor for the duration.",
+   "rank_rule": "rank = 1 + (hero_level - unlock_level) // 5, capped at 16",
+   "rank_table": [
+    {
+     "rank": 1,
+     "value_pct": 20
+    },
+    {
+     "rank": 2,
+     "value_pct": 22
+    },
+    {
+     "rank": 3,
+     "value_pct": 24
+    },
+    {
+     "rank": 4,
+     "value_pct": 26
+    },
+    {
+     "rank": 5,
+     "value_pct": 28
+    },
+    {
+     "rank": 6,
+     "value_pct": 30
+    },
+    {
+     "rank": 7,
+     "value_pct": 32
+    },
+    {
+     "rank": 8,
+     "value_pct": 34
+    },
+    {
+     "rank": 9,
+     "value_pct": 36
+    },
+    {
+     "rank": 10,
+     "value_pct": 38
+    },
+    {
+     "rank": 11,
+     "value_pct": 40
+    },
+    {
+     "rank": 12,
+     "value_pct": 42
+    },
+    {
+     "rank": 13,
+     "value_pct": 44
+    },
+    {
+     "rank": 14,
+     "value_pct": 46
+    },
+    {
+     "rank": 15,
+     "value_pct": 48
+    },
+    {
+     "rank": 16,
+     "value_pct": 50
+    }
+   ],
+   "tags": []
+  },
+  {
+   "id": "whirlwind",
+   "class": "barbarian",
+   "unlock_level": 24,
+   "name": "Whirlwind",
+   "type": "attack",
+   "damage_type": "physical",
+   "base_damage_pct": 90,
+   "per_rank_pct": 7,
+   "mana_cost_per_s": 3,
+   "cooldown_s": 0,
+   "effect": "Hits all enemies within 60 units while channeled.",
+   "rank_rule": "rank = 1 + (hero_level - unlock_level) // 5, capped at 16",
+   "rank_table": [
+    {
+     "rank": 1,
+     "value_pct": 90
+    },
+    {
+     "rank": 2,
+     "value_pct": 97
+    },
+    {
+     "rank": 3,
+     "value_pct": 104
+    },
+    {
+     "rank": 4,
+     "value_pct": 111
+    },
+    {
+     "rank": 5,
+     "value_pct": 118
+    },
+    {
+     "rank": 6,
+     "value_pct": 125
+    },
+    {
+     "rank": 7,
+     "value_pct": 132
+    },
+    {
+     "rank": 8,
+     "value_pct": 139
+    },
+    {
+     "rank": 9,
+     "value_pct": 146
+    },
+    {
+     "rank": 10,
+     "value_pct": 153
+    },
+    {
+     "rank": 11,
+     "value_pct": 160
+    },
+    {
+     "rank": 12,
+     "value_pct": 167
+    },
+    {
+     "rank": 13,
+     "value_pct": 174
+    },
+    {
+     "rank": 14,
+     "value_pct": 181
+    },
+    {
+     "rank": 15,
+     "value_pct": 188
+    },
+    {
+     "rank": 16,
+     "value_pct": 195
+    }
+   ],
+   "tags": []
+  },
+  {
+   "id": "bloodstorm",
+   "class": "barbarian",
+   "unlock_level": 40,
+   "name": "Bloodstorm",
+   "type": "attack",
+   "damage_type": "physical",
+   "base_damage_pct": 220,
+   "per_rank_pct": 15,
+   "life_cost_pct": 5,
+   "cooldown_s": 6,
+   "effect": "Costs Life instead of Mana. Leeches 5% of damage as Life.",
+   "rank_rule": "rank = 1 + (hero_level - unlock_level) // 5, capped at 16",
+   "rank_table": [
+    {
+     "rank": 1,
+     "value_pct": 220
+    },
+    {
+     "rank": 2,
+     "value_pct": 235
+    },
+    {
+     "rank": 3,
+     "value_pct": 250
+    },
+    {
+     "rank": 4,
+     "value_pct": 265
+    },
+    {
+     "rank": 5,
+     "value_pct": 280
+    },
+    {
+     "rank": 6,
+     "value_pct": 295
+    },
+    {
+     "rank": 7,
+     "value_pct": 310
+    },
+    {
+     "rank": 8,
+     "value_pct": 325
+    },
+    {
+     "rank": 9,
+     "value_pct": 340
+    },
+    {
+     "rank": 10,
+     "value_pct": 355
+    },
+    {
+     "rank": 11,
+     "value_pct": 370
+    },
+    {
+     "rank": 12,
+     "value_pct": 385
+    },
+    {
+     "rank": 13,
+     "value_pct": 400
+    },
+    {
+     "rank": 14,
+     "value_pct": 415
+    },
+    {
+     "rank": 15,
+     "value_pct": 430
+    },
+    {
+     "rank": 16,
+     "value_pct": 445
+    }
+   ],
+   "tags": []
+  },
+  {
+   "id": "rain_of_barbs",
+   "class": "archer",
+   "unlock_level": 24,
+   "name": "Rain of Barbs",
+   "type": "attack",
+   "damage_type": "physical",
+   "base_damage_pct": 140,
+   "per_rank_pct": 10,
+   "mana_cost": 10,
+   "cooldown_s": 5,
+   "effect": "Area rain; enemies hit Bleed for 40% of hit over 4s.",
+   "rank_rule": "rank = 1 + (hero_level - unlock_level) // 5, capped at 16",
+   "rank_table": [
+    {
+     "rank": 1,
+     "value_pct": 140
+    },
+    {
+     "rank": 2,
+     "value_pct": 150
+    },
+    {
+     "rank": 3,
+     "value_pct": 160
+    },
+    {
+     "rank": 4,
+     "value_pct": 170
+    },
+    {
+     "rank": 5,
+     "value_pct": 180
+    },
+    {
+     "rank": 6,
+     "value_pct": 190
+    },
+    {
+     "rank": 7,
+     "value_pct": 200
+    },
+    {
+     "rank": 8,
+     "value_pct": 210
+    },
+    {
+     "rank": 9,
+     "value_pct": 220
+    },
+    {
+     "rank": 10,
+     "value_pct": 230
+    },
+    {
+     "rank": 11,
+     "value_pct": 240
+    },
+    {
+     "rank": 12,
+     "value_pct": 250
+    },
+    {
+     "rank": 13,
+     "value_pct": 260
+    },
+    {
+     "rank": 14,
+     "value_pct": 270
+    },
+    {
+     "rank": 15,
+     "value_pct": 280
+    },
+    {
+     "rank": 16,
+     "value_pct": 290
+    }
+   ],
+   "tags": [
+    "projectile"
+   ]
+  },
+  {
+   "id": "phantom_volley",
+   "class": "archer",
+   "unlock_level": 40,
+   "name": "Phantom Volley",
+   "type": "attack",
+   "damage_type": "physical",
+   "base_damage_pct": 75,
+   "per_rank_pct": 6,
+   "projectiles": 5,
+   "mana_cost": 14,
+   "cooldown_s": 7,
+   "effect": "Fires 5 arrows at up to 5 targets.",
+   "rank_rule": "rank = 1 + (hero_level - unlock_level) // 5, capped at 16",
+   "rank_table": [
+    {
+     "rank": 1,
+     "value_pct": 75
+    },
+    {
+     "rank": 2,
+     "value_pct": 81
+    },
+    {
+     "rank": 3,
+     "value_pct": 87
+    },
+    {
+     "rank": 4,
+     "value_pct": 93
+    },
+    {
+     "rank": 5,
+     "value_pct": 99
+    },
+    {
+     "rank": 6,
+     "value_pct": 105
+    },
+    {
+     "rank": 7,
+     "value_pct": 111
+    },
+    {
+     "rank": 8,
+     "value_pct": 117
+    },
+    {
+     "rank": 9,
+     "value_pct": 123
+    },
+    {
+     "rank": 10,
+     "value_pct": 129
+    },
+    {
+     "rank": 11,
+     "value_pct": 135
+    },
+    {
+     "rank": 12,
+     "value_pct": 141
+    },
+    {
+     "rank": 13,
+     "value_pct": 147
+    },
+    {
+     "rank": 14,
+     "value_pct": 153
+    },
+    {
+     "rank": 15,
+     "value_pct": 159
+    },
+    {
+     "rank": 16,
+     "value_pct": 165
+    }
+   ],
+   "tags": [
+    "projectile"
+   ]
+  },
+  {
+   "id": "chain_nova",
+   "class": "mage",
+   "unlock_level": 24,
+   "name": "Chain Nova",
+   "type": "spell",
+   "damage_type": "lightning",
+   "base_damage_pct": 160,
+   "per_rank_pct": 11,
+   "mana_cost": 12,
+   "cooldown_s": 4,
+   "effect": "Chains to 4 targets, -15% damage per jump.",
+   "rank_rule": "rank = 1 + (hero_level - unlock_level) // 5, capped at 16",
+   "rank_table": [
+    {
+     "rank": 1,
+     "value_pct": 160
+    },
+    {
+     "rank": 2,
+     "value_pct": 171
+    },
+    {
+     "rank": 3,
+     "value_pct": 182
+    },
+    {
+     "rank": 4,
+     "value_pct": 193
+    },
+    {
+     "rank": 5,
+     "value_pct": 204
+    },
+    {
+     "rank": 6,
+     "value_pct": 215
+    },
+    {
+     "rank": 7,
+     "value_pct": 226
+    },
+    {
+     "rank": 8,
+     "value_pct": 237
+    },
+    {
+     "rank": 9,
+     "value_pct": 248
+    },
+    {
+     "rank": 10,
+     "value_pct": 259
+    },
+    {
+     "rank": 11,
+     "value_pct": 270
+    },
+    {
+     "rank": 12,
+     "value_pct": 281
+    },
+    {
+     "rank": 13,
+     "value_pct": 292
+    },
+    {
+     "rank": 14,
+     "value_pct": 303
+    },
+    {
+     "rank": 15,
+     "value_pct": 314
+    },
+    {
+     "rank": 16,
+     "value_pct": 325
+    }
+   ],
+   "tags": []
+  },
+  {
+   "id": "meteor_of_the_ember_below",
+   "class": "mage",
+   "unlock_level": 40,
+   "name": "Meteor of the Ember Below",
+   "type": "spell",
+   "damage_type": "fire",
+   "base_damage_pct": 320,
+   "per_rank_pct": 20,
+   "mana_cost": 25,
+   "cooldown_s": 8,
+   "effect": "Fire AoE; leaves burning ground for 3s (30% of hit per second).",
+   "rank_rule": "rank = 1 + (hero_level - unlock_level) // 5, capped at 16",
+   "rank_table": [
+    {
+     "rank": 1,
+     "value_pct": 320
+    },
+    {
+     "rank": 2,
+     "value_pct": 340
+    },
+    {
+     "rank": 3,
+     "value_pct": 360
+    },
+    {
+     "rank": 4,
+     "value_pct": 380
+    },
+    {
+     "rank": 5,
+     "value_pct": 400
+    },
+    {
+     "rank": 6,
+     "value_pct": 420
+    },
+    {
+     "rank": 7,
+     "value_pct": 440
+    },
+    {
+     "rank": 8,
+     "value_pct": 460
+    },
+    {
+     "rank": 9,
+     "value_pct": 480
+    },
+    {
+     "rank": 10,
+     "value_pct": 500
+    },
+    {
+     "rank": 11,
+     "value_pct": 520
+    },
+    {
+     "rank": 12,
+     "value_pct": 540
+    },
+    {
+     "rank": 13,
+     "value_pct": 560
+    },
+    {
+     "rank": 14,
+     "value_pct": 580
+    },
+    {
+     "rank": 15,
+     "value_pct": 600
+    },
+    {
+     "rank": 16,
+     "value_pct": 620
+    }
+   ],
+   "tags": []
+  },
+  {
+   "id": "judgement",
+   "class": "cleric",
+   "unlock_level": 24,
+   "name": "Judgement",
+   "type": "spell",
+   "damage_type": "fire",
+   "base_damage_pct": 170,
+   "per_rank_pct": 12,
+   "mana_cost": 11,
+   "cooldown_s": 5,
+   "effect": "+50% damage vs Undead.",
+   "rank_rule": "rank = 1 + (hero_level - unlock_level) // 5, capped at 16",
+   "rank_table": [
+    {
+     "rank": 1,
+     "value_pct": 170
+    },
+    {
+     "rank": 2,
+     "value_pct": 182
+    },
+    {
+     "rank": 3,
+     "value_pct": 194
+    },
+    {
+     "rank": 4,
+     "value_pct": 206
+    },
+    {
+     "rank": 5,
+     "value_pct": 218
+    },
+    {
+     "rank": 6,
+     "value_pct": 230
+    },
+    {
+     "rank": 7,
+     "value_pct": 242
+    },
+    {
+     "rank": 8,
+     "value_pct": 254
+    },
+    {
+     "rank": 9,
+     "value_pct": 266
+    },
+    {
+     "rank": 10,
+     "value_pct": 278
+    },
+    {
+     "rank": 11,
+     "value_pct": 290
+    },
+    {
+     "rank": 12,
+     "value_pct": 302
+    },
+    {
+     "rank": 13,
+     "value_pct": 314
+    },
+    {
+     "rank": 14,
+     "value_pct": 326
+    },
+    {
+     "rank": 15,
+     "value_pct": 338
+    },
+    {
+     "rank": 16,
+     "value_pct": 350
+    }
+   ],
+   "tags": []
+  },
+  {
+   "id": "sanctuary",
+   "class": "cleric",
+   "unlock_level": 40,
+   "name": "Sanctuary",
+   "type": "buff",
+   "base_effect_pct": 12,
+   "per_rank_pct": 1,
+   "duration_s": 8,
+   "cooldown_s": 25,
+   "mana_cost": 18,
+   "effect": "Heals X% of Max Life over duration and grants +10% All Resistances.",
+   "rank_rule": "rank = 1 + (hero_level - unlock_level) // 5, capped at 16",
+   "rank_table": [
+    {
+     "rank": 1,
+     "value_pct": 12
+    },
+    {
+     "rank": 2,
+     "value_pct": 13
+    },
+    {
+     "rank": 3,
+     "value_pct": 14
+    },
+    {
+     "rank": 4,
+     "value_pct": 15
+    },
+    {
+     "rank": 5,
+     "value_pct": 16
+    },
+    {
+     "rank": 6,
+     "value_pct": 17
+    },
+    {
+     "rank": 7,
+     "value_pct": 18
+    },
+    {
+     "rank": 8,
+     "value_pct": 19
+    },
+    {
+     "rank": 9,
+     "value_pct": 20
+    },
+    {
+     "rank": 10,
+     "value_pct": 21
+    },
+    {
+     "rank": 11,
+     "value_pct": 22
+    },
+    {
+     "rank": 12,
+     "value_pct": 23
+    },
+    {
+     "rank": 13,
+     "value_pct": 24
+    },
+    {
+     "rank": 14,
+     "value_pct": 25
+    },
+    {
+     "rank": 15,
+     "value_pct": 26
+    },
+    {
+     "rank": 16,
+     "value_pct": 27
+    }
+   ],
+   "tags": []
+  }
+ ],
+ "runes": [
+  {
+   "id": "rune_ash",
+   "name": "Ash",
+   "drop_mlvl": 8,
+   "effect": "20% of skill damage also dealt as Burning over 3s"
+  },
+  {
+   "id": "rune_tide",
+   "name": "Tide",
+   "drop_mlvl": 12,
+   "effect": "Skill converts 25% Physical to Cold"
+  },
+  {
+   "id": "rune_crown",
+   "name": "Crown",
+   "drop_mlvl": 16,
+   "effect": "+10% skill damage vs Rare and Unique monsters"
+  },
+  {
+   "id": "rune_grudge",
+   "name": "Grudge",
+   "drop_mlvl": 20,
+   "effect": "+15% skill damage vs the monster type that last killed you"
+  },
+  {
+   "id": "rune_ledger",
+   "name": "Ledger",
+   "drop_mlvl": 25,
+   "effect": "Kills with this skill grant +5% Gold"
+  },
+  {
+   "id": "rune_ember",
+   "name": "Ember",
+   "drop_mlvl": 30,
+   "effect": "Skill converts 25% Physical to Fire"
+  },
+  {
+   "id": "rune_anvil",
+   "name": "Anvil",
+   "drop_mlvl": 35,
+   "effect": "-10% skill cost; +5% skill damage per 100 Armor (max +25%)"
+  },
+  {
+   "id": "rune_fang",
+   "name": "Fang",
+   "drop_mlvl": 40,
+   "effect": "Skill leeches 1.5% of damage as Life"
+  },
+  {
+   "id": "rune_storm",
+   "name": "Storm",
+   "drop_mlvl": 45,
+   "effect": "Skill converts 25% Physical to Lightning"
+  },
+  {
+   "id": "rune_leech",
+   "name": "Leech",
+   "drop_mlvl": 50,
+   "effect": "Skill leeches 1% of damage as Mana"
+  },
+  {
+   "id": "rune_toll",
+   "name": "Toll",
+   "drop_mlvl": 55,
+   "effect": "+20% skill damage; skill costs 10% of its damage as Life"
+  },
+  {
+   "id": "rune_sorrow",
+   "name": "Sorrow",
+   "drop_mlvl": 60,
+   "effect": "Skill deals 15% extra damage as Chaos"
+  }
+ ]
+}

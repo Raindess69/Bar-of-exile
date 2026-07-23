@@ -1,0 +1,40 @@
+{
+  "character": "insectoid",
+  "note": "flip horizontally in engine for opposite facing",
+  "walk": {
+    "frames": 8,
+    "frame_w": 362,
+    "frame_h": 193,
+    "fps": 12,
+    "loop": true,
+    "sheet": "walk.png",
+    "render_scale": 1.0
+  },
+  "walk_alt": {
+    "frames": 8,
+    "frame_w": 363,
+    "frame_h": 193,
+    "fps": 12,
+    "loop": true,
+    "sheet": "walk_alt.png",
+    "render_scale": 1.0
+  },
+  "attack": {
+    "frames": 8,
+    "frame_w": 364,
+    "frame_h": 284,
+    "fps": 14,
+    "loop": false,
+    "sheet": "attack.png",
+    "render_scale": 1.0
+  },
+  "special": {
+    "frames": 8,
+    "frame_w": 364,
+    "frame_h": 256,
+    "fps": 14,
+    "loop": false,
+    "sheet": "special.png",
+    "render_scale": 1.0
+  }
+}

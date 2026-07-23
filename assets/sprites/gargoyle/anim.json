@@ -1,0 +1,40 @@
+{
+  "character": "gargoyle",
+  "note": "flip horizontally in engine for opposite facing",
+  "walk": {
+    "frames": 8,
+    "frame_w": 375,
+    "frame_h": 313,
+    "fps": 12,
+    "loop": true,
+    "sheet": "walk.png",
+    "render_scale": 1.0
+  },
+  "walk_alt": {
+    "frames": 8,
+    "frame_w": 336,
+    "frame_h": 266,
+    "fps": 12,
+    "loop": true,
+    "sheet": "walk_alt.png",
+    "render_scale": 1.0
+  },
+  "attack": {
+    "frames": 8,
+    "frame_w": 357,
+    "frame_h": 353,
+    "fps": 14,
+    "loop": false,
+    "sheet": "attack.png",
+    "render_scale": 1.0
+  },
+  "special": {
+    "frames": 8,
+    "frame_w": 392,
+    "frame_h": 334,
+    "fps": 14,
+    "loop": false,
+    "sheet": "special.png",
+    "render_scale": 0.796
+  }
+}

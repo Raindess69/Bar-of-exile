@@ -1,0 +1,3499 @@
+{
+ "meta": {
+  "kind": "affix_pool",
+  "game": "Bar of Exile",
+  "rules": {
+   "magic": "up to 1 prefix + 1 suffix",
+   "rare": "up to 3 prefixes + 3 suffixes",
+   "family": "max one affix per family per item",
+   "rolling": "filter by slot + ilvl_req, then weighted pick by weight; roll value uniformly in [roll_min, roll_max]; damage_flat_* rolls (min,max) pair inside the range",
+   "tiers": "T5 worst -> T1 best; higher ilvl unlocks better tiers but keeps lower ones in the pool"
+  },
+  "version": 3,
+  "total_affixes": 195,
+  "total_families": 39,
+  "note": "v3 idle rework: removed stun/block/armor_pen/shock_effect/ailment-chance/low-life/burning/projectile families; added area/boss/global damage, cooldown recovery, experience gained. Replaces affixes_v2.json."
+ },
+ "affixes": [
+  {
+   "id": "phys_flat_t5",
+   "family": "phys_flat",
+   "type": "prefix",
+   "tier": "T5",
+   "name": "Jagged",
+   "display": "Adds {lo} to {hi} Physical Damage",
+   "stat": "damage_flat_physical",
+   "roll_min": 1,
+   "roll_max": 3,
+   "ilvl_req": 1,
+   "weight": 1000,
+   "slots": [
+    "weapon"
+   ]
+  },
+  {
+   "id": "phys_flat_t4",
+   "family": "phys_flat",
+   "type": "prefix",
+   "tier": "T4",
+   "name": "Vicious",
+   "display": "Adds {lo} to {hi} Physical Damage",
+   "stat": "damage_flat_physical",
+   "roll_min": 3,
+   "roll_max": 6,
+   "ilvl_req": 15,
+   "weight": 600,
+   "slots": [
+    "weapon"
+   ]
+  },
+  {
+   "id": "phys_flat_t3",
+   "family": "phys_flat",
+   "type": "prefix",
+   "tier": "T3",
+   "name": "Cruel",
+   "display": "Adds {lo} to {hi} Physical Damage",
+   "stat": "damage_flat_physical",
+   "roll_min": 6,
+   "roll_max": 11,
+   "ilvl_req": 30,
+   "weight": 350,
+   "slots": [
+    "weapon"
+   ]
+  },
+  {
+   "id": "phys_flat_t2",
+   "family": "phys_flat",
+   "type": "prefix",
+   "tier": "T2",
+   "name": "Brutal",
+   "display": "Adds {lo} to {hi} Physical Damage",
+   "stat": "damage_flat_physical",
+   "roll_min": 10,
+   "roll_max": 18,
+   "ilvl_req": 45,
+   "weight": 180,
+   "slots": [
+    "weapon"
+   ]
+  },
+  {
+   "id": "phys_flat_t1",
+   "family": "phys_flat",
+   "type": "prefix",
+   "tier": "T1",
+   "name": "Tyrannical",
+   "display": "Adds {lo} to {hi} Physical Damage",
+   "stat": "damage_flat_physical",
+   "roll_min": 16,
+   "roll_max": 28,
+   "ilvl_req": 60,
+   "weight": 80,
+   "slots": [
+    "weapon"
+   ]
+  },
+  {
+   "id": "phys_inc_t5",
+   "family": "phys_inc",
+   "type": "prefix",
+   "tier": "T5",
+   "name": "Heavy",
+   "display": "{v}% Increased Physical Damage",
+   "stat": "physical_damage_inc_pct",
+   "roll_min": 5,
+   "roll_max": 12,
+   "ilvl_req": 1,
+   "weight": 1000,
+   "slots": [
+    "weapon"
+   ]
+  },
+  {
+   "id": "phys_inc_t4",
+   "family": "phys_inc",
+   "type": "prefix",
+   "tier": "T4",
+   "name": "Serrated",
+   "display": "{v}% Increased Physical Damage",
+   "stat": "physical_damage_inc_pct",
+   "roll_min": 13,
+   "roll_max": 22,
+   "ilvl_req": 15,
+   "weight": 600,
+   "slots": [
+    "weapon"
+   ]
+  },
+  {
+   "id": "phys_inc_t3",
+   "family": "phys_inc",
+   "type": "prefix",
+   "tier": "T3",
+   "name": "Wicked",
+   "display": "{v}% Increased Physical Damage",
+   "stat": "physical_damage_inc_pct",
+   "roll_min": 23,
+   "roll_max": 35,
+   "ilvl_req": 30,
+   "weight": 350,
+   "slots": [
+    "weapon"
+   ]
+  },
+  {
+   "id": "phys_inc_t2",
+   "family": "phys_inc",
+   "type": "prefix",
+   "tier": "T2",
+   "name": "Bloodthirsty",
+   "display": "{v}% Increased Physical Damage",
+   "stat": "physical_damage_inc_pct",
+   "roll_min": 36,
+   "roll_max": 52,
+   "ilvl_req": 45,
+   "weight": 180,
+   "slots": [
+    "weapon"
+   ]
+  },
+  {
+   "id": "phys_inc_t1",
+   "family": "phys_inc",
+   "type": "prefix",
+   "tier": "T1",
+   "name": "Merciless",
+   "display": "{v}% Increased Physical Damage",
+   "stat": "physical_damage_inc_pct",
+   "roll_min": 53,
+   "roll_max": 74,
+   "ilvl_req": 60,
+   "weight": 80,
+   "slots": [
+    "weapon"
+   ]
+  },
+  {
+   "id": "fire_flat_t5",
+   "family": "fire_flat",
+   "type": "prefix",
+   "tier": "T5",
+   "name": "Heated",
+   "display": "Adds {lo} to {hi} Fire Damage",
+   "stat": "damage_flat_fire",
+   "roll_min": 1,
+   "roll_max": 3,
+   "ilvl_req": 1,
+   "weight": 1000,
+   "slots": [
+    "weapon",
+    "ring"
+   ]
+  },
+  {
+   "id": "fire_flat_t4",
+   "family": "fire_flat",
+   "type": "prefix",
+   "tier": "T4",
+   "name": "Smoldering",
+   "display": "Adds {lo} to {hi} Fire Damage",
+   "stat": "damage_flat_fire",
+   "roll_min": 3,
+   "roll_max": 7,
+   "ilvl_req": 15,
+   "weight": 600,
+   "slots": [
+    "weapon",
+    "ring"
+   ]
+  },
+  {
+   "id": "fire_flat_t3",
+   "family": "fire_flat",
+   "type": "prefix",
+   "tier": "T3",
+   "name": "Flaming",
+   "display": "Adds {lo} to {hi} Fire Damage",
+   "stat": "damage_flat_fire",
+   "roll_min": 7,
+   "roll_max": 13,
+   "ilvl_req": 30,
+   "weight": 350,
+   "slots": [
+    "weapon",
+    "ring"
+   ]
+  },
+  {
+   "id": "fire_flat_t2",
+   "family": "fire_flat",
+   "type": "prefix",
+   "tier": "T2",
+   "name": "Blazing",
+   "display": "Adds {lo} to {hi} Fire Damage",
+   "stat": "damage_flat_fire",
+   "roll_min": 12,
+   "roll_max": 22,
+   "ilvl_req": 45,
+   "weight": 180,
+   "slots": [
+    "weapon",
+    "ring"
+   ]
+  },
+  {
+   "id": "fire_flat_t1",
+   "family": "fire_flat",
+   "type": "prefix",
+   "tier": "T1",
+   "name": "Cremating",
+   "display": "Adds {lo} to {hi} Fire Damage",
+   "stat": "damage_flat_fire",
+   "roll_min": 20,
+   "roll_max": 35,
+   "ilvl_req": 60,
+   "weight": 80,
+   "slots": [
+    "weapon",
+    "ring"
+   ]
+  },
+  {
+   "id": "cold_flat_t5",
+   "family": "cold_flat",
+   "type": "prefix",
+   "tier": "T5",
+   "name": "Chilled",
+   "display": "Adds {lo} to {hi} Cold Damage",
+   "stat": "damage_flat_cold",
+   "roll_min": 1,
+   "roll_max": 2,
+   "ilvl_req": 1,
+   "weight": 1000,
+   "slots": [
+    "weapon",
+    "ring"
+   ]
+  },
+  {
+   "id": "cold_flat_t4",
+   "family": "cold_flat",
+   "type": "prefix",
+   "tier": "T4",
+   "name": "Frigid",
+   "display": "Adds {lo} to {hi} Cold Damage",
+   "stat": "damage_flat_cold",
+   "roll_min": 2,
+   "roll_max": 6,
+   "ilvl_req": 15,
+   "weight": 600,
+   "slots": [
+    "weapon",
+    "ring"
+   ]
+  },
+  {
+   "id": "cold_flat_t3",
+   "family": "cold_flat",
+   "type": "prefix",
+   "tier": "T3",
+   "name": "Freezing",
+   "display": "Adds {lo} to {hi} Cold Damage",
+   "stat": "damage_flat_cold",
+   "roll_min": 6,
+   "roll_max": 11,
+   "ilvl_req": 30,
+   "weight": 350,
+   "slots": [
+    "weapon",
+    "ring"
+   ]
+  },
+  {
+   "id": "cold_flat_t2",
+   "family": "cold_flat",
+   "type": "prefix",
+   "tier": "T2",
+   "name": "Glacial",
+   "display": "Adds {lo} to {hi} Cold Damage",
+   "stat": "damage_flat_cold",
+   "roll_min": 10,
+   "roll_max": 19,
+   "ilvl_req": 45,
+   "weight": 180,
+   "slots": [
+    "weapon",
+    "ring"
+   ]
+  },
+  {
+   "id": "cold_flat_t1",
+   "family": "cold_flat",
+   "type": "prefix",
+   "tier": "T1",
+   "name": "Polar",
+   "display": "Adds {lo} to {hi} Cold Damage",
+   "stat": "damage_flat_cold",
+   "roll_min": 17,
+   "roll_max": 30,
+   "ilvl_req": 60,
+   "weight": 80,
+   "slots": [
+    "weapon",
+    "ring"
+   ]
+  },
+  {
+   "id": "lightning_flat_t5",
+   "family": "lightning_flat",
+   "type": "prefix",
+   "tier": "T5",
+   "name": "Sparking",
+   "display": "Adds {lo} to {hi} Lightning Damage",
+   "stat": "damage_flat_lightning",
+   "roll_min": 1,
+   "roll_max": 5,
+   "ilvl_req": 1,
+   "weight": 1000,
+   "slots": [
+    "weapon",
+    "ring"
+   ]
+  },
+  {
+   "id": "lightning_flat_t4",
+   "family": "lightning_flat",
+   "type": "prefix",
+   "tier": "T4",
+   "name": "Crackling",
+   "display": "Adds {lo} to {hi} Lightning Damage",
+   "stat": "damage_flat_lightning",
+   "roll_min": 1,
+   "roll_max": 10,
+   "ilvl_req": 15,
+   "weight": 600,
+   "slots": [
+    "weapon",
+    "ring"
+   ]
+  },
+  {
+   "id": "lightning_flat_t3",
+   "family": "lightning_flat",
+   "type": "prefix",
+   "tier": "T3",
+   "name": "Arcing",
+   "display": "Adds {lo} to {hi} Lightning Damage",
+   "stat": "damage_flat_lightning",
+   "roll_min": 1,
+   "roll_max": 19,
+   "ilvl_req": 30,
+   "weight": 350,
+   "slots": [
+    "weapon",
+    "ring"
+   ]
+  },
+  {
+   "id": "lightning_flat_t2",
+   "family": "lightning_flat",
+   "type": "prefix",
+   "tier": "T2",
+   "name": "Discharging",
+   "display": "Adds {lo} to {hi} Lightning Damage",
+   "stat": "damage_flat_lightning",
+   "roll_min": 1,
+   "roll_max": 33,
+   "ilvl_req": 45,
+   "weight": 180,
+   "slots": [
+    "weapon",
+    "ring"
+   ]
+  },
+  {
+   "id": "lightning_flat_t1",
+   "family": "lightning_flat",
+   "type": "prefix",
+   "tier": "T1",
+   "name": "Vapourising",
+   "display": "Adds {lo} to {hi} Lightning Damage",
+   "stat": "damage_flat_lightning",
+   "roll_min": 1,
+   "roll_max": 52,
+   "ilvl_req": 60,
+   "weight": 80,
+   "slots": [
+    "weapon",
+    "ring"
+   ]
+  },
+  {
+   "id": "life_flat_t5",
+   "family": "life_flat",
+   "type": "prefix",
+   "tier": "T5",
+   "name": "Hale",
+   "display": "+{v} to Maximum Life",
+   "stat": "life_flat",
+   "roll_min": 5,
+   "roll_max": 14,
+   "ilvl_req": 1,
+   "weight": 1000,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "life_flat_t4",
+   "family": "life_flat",
+   "type": "prefix",
+   "tier": "T4",
+   "name": "Stalwart",
+   "display": "+{v} to Maximum Life",
+   "stat": "life_flat",
+   "roll_min": 15,
+   "roll_max": 29,
+   "ilvl_req": 15,
+   "weight": 600,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "life_flat_t3",
+   "family": "life_flat",
+   "type": "prefix",
+   "tier": "T3",
+   "name": "Sanguine",
+   "display": "+{v} to Maximum Life",
+   "stat": "life_flat",
+   "roll_min": 30,
+   "roll_max": 49,
+   "ilvl_req": 30,
+   "weight": 350,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "life_flat_t2",
+   "family": "life_flat",
+   "type": "prefix",
+   "tier": "T2",
+   "name": "Stout",
+   "display": "+{v} to Maximum Life",
+   "stat": "life_flat",
+   "roll_min": 50,
+   "roll_max": 74,
+   "ilvl_req": 45,
+   "weight": 180,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "life_flat_t1",
+   "family": "life_flat",
+   "type": "prefix",
+   "tier": "T1",
+   "name": "Colossal",
+   "display": "+{v} to Maximum Life",
+   "stat": "life_flat",
+   "roll_min": 75,
+   "roll_max": 109,
+   "ilvl_req": 60,
+   "weight": 80,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "armor_flat_t5",
+   "family": "armor_flat",
+   "type": "prefix",
+   "tier": "T5",
+   "name": "Lacquered",
+   "display": "+{v} to Armor",
+   "stat": "armor_flat",
+   "roll_min": 6,
+   "roll_max": 15,
+   "ilvl_req": 1,
+   "weight": 1000,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield"
+   ]
+  },
+  {
+   "id": "armor_flat_t4",
+   "family": "armor_flat",
+   "type": "prefix",
+   "tier": "T4",
+   "name": "Studded",
+   "display": "+{v} to Armor",
+   "stat": "armor_flat",
+   "roll_min": 16,
+   "roll_max": 30,
+   "ilvl_req": 15,
+   "weight": 600,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield"
+   ]
+  },
+  {
+   "id": "armor_flat_t3",
+   "family": "armor_flat",
+   "type": "prefix",
+   "tier": "T3",
+   "name": "Ribbed",
+   "display": "+{v} to Armor",
+   "stat": "armor_flat",
+   "roll_min": 31,
+   "roll_max": 52,
+   "ilvl_req": 30,
+   "weight": 350,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield"
+   ]
+  },
+  {
+   "id": "armor_flat_t2",
+   "family": "armor_flat",
+   "type": "prefix",
+   "tier": "T2",
+   "name": "Fortified",
+   "display": "+{v} to Armor",
+   "stat": "armor_flat",
+   "roll_min": 53,
+   "roll_max": 80,
+   "ilvl_req": 45,
+   "weight": 180,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield"
+   ]
+  },
+  {
+   "id": "armor_flat_t1",
+   "family": "armor_flat",
+   "type": "prefix",
+   "tier": "T1",
+   "name": "Impregnable",
+   "display": "+{v} to Armor",
+   "stat": "armor_flat",
+   "roll_min": 81,
+   "roll_max": 120,
+   "ilvl_req": 60,
+   "weight": 80,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield"
+   ]
+  },
+  {
+   "id": "armor_inc_t5",
+   "family": "armor_inc",
+   "type": "prefix",
+   "tier": "T5",
+   "name": "Reinforced",
+   "display": "{v}% Increased Armor",
+   "stat": "armor_inc_pct",
+   "roll_min": 5,
+   "roll_max": 12,
+   "ilvl_req": 1,
+   "weight": 1000,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield"
+   ]
+  },
+  {
+   "id": "armor_inc_t4",
+   "family": "armor_inc",
+   "type": "prefix",
+   "tier": "T4",
+   "name": "Layered",
+   "display": "{v}% Increased Armor",
+   "stat": "armor_inc_pct",
+   "roll_min": 13,
+   "roll_max": 22,
+   "ilvl_req": 15,
+   "weight": 600,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield"
+   ]
+  },
+  {
+   "id": "armor_inc_t3",
+   "family": "armor_inc",
+   "type": "prefix",
+   "tier": "T3",
+   "name": "Thickened",
+   "display": "{v}% Increased Armor",
+   "stat": "armor_inc_pct",
+   "roll_min": 23,
+   "roll_max": 35,
+   "ilvl_req": 30,
+   "weight": 350,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield"
+   ]
+  },
+  {
+   "id": "armor_inc_t2",
+   "family": "armor_inc",
+   "type": "prefix",
+   "tier": "T2",
+   "name": "Girded",
+   "display": "{v}% Increased Armor",
+   "stat": "armor_inc_pct",
+   "roll_min": 36,
+   "roll_max": 52,
+   "ilvl_req": 45,
+   "weight": 180,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield"
+   ]
+  },
+  {
+   "id": "armor_inc_t1",
+   "family": "armor_inc",
+   "type": "prefix",
+   "tier": "T1",
+   "name": "Unbreakable",
+   "display": "{v}% Increased Armor",
+   "stat": "armor_inc_pct",
+   "roll_min": 53,
+   "roll_max": 74,
+   "ilvl_req": 60,
+   "weight": 80,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield"
+   ]
+  },
+  {
+   "id": "evasion_flat_t5",
+   "family": "evasion_flat",
+   "type": "prefix",
+   "tier": "T5",
+   "name": "Agile",
+   "display": "+{v} to Evasion",
+   "stat": "evasion_flat",
+   "roll_min": 6,
+   "roll_max": 15,
+   "ilvl_req": 1,
+   "weight": 1000,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield"
+   ]
+  },
+  {
+   "id": "evasion_flat_t4",
+   "family": "evasion_flat",
+   "type": "prefix",
+   "tier": "T4",
+   "name": "Dancing",
+   "display": "+{v} to Evasion",
+   "stat": "evasion_flat",
+   "roll_min": 16,
+   "roll_max": 30,
+   "ilvl_req": 15,
+   "weight": 600,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield"
+   ]
+  },
+  {
+   "id": "evasion_flat_t3",
+   "family": "evasion_flat",
+   "type": "prefix",
+   "tier": "T3",
+   "name": "Fleet",
+   "display": "+{v} to Evasion",
+   "stat": "evasion_flat",
+   "roll_min": 31,
+   "roll_max": 52,
+   "ilvl_req": 30,
+   "weight": 350,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield"
+   ]
+  },
+  {
+   "id": "evasion_flat_t2",
+   "family": "evasion_flat",
+   "type": "prefix",
+   "tier": "T2",
+   "name": "Phantom",
+   "display": "+{v} to Evasion",
+   "stat": "evasion_flat",
+   "roll_min": 53,
+   "roll_max": 80,
+   "ilvl_req": 45,
+   "weight": 180,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield"
+   ]
+  },
+  {
+   "id": "evasion_flat_t1",
+   "family": "evasion_flat",
+   "type": "prefix",
+   "tier": "T1",
+   "name": "Mirage",
+   "display": "+{v} to Evasion",
+   "stat": "evasion_flat",
+   "roll_min": 81,
+   "roll_max": 120,
+   "ilvl_req": 60,
+   "weight": 80,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield"
+   ]
+  },
+  {
+   "id": "evasion_inc_t5",
+   "family": "evasion_inc",
+   "type": "prefix",
+   "tier": "T5",
+   "name": "Supple",
+   "display": "{v}% Increased Evasion",
+   "stat": "evasion_inc_pct",
+   "roll_min": 5,
+   "roll_max": 12,
+   "ilvl_req": 1,
+   "weight": 1000,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield"
+   ]
+  },
+  {
+   "id": "evasion_inc_t4",
+   "family": "evasion_inc",
+   "type": "prefix",
+   "tier": "T4",
+   "name": "Lithe",
+   "display": "{v}% Increased Evasion",
+   "stat": "evasion_inc_pct",
+   "roll_min": 13,
+   "roll_max": 22,
+   "ilvl_req": 15,
+   "weight": 600,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield"
+   ]
+  },
+  {
+   "id": "evasion_inc_t3",
+   "family": "evasion_inc",
+   "type": "prefix",
+   "tier": "T3",
+   "name": "Nimble",
+   "display": "{v}% Increased Evasion",
+   "stat": "evasion_inc_pct",
+   "roll_min": 23,
+   "roll_max": 35,
+   "ilvl_req": 30,
+   "weight": 350,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield"
+   ]
+  },
+  {
+   "id": "evasion_inc_t2",
+   "family": "evasion_inc",
+   "type": "prefix",
+   "tier": "T2",
+   "name": "Ghosting",
+   "display": "{v}% Increased Evasion",
+   "stat": "evasion_inc_pct",
+   "roll_min": 36,
+   "roll_max": 52,
+   "ilvl_req": 45,
+   "weight": 180,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield"
+   ]
+  },
+  {
+   "id": "evasion_inc_t1",
+   "family": "evasion_inc",
+   "type": "prefix",
+   "tier": "T1",
+   "name": "Untouchable",
+   "display": "{v}% Increased Evasion",
+   "stat": "evasion_inc_pct",
+   "roll_min": 53,
+   "roll_max": 74,
+   "ilvl_req": 60,
+   "weight": 80,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield"
+   ]
+  },
+  {
+   "id": "fire_res_t5",
+   "family": "fire_res",
+   "type": "suffix",
+   "tier": "T5",
+   "name": "of Warmth",
+   "display": "+{v}% Fire Resistance",
+   "stat": "fire_res_pct",
+   "roll_min": 5,
+   "roll_max": 10,
+   "ilvl_req": 1,
+   "weight": 1000,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "fire_res_t4",
+   "family": "fire_res",
+   "type": "suffix",
+   "tier": "T4",
+   "name": "of Cinders",
+   "display": "+{v}% Fire Resistance",
+   "stat": "fire_res_pct",
+   "roll_min": 11,
+   "roll_max": 17,
+   "ilvl_req": 15,
+   "weight": 600,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "fire_res_t3",
+   "family": "fire_res",
+   "type": "suffix",
+   "tier": "T3",
+   "name": "of the Kiln",
+   "display": "+{v}% Fire Resistance",
+   "stat": "fire_res_pct",
+   "roll_min": 18,
+   "roll_max": 24,
+   "ilvl_req": 30,
+   "weight": 350,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "fire_res_t2",
+   "family": "fire_res",
+   "type": "suffix",
+   "tier": "T2",
+   "name": "of the Furnace",
+   "display": "+{v}% Fire Resistance",
+   "stat": "fire_res_pct",
+   "roll_min": 25,
+   "roll_max": 32,
+   "ilvl_req": 45,
+   "weight": 180,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "fire_res_t1",
+   "family": "fire_res",
+   "type": "suffix",
+   "tier": "T1",
+   "name": "of the Ember Below",
+   "display": "+{v}% Fire Resistance",
+   "stat": "fire_res_pct",
+   "roll_min": 33,
+   "roll_max": 42,
+   "ilvl_req": 60,
+   "weight": 80,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "cold_res_t5",
+   "family": "cold_res",
+   "type": "suffix",
+   "tier": "T5",
+   "name": "of the Breeze",
+   "display": "+{v}% Cold Resistance",
+   "stat": "cold_res_pct",
+   "roll_min": 5,
+   "roll_max": 10,
+   "ilvl_req": 1,
+   "weight": 1000,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "cold_res_t4",
+   "family": "cold_res",
+   "type": "suffix",
+   "tier": "T4",
+   "name": "of Sleet",
+   "display": "+{v}% Cold Resistance",
+   "stat": "cold_res_pct",
+   "roll_min": 11,
+   "roll_max": 17,
+   "ilvl_req": 15,
+   "weight": 600,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "cold_res_t3",
+   "family": "cold_res",
+   "type": "suffix",
+   "tier": "T3",
+   "name": "of the Tundra",
+   "display": "+{v}% Cold Resistance",
+   "stat": "cold_res_pct",
+   "roll_min": 18,
+   "roll_max": 24,
+   "ilvl_req": 30,
+   "weight": 350,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "cold_res_t2",
+   "family": "cold_res",
+   "type": "suffix",
+   "tier": "T2",
+   "name": "of the Floe",
+   "display": "+{v}% Cold Resistance",
+   "stat": "cold_res_pct",
+   "roll_min": 25,
+   "roll_max": 32,
+   "ilvl_req": 45,
+   "weight": 180,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "cold_res_t1",
+   "family": "cold_res",
+   "type": "suffix",
+   "tier": "T1",
+   "name": "of the Frozen Deep",
+   "display": "+{v}% Cold Resistance",
+   "stat": "cold_res_pct",
+   "roll_min": 33,
+   "roll_max": 42,
+   "ilvl_req": 60,
+   "weight": 80,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "lightning_res_t5",
+   "family": "lightning_res",
+   "type": "suffix",
+   "tier": "T5",
+   "name": "of Static",
+   "display": "+{v}% Lightning Resistance",
+   "stat": "lightning_res_pct",
+   "roll_min": 5,
+   "roll_max": 10,
+   "ilvl_req": 1,
+   "weight": 1000,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "lightning_res_t4",
+   "family": "lightning_res",
+   "type": "suffix",
+   "tier": "T4",
+   "name": "of Grounding",
+   "display": "+{v}% Lightning Resistance",
+   "stat": "lightning_res_pct",
+   "roll_min": 11,
+   "roll_max": 17,
+   "ilvl_req": 15,
+   "weight": 600,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "lightning_res_t3",
+   "family": "lightning_res",
+   "type": "suffix",
+   "tier": "T3",
+   "name": "of Insulation",
+   "display": "+{v}% Lightning Resistance",
+   "stat": "lightning_res_pct",
+   "roll_min": 18,
+   "roll_max": 24,
+   "ilvl_req": 30,
+   "weight": 350,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "lightning_res_t2",
+   "family": "lightning_res",
+   "type": "suffix",
+   "tier": "T2",
+   "name": "of the Storm",
+   "display": "+{v}% Lightning Resistance",
+   "stat": "lightning_res_pct",
+   "roll_min": 25,
+   "roll_max": 32,
+   "ilvl_req": 45,
+   "weight": 180,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "lightning_res_t1",
+   "family": "lightning_res",
+   "type": "suffix",
+   "tier": "T1",
+   "name": "of the Stormherald",
+   "display": "+{v}% Lightning Resistance",
+   "stat": "lightning_res_pct",
+   "roll_min": 33,
+   "roll_max": 42,
+   "ilvl_req": 60,
+   "weight": 80,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "chaos_res_t5",
+   "family": "chaos_res",
+   "type": "suffix",
+   "tier": "T5",
+   "name": "of Doubt",
+   "display": "+{v}% Chaos Resistance",
+   "stat": "chaos_res_pct",
+   "roll_min": 3,
+   "roll_max": 6,
+   "ilvl_req": 1,
+   "weight": 1000,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "chaos_res_t4",
+   "family": "chaos_res",
+   "type": "suffix",
+   "tier": "T4",
+   "name": "of Denial",
+   "display": "+{v}% Chaos Resistance",
+   "stat": "chaos_res_pct",
+   "roll_min": 7,
+   "roll_max": 11,
+   "ilvl_req": 15,
+   "weight": 600,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "chaos_res_t3",
+   "family": "chaos_res",
+   "type": "suffix",
+   "tier": "T3",
+   "name": "of Warding",
+   "display": "+{v}% Chaos Resistance",
+   "stat": "chaos_res_pct",
+   "roll_min": 12,
+   "roll_max": 16,
+   "ilvl_req": 30,
+   "weight": 350,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "chaos_res_t2",
+   "family": "chaos_res",
+   "type": "suffix",
+   "tier": "T2",
+   "name": "of Exorcism",
+   "display": "+{v}% Chaos Resistance",
+   "stat": "chaos_res_pct",
+   "roll_min": 17,
+   "roll_max": 23,
+   "ilvl_req": 45,
+   "weight": 180,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "chaos_res_t1",
+   "family": "chaos_res",
+   "type": "suffix",
+   "tier": "T1",
+   "name": "of the Unbought Soul",
+   "display": "+{v}% Chaos Resistance",
+   "stat": "chaos_res_pct",
+   "roll_min": 24,
+   "roll_max": 31,
+   "ilvl_req": 60,
+   "weight": 80,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "attack_speed_t5",
+   "family": "attack_speed",
+   "type": "suffix",
+   "tier": "T5",
+   "name": "of Skill",
+   "display": "{v}% Increased Attack Speed",
+   "stat": "attack_speed_inc_pct",
+   "roll_min": 3,
+   "roll_max": 5,
+   "ilvl_req": 1,
+   "weight": 1000,
+   "slots": [
+    "weapon",
+    "gloves"
+   ]
+  },
+  {
+   "id": "attack_speed_t4",
+   "family": "attack_speed",
+   "type": "suffix",
+   "tier": "T4",
+   "name": "of Ease",
+   "display": "{v}% Increased Attack Speed",
+   "stat": "attack_speed_inc_pct",
+   "roll_min": 6,
+   "roll_max": 8,
+   "ilvl_req": 15,
+   "weight": 600,
+   "slots": [
+    "weapon",
+    "gloves"
+   ]
+  },
+  {
+   "id": "attack_speed_t3",
+   "family": "attack_speed",
+   "type": "suffix",
+   "tier": "T3",
+   "name": "of Renown",
+   "display": "{v}% Increased Attack Speed",
+   "stat": "attack_speed_inc_pct",
+   "roll_min": 9,
+   "roll_max": 11,
+   "ilvl_req": 30,
+   "weight": 350,
+   "slots": [
+    "weapon",
+    "gloves"
+   ]
+  },
+  {
+   "id": "attack_speed_t2",
+   "family": "attack_speed",
+   "type": "suffix",
+   "tier": "T2",
+   "name": "of Alacrity",
+   "display": "{v}% Increased Attack Speed",
+   "stat": "attack_speed_inc_pct",
+   "roll_min": 12,
+   "roll_max": 15,
+   "ilvl_req": 45,
+   "weight": 180,
+   "slots": [
+    "weapon",
+    "gloves"
+   ]
+  },
+  {
+   "id": "attack_speed_t1",
+   "family": "attack_speed",
+   "type": "suffix",
+   "tier": "T1",
+   "name": "of Celerity",
+   "display": "{v}% Increased Attack Speed",
+   "stat": "attack_speed_inc_pct",
+   "roll_min": 16,
+   "roll_max": 20,
+   "ilvl_req": 60,
+   "weight": 80,
+   "slots": [
+    "weapon",
+    "gloves"
+   ]
+  },
+  {
+   "id": "crit_chance_t5",
+   "family": "crit_chance",
+   "type": "suffix",
+   "tier": "T5",
+   "name": "of Needling",
+   "display": "{v}% Increased Critical Strike Chance",
+   "stat": "crit_chance_inc_pct",
+   "roll_min": 5,
+   "roll_max": 9,
+   "ilvl_req": 1,
+   "weight": 1000,
+   "slots": [
+    "weapon",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "crit_chance_t4",
+   "family": "crit_chance",
+   "type": "suffix",
+   "tier": "T4",
+   "name": "of Stinging",
+   "display": "{v}% Increased Critical Strike Chance",
+   "stat": "crit_chance_inc_pct",
+   "roll_min": 10,
+   "roll_max": 15,
+   "ilvl_req": 15,
+   "weight": 600,
+   "slots": [
+    "weapon",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "crit_chance_t3",
+   "family": "crit_chance",
+   "type": "suffix",
+   "tier": "T3",
+   "name": "of Piercing",
+   "display": "{v}% Increased Critical Strike Chance",
+   "stat": "crit_chance_inc_pct",
+   "roll_min": 16,
+   "roll_max": 22,
+   "ilvl_req": 30,
+   "weight": 350,
+   "slots": [
+    "weapon",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "crit_chance_t2",
+   "family": "crit_chance",
+   "type": "suffix",
+   "tier": "T2",
+   "name": "of Rupturing",
+   "display": "{v}% Increased Critical Strike Chance",
+   "stat": "crit_chance_inc_pct",
+   "roll_min": 23,
+   "roll_max": 30,
+   "ilvl_req": 45,
+   "weight": 180,
+   "slots": [
+    "weapon",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "crit_chance_t1",
+   "family": "crit_chance",
+   "type": "suffix",
+   "tier": "T1",
+   "name": "of Penetrating",
+   "display": "{v}% Increased Critical Strike Chance",
+   "stat": "crit_chance_inc_pct",
+   "roll_min": 31,
+   "roll_max": 40,
+   "ilvl_req": 60,
+   "weight": 80,
+   "slots": [
+    "weapon",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "crit_multi_t5",
+   "family": "crit_multi",
+   "type": "suffix",
+   "tier": "T5",
+   "name": "of Menace",
+   "display": "+{v}% Critical Strike Multiplier",
+   "stat": "crit_multi_flat",
+   "roll_min": 5,
+   "roll_max": 8,
+   "ilvl_req": 1,
+   "weight": 1000,
+   "slots": [
+    "weapon",
+    "amulet"
+   ]
+  },
+  {
+   "id": "crit_multi_t4",
+   "family": "crit_multi",
+   "type": "suffix",
+   "tier": "T4",
+   "name": "of Ruin",
+   "display": "+{v}% Critical Strike Multiplier",
+   "stat": "crit_multi_flat",
+   "roll_min": 9,
+   "roll_max": 13,
+   "ilvl_req": 15,
+   "weight": 600,
+   "slots": [
+    "weapon",
+    "amulet"
+   ]
+  },
+  {
+   "id": "crit_multi_t3",
+   "family": "crit_multi",
+   "type": "suffix",
+   "tier": "T3",
+   "name": "of Calamity",
+   "display": "+{v}% Critical Strike Multiplier",
+   "stat": "crit_multi_flat",
+   "roll_min": 14,
+   "roll_max": 19,
+   "ilvl_req": 30,
+   "weight": 350,
+   "slots": [
+    "weapon",
+    "amulet"
+   ]
+  },
+  {
+   "id": "crit_multi_t2",
+   "family": "crit_multi",
+   "type": "suffix",
+   "tier": "T2",
+   "name": "of Destruction",
+   "display": "+{v}% Critical Strike Multiplier",
+   "stat": "crit_multi_flat",
+   "roll_min": 20,
+   "roll_max": 26,
+   "ilvl_req": 45,
+   "weight": 180,
+   "slots": [
+    "weapon",
+    "amulet"
+   ]
+  },
+  {
+   "id": "crit_multi_t1",
+   "family": "crit_multi",
+   "type": "suffix",
+   "tier": "T1",
+   "name": "of Annihilation",
+   "display": "+{v}% Critical Strike Multiplier",
+   "stat": "crit_multi_flat",
+   "roll_min": 27,
+   "roll_max": 35,
+   "ilvl_req": 60,
+   "weight": 80,
+   "slots": [
+    "weapon",
+    "amulet"
+   ]
+  },
+  {
+   "id": "move_speed_t5",
+   "family": "move_speed",
+   "type": "suffix",
+   "tier": "T5",
+   "name": "of Pace",
+   "display": "{v}% Increased Movement Speed",
+   "stat": "move_speed_inc_pct",
+   "roll_min": 3,
+   "roll_max": 5,
+   "ilvl_req": 1,
+   "weight": 1000,
+   "slots": [
+    "boots"
+   ]
+  },
+  {
+   "id": "move_speed_t4",
+   "family": "move_speed",
+   "type": "suffix",
+   "tier": "T4",
+   "name": "of the Stride",
+   "display": "{v}% Increased Movement Speed",
+   "stat": "move_speed_inc_pct",
+   "roll_min": 6,
+   "roll_max": 8,
+   "ilvl_req": 15,
+   "weight": 600,
+   "slots": [
+    "boots"
+   ]
+  },
+  {
+   "id": "move_speed_t3",
+   "family": "move_speed",
+   "type": "suffix",
+   "tier": "T3",
+   "name": "of the Courier",
+   "display": "{v}% Increased Movement Speed",
+   "stat": "move_speed_inc_pct",
+   "roll_min": 9,
+   "roll_max": 12,
+   "ilvl_req": 30,
+   "weight": 350,
+   "slots": [
+    "boots"
+   ]
+  },
+  {
+   "id": "move_speed_t2",
+   "family": "move_speed",
+   "type": "suffix",
+   "tier": "T2",
+   "name": "of the Wind",
+   "display": "{v}% Increased Movement Speed",
+   "stat": "move_speed_inc_pct",
+   "roll_min": 13,
+   "roll_max": 16,
+   "ilvl_req": 45,
+   "weight": 180,
+   "slots": [
+    "boots"
+   ]
+  },
+  {
+   "id": "move_speed_t1",
+   "family": "move_speed",
+   "type": "suffix",
+   "tier": "T1",
+   "name": "of the Gale",
+   "display": "{v}% Increased Movement Speed",
+   "stat": "move_speed_inc_pct",
+   "roll_min": 17,
+   "roll_max": 20,
+   "ilvl_req": 60,
+   "weight": 80,
+   "slots": [
+    "boots"
+   ]
+  },
+  {
+   "id": "life_regen_t5",
+   "family": "life_regen",
+   "type": "suffix",
+   "tier": "T5",
+   "name": "of Mending",
+   "display": "+{v} Life Regenerated per Second",
+   "stat": "life_regen_flat",
+   "roll_min": 1,
+   "roll_max": 1,
+   "ilvl_req": 1,
+   "weight": 1000,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "life_regen_t4",
+   "family": "life_regen",
+   "type": "suffix",
+   "tier": "T4",
+   "name": "of Sewing",
+   "display": "+{v} Life Regenerated per Second",
+   "stat": "life_regen_flat",
+   "roll_min": 2,
+   "roll_max": 3,
+   "ilvl_req": 15,
+   "weight": 600,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "life_regen_t3",
+   "family": "life_regen",
+   "type": "suffix",
+   "tier": "T3",
+   "name": "of Stitching",
+   "display": "+{v} Life Regenerated per Second",
+   "stat": "life_regen_flat",
+   "roll_min": 4,
+   "roll_max": 5,
+   "ilvl_req": 30,
+   "weight": 350,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "life_regen_t2",
+   "family": "life_regen",
+   "type": "suffix",
+   "tier": "T2",
+   "name": "of Renewal",
+   "display": "+{v} Life Regenerated per Second",
+   "stat": "life_regen_flat",
+   "roll_min": 6,
+   "roll_max": 8,
+   "ilvl_req": 45,
+   "weight": 180,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "life_regen_t1",
+   "family": "life_regen",
+   "type": "suffix",
+   "tier": "T1",
+   "name": "of the Phoenix",
+   "display": "+{v} Life Regenerated per Second",
+   "stat": "life_regen_flat",
+   "roll_min": 9,
+   "roll_max": 12,
+   "ilvl_req": 60,
+   "weight": 80,
+   "slots": [
+    "helmet",
+    "chest",
+    "gloves",
+    "boots",
+    "belt",
+    "shield",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "gold_find_t5",
+   "family": "gold_find",
+   "type": "suffix",
+   "tier": "T5",
+   "name": "of Copper",
+   "display": "{v}% Increased Gold Find",
+   "stat": "gold_find_inc_pct",
+   "roll_min": 5,
+   "roll_max": 10,
+   "ilvl_req": 1,
+   "weight": 1000,
+   "slots": [
+    "ring",
+    "amulet",
+    "belt"
+   ]
+  },
+  {
+   "id": "gold_find_t4",
+   "family": "gold_find",
+   "type": "suffix",
+   "tier": "T4",
+   "name": "of Silver",
+   "display": "{v}% Increased Gold Find",
+   "stat": "gold_find_inc_pct",
+   "roll_min": 11,
+   "roll_max": 18,
+   "ilvl_req": 15,
+   "weight": 600,
+   "slots": [
+    "ring",
+    "amulet",
+    "belt"
+   ]
+  },
+  {
+   "id": "gold_find_t3",
+   "family": "gold_find",
+   "type": "suffix",
+   "tier": "T3",
+   "name": "of Gold",
+   "display": "{v}% Increased Gold Find",
+   "stat": "gold_find_inc_pct",
+   "roll_min": 19,
+   "roll_max": 27,
+   "ilvl_req": 30,
+   "weight": 350,
+   "slots": [
+    "ring",
+    "amulet",
+    "belt"
+   ]
+  },
+  {
+   "id": "gold_find_t2",
+   "family": "gold_find",
+   "type": "suffix",
+   "tier": "T2",
+   "name": "of Riches",
+   "display": "{v}% Increased Gold Find",
+   "stat": "gold_find_inc_pct",
+   "roll_min": 28,
+   "roll_max": 38,
+   "ilvl_req": 45,
+   "weight": 180,
+   "slots": [
+    "ring",
+    "amulet",
+    "belt"
+   ]
+  },
+  {
+   "id": "gold_find_t1",
+   "family": "gold_find",
+   "type": "suffix",
+   "tier": "T1",
+   "name": "of the Emperor's Cut",
+   "display": "{v}% Increased Gold Find",
+   "stat": "gold_find_inc_pct",
+   "roll_min": 39,
+   "roll_max": 50,
+   "ilvl_req": 60,
+   "weight": 80,
+   "slots": [
+    "ring",
+    "amulet",
+    "belt"
+   ]
+  },
+  {
+   "id": "magic_find_t5",
+   "family": "magic_find",
+   "type": "suffix",
+   "tier": "T5",
+   "name": "of Luck",
+   "display": "{v}% Increased Item Rarity",
+   "stat": "item_rarity_inc_pct",
+   "roll_min": 3,
+   "roll_max": 6,
+   "ilvl_req": 1,
+   "weight": 1000,
+   "slots": [
+    "ring",
+    "amulet",
+    "helmet"
+   ]
+  },
+  {
+   "id": "magic_find_t4",
+   "family": "magic_find",
+   "type": "suffix",
+   "tier": "T4",
+   "name": "of Fortune",
+   "display": "{v}% Increased Item Rarity",
+   "stat": "item_rarity_inc_pct",
+   "roll_min": 7,
+   "roll_max": 11,
+   "ilvl_req": 15,
+   "weight": 600,
+   "slots": [
+    "ring",
+    "amulet",
+    "helmet"
+   ]
+  },
+  {
+   "id": "magic_find_t3",
+   "family": "magic_find",
+   "type": "suffix",
+   "tier": "T3",
+   "name": "of Omens",
+   "display": "{v}% Increased Item Rarity",
+   "stat": "item_rarity_inc_pct",
+   "roll_min": 12,
+   "roll_max": 17,
+   "ilvl_req": 30,
+   "weight": 350,
+   "slots": [
+    "ring",
+    "amulet",
+    "helmet"
+   ]
+  },
+  {
+   "id": "magic_find_t2",
+   "family": "magic_find",
+   "type": "suffix",
+   "tier": "T2",
+   "name": "of Prophecy",
+   "display": "{v}% Increased Item Rarity",
+   "stat": "item_rarity_inc_pct",
+   "roll_min": 18,
+   "roll_max": 24,
+   "ilvl_req": 45,
+   "weight": 180,
+   "slots": [
+    "ring",
+    "amulet",
+    "helmet"
+   ]
+  },
+  {
+   "id": "magic_find_t1",
+   "family": "magic_find",
+   "type": "suffix",
+   "tier": "T1",
+   "name": "of Vharos' Favor",
+   "display": "{v}% Increased Item Rarity",
+   "stat": "item_rarity_inc_pct",
+   "roll_min": 25,
+   "roll_max": 32,
+   "ilvl_req": 60,
+   "weight": 80,
+   "slots": [
+    "ring",
+    "amulet",
+    "helmet"
+   ]
+  },
+  {
+   "id": "fire_inc_t5",
+   "family": "fire_inc",
+   "type": "prefix",
+   "tier": "T5",
+   "name": "Heated",
+   "display": "{v}% increased Fire Damage",
+   "stat": "fire_damage_inc_pct",
+   "roll_min": 5,
+   "roll_max": 10,
+   "ilvl_req": 1,
+   "weight": 1000,
+   "slots": [
+    "weapon",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "fire_inc_t4",
+   "family": "fire_inc",
+   "type": "prefix",
+   "tier": "T4",
+   "name": "Smoldering",
+   "display": "{v}% increased Fire Damage",
+   "stat": "fire_damage_inc_pct",
+   "roll_min": 11,
+   "roll_max": 18,
+   "ilvl_req": 15,
+   "weight": 600,
+   "slots": [
+    "weapon",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "fire_inc_t3",
+   "family": "fire_inc",
+   "type": "prefix",
+   "tier": "T3",
+   "name": "Blazing",
+   "display": "{v}% increased Fire Damage",
+   "stat": "fire_damage_inc_pct",
+   "roll_min": 19,
+   "roll_max": 28,
+   "ilvl_req": 30,
+   "weight": 350,
+   "slots": [
+    "weapon",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "fire_inc_t2",
+   "family": "fire_inc",
+   "type": "prefix",
+   "tier": "T2",
+   "name": "Scorching",
+   "display": "{v}% increased Fire Damage",
+   "stat": "fire_damage_inc_pct",
+   "roll_min": 29,
+   "roll_max": 40,
+   "ilvl_req": 45,
+   "weight": 180,
+   "slots": [
+    "weapon",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "fire_inc_t1",
+   "family": "fire_inc",
+   "type": "prefix",
+   "tier": "T1",
+   "name": "Infernal",
+   "display": "{v}% increased Fire Damage",
+   "stat": "fire_damage_inc_pct",
+   "roll_min": 41,
+   "roll_max": 55,
+   "ilvl_req": 60,
+   "weight": 80,
+   "slots": [
+    "weapon",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "cold_inc_t5",
+   "family": "cold_inc",
+   "type": "prefix",
+   "tier": "T5",
+   "name": "Chilled",
+   "display": "{v}% increased Cold Damage",
+   "stat": "cold_damage_inc_pct",
+   "roll_min": 5,
+   "roll_max": 10,
+   "ilvl_req": 1,
+   "weight": 1000,
+   "slots": [
+    "weapon",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "cold_inc_t4",
+   "family": "cold_inc",
+   "type": "prefix",
+   "tier": "T4",
+   "name": "Frigid",
+   "display": "{v}% increased Cold Damage",
+   "stat": "cold_damage_inc_pct",
+   "roll_min": 11,
+   "roll_max": 18,
+   "ilvl_req": 15,
+   "weight": 600,
+   "slots": [
+    "weapon",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "cold_inc_t3",
+   "family": "cold_inc",
+   "type": "prefix",
+   "tier": "T3",
+   "name": "Freezing",
+   "display": "{v}% increased Cold Damage",
+   "stat": "cold_damage_inc_pct",
+   "roll_min": 19,
+   "roll_max": 28,
+   "ilvl_req": 30,
+   "weight": 350,
+   "slots": [
+    "weapon",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "cold_inc_t2",
+   "family": "cold_inc",
+   "type": "prefix",
+   "tier": "T2",
+   "name": "Glacial",
+   "display": "{v}% increased Cold Damage",
+   "stat": "cold_damage_inc_pct",
+   "roll_min": 29,
+   "roll_max": 40,
+   "ilvl_req": 45,
+   "weight": 180,
+   "slots": [
+    "weapon",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "cold_inc_t1",
+   "family": "cold_inc",
+   "type": "prefix",
+   "tier": "T1",
+   "name": "Polar",
+   "display": "{v}% increased Cold Damage",
+   "stat": "cold_damage_inc_pct",
+   "roll_min": 41,
+   "roll_max": 55,
+   "ilvl_req": 60,
+   "weight": 80,
+   "slots": [
+    "weapon",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "light_inc_t5",
+   "family": "light_inc",
+   "type": "prefix",
+   "tier": "T5",
+   "name": "Static",
+   "display": "{v}% increased Lightning Damage",
+   "stat": "lightning_damage_inc_pct",
+   "roll_min": 5,
+   "roll_max": 10,
+   "ilvl_req": 1,
+   "weight": 1000,
+   "slots": [
+    "weapon",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "light_inc_t4",
+   "family": "light_inc",
+   "type": "prefix",
+   "tier": "T4",
+   "name": "Sparking",
+   "display": "{v}% increased Lightning Damage",
+   "stat": "lightning_damage_inc_pct",
+   "roll_min": 11,
+   "roll_max": 18,
+   "ilvl_req": 15,
+   "weight": 600,
+   "slots": [
+    "weapon",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "light_inc_t3",
+   "family": "light_inc",
+   "type": "prefix",
+   "tier": "T3",
+   "name": "Arcing",
+   "display": "{v}% increased Lightning Damage",
+   "stat": "lightning_damage_inc_pct",
+   "roll_min": 19,
+   "roll_max": 28,
+   "ilvl_req": 30,
+   "weight": 350,
+   "slots": [
+    "weapon",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "light_inc_t2",
+   "family": "light_inc",
+   "type": "prefix",
+   "tier": "T2",
+   "name": "Shocking",
+   "display": "{v}% increased Lightning Damage",
+   "stat": "lightning_damage_inc_pct",
+   "roll_min": 29,
+   "roll_max": 40,
+   "ilvl_req": 45,
+   "weight": 180,
+   "slots": [
+    "weapon",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "light_inc_t1",
+   "family": "light_inc",
+   "type": "prefix",
+   "tier": "T1",
+   "name": "Thundering",
+   "display": "{v}% increased Lightning Damage",
+   "stat": "lightning_damage_inc_pct",
+   "roll_min": 41,
+   "roll_max": 55,
+   "ilvl_req": 60,
+   "weight": 80,
+   "slots": [
+    "weapon",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "ele_inc_t5",
+   "family": "ele_inc",
+   "type": "prefix",
+   "tier": "T5",
+   "name": "Prismatic",
+   "display": "{v}% increased Elemental Damage",
+   "stat": "elemental_damage_inc_pct",
+   "roll_min": 4,
+   "roll_max": 8,
+   "ilvl_req": 1,
+   "weight": 1000,
+   "slots": [
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "ele_inc_t4",
+   "family": "ele_inc",
+   "type": "prefix",
+   "tier": "T4",
+   "name": "Iridescent",
+   "display": "{v}% increased Elemental Damage",
+   "stat": "elemental_damage_inc_pct",
+   "roll_min": 9,
+   "roll_max": 14,
+   "ilvl_req": 15,
+   "weight": 600,
+   "slots": [
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "ele_inc_t3",
+   "family": "ele_inc",
+   "type": "prefix",
+   "tier": "T3",
+   "name": "Radiant",
+   "display": "{v}% increased Elemental Damage",
+   "stat": "elemental_damage_inc_pct",
+   "roll_min": 15,
+   "roll_max": 22,
+   "ilvl_req": 30,
+   "weight": 350,
+   "slots": [
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "ele_inc_t2",
+   "family": "ele_inc",
+   "type": "prefix",
+   "tier": "T2",
+   "name": "Resplendent",
+   "display": "{v}% increased Elemental Damage",
+   "stat": "elemental_damage_inc_pct",
+   "roll_min": 23,
+   "roll_max": 32,
+   "ilvl_req": 45,
+   "weight": 180,
+   "slots": [
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "ele_inc_t1",
+   "family": "ele_inc",
+   "type": "prefix",
+   "tier": "T1",
+   "name": "Empyrean",
+   "display": "{v}% increased Elemental Damage",
+   "stat": "elemental_damage_inc_pct",
+   "roll_min": 33,
+   "roll_max": 45,
+   "ilvl_req": 60,
+   "weight": 80,
+   "slots": [
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "dot_inc_t5",
+   "family": "dot_inc",
+   "type": "prefix",
+   "tier": "T5",
+   "name": "Festering",
+   "display": "{v}% increased Damage over Time",
+   "stat": "dot_damage_inc_pct",
+   "roll_min": 6,
+   "roll_max": 12,
+   "ilvl_req": 1,
+   "weight": 1000,
+   "slots": [
+    "weapon",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "dot_inc_t4",
+   "family": "dot_inc",
+   "type": "prefix",
+   "tier": "T4",
+   "name": "Wasting",
+   "display": "{v}% increased Damage over Time",
+   "stat": "dot_damage_inc_pct",
+   "roll_min": 13,
+   "roll_max": 20,
+   "ilvl_req": 15,
+   "weight": 600,
+   "slots": [
+    "weapon",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "dot_inc_t3",
+   "family": "dot_inc",
+   "type": "prefix",
+   "tier": "T3",
+   "name": "Withering",
+   "display": "{v}% increased Damage over Time",
+   "stat": "dot_damage_inc_pct",
+   "roll_min": 21,
+   "roll_max": 30,
+   "ilvl_req": 30,
+   "weight": 350,
+   "slots": [
+    "weapon",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "dot_inc_t2",
+   "family": "dot_inc",
+   "type": "prefix",
+   "tier": "T2",
+   "name": "Consuming",
+   "display": "{v}% increased Damage over Time",
+   "stat": "dot_damage_inc_pct",
+   "roll_min": 31,
+   "roll_max": 42,
+   "ilvl_req": 45,
+   "weight": 180,
+   "slots": [
+    "weapon",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "dot_inc_t1",
+   "family": "dot_inc",
+   "type": "prefix",
+   "tier": "T1",
+   "name": "Entropic",
+   "display": "{v}% increased Damage over Time",
+   "stat": "dot_damage_inc_pct",
+   "roll_min": 43,
+   "roll_max": 60,
+   "ilvl_req": 60,
+   "weight": 80,
+   "slots": [
+    "weapon",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "life_inc_t5",
+   "family": "life_inc",
+   "type": "prefix",
+   "tier": "T5",
+   "name": "Hale",
+   "display": "{v}% increased Maximum Life",
+   "stat": "life_inc_pct",
+   "roll_min": 3,
+   "roll_max": 5,
+   "ilvl_req": 1,
+   "weight": 1000,
+   "slots": [
+    "chest",
+    "shield",
+    "belt"
+   ]
+  },
+  {
+   "id": "life_inc_t4",
+   "family": "life_inc",
+   "type": "prefix",
+   "tier": "T4",
+   "name": "Stout",
+   "display": "{v}% increased Maximum Life",
+   "stat": "life_inc_pct",
+   "roll_min": 6,
+   "roll_max": 8,
+   "ilvl_req": 15,
+   "weight": 600,
+   "slots": [
+    "chest",
+    "shield",
+    "belt"
+   ]
+  },
+  {
+   "id": "life_inc_t3",
+   "family": "life_inc",
+   "type": "prefix",
+   "tier": "T3",
+   "name": "Robust",
+   "display": "{v}% increased Maximum Life",
+   "stat": "life_inc_pct",
+   "roll_min": 9,
+   "roll_max": 12,
+   "ilvl_req": 30,
+   "weight": 350,
+   "slots": [
+    "chest",
+    "shield",
+    "belt"
+   ]
+  },
+  {
+   "id": "life_inc_t2",
+   "family": "life_inc",
+   "type": "prefix",
+   "tier": "T2",
+   "name": "Vigorous",
+   "display": "{v}% increased Maximum Life",
+   "stat": "life_inc_pct",
+   "roll_min": 13,
+   "roll_max": 16,
+   "ilvl_req": 45,
+   "weight": 180,
+   "slots": [
+    "chest",
+    "shield",
+    "belt"
+   ]
+  },
+  {
+   "id": "life_inc_t1",
+   "family": "life_inc",
+   "type": "prefix",
+   "tier": "T1",
+   "name": "Titanic",
+   "display": "{v}% increased Maximum Life",
+   "stat": "life_inc_pct",
+   "roll_min": 17,
+   "roll_max": 22,
+   "ilvl_req": 60,
+   "weight": 80,
+   "slots": [
+    "chest",
+    "shield",
+    "belt"
+   ]
+  },
+  {
+   "id": "heal_inc_t5",
+   "family": "heal_inc",
+   "type": "prefix",
+   "tier": "T5",
+   "name": "Mending",
+   "display": "{v}% increased Healing",
+   "stat": "healing_inc_pct",
+   "roll_min": 5,
+   "roll_max": 9,
+   "ilvl_req": 1,
+   "weight": 1000,
+   "slots": [
+    "weapon",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "heal_inc_t4",
+   "family": "heal_inc",
+   "type": "prefix",
+   "tier": "T4",
+   "name": "Soothing",
+   "display": "{v}% increased Healing",
+   "stat": "healing_inc_pct",
+   "roll_min": 10,
+   "roll_max": 15,
+   "ilvl_req": 15,
+   "weight": 600,
+   "slots": [
+    "weapon",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "heal_inc_t3",
+   "family": "heal_inc",
+   "type": "prefix",
+   "tier": "T3",
+   "name": "Restoring",
+   "display": "{v}% increased Healing",
+   "stat": "healing_inc_pct",
+   "roll_min": 16,
+   "roll_max": 23,
+   "ilvl_req": 30,
+   "weight": 350,
+   "slots": [
+    "weapon",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "heal_inc_t2",
+   "family": "heal_inc",
+   "type": "prefix",
+   "tier": "T2",
+   "name": "Benevolent",
+   "display": "{v}% increased Healing",
+   "stat": "healing_inc_pct",
+   "roll_min": 24,
+   "roll_max": 32,
+   "ilvl_req": 45,
+   "weight": 180,
+   "slots": [
+    "weapon",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "heal_inc_t1",
+   "family": "heal_inc",
+   "type": "prefix",
+   "tier": "T1",
+   "name": "Divine",
+   "display": "{v}% increased Healing",
+   "stat": "healing_inc_pct",
+   "roll_min": 33,
+   "roll_max": 45,
+   "ilvl_req": 60,
+   "weight": 80,
+   "slots": [
+    "weapon",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "cast_speed_t5",
+   "family": "cast_speed",
+   "type": "suffix",
+   "tier": "T5",
+   "name": "of Chanting",
+   "display": "{v}% increased Cast Speed",
+   "stat": "cast_speed_inc_pct",
+   "roll_min": 3,
+   "roll_max": 5,
+   "ilvl_req": 1,
+   "weight": 1000,
+   "slots": [
+    "weapon",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "cast_speed_t4",
+   "family": "cast_speed",
+   "type": "suffix",
+   "tier": "T4",
+   "name": "of Incantation",
+   "display": "{v}% increased Cast Speed",
+   "stat": "cast_speed_inc_pct",
+   "roll_min": 6,
+   "roll_max": 8,
+   "ilvl_req": 15,
+   "weight": 600,
+   "slots": [
+    "weapon",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "cast_speed_t3",
+   "family": "cast_speed",
+   "type": "suffix",
+   "tier": "T3",
+   "name": "of Sorcery",
+   "display": "{v}% increased Cast Speed",
+   "stat": "cast_speed_inc_pct",
+   "roll_min": 9,
+   "roll_max": 12,
+   "ilvl_req": 30,
+   "weight": 350,
+   "slots": [
+    "weapon",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "cast_speed_t2",
+   "family": "cast_speed",
+   "type": "suffix",
+   "tier": "T2",
+   "name": "of Artifice",
+   "display": "{v}% increased Cast Speed",
+   "stat": "cast_speed_inc_pct",
+   "roll_min": 13,
+   "roll_max": 16,
+   "ilvl_req": 45,
+   "weight": 180,
+   "slots": [
+    "weapon",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "cast_speed_t1",
+   "family": "cast_speed",
+   "type": "suffix",
+   "tier": "T1",
+   "name": "of the Archmage",
+   "display": "{v}% increased Cast Speed",
+   "stat": "cast_speed_inc_pct",
+   "roll_min": 17,
+   "roll_max": 22,
+   "ilvl_req": 60,
+   "weight": 80,
+   "slots": [
+    "weapon",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "all_res_t5",
+   "family": "all_res",
+   "type": "suffix",
+   "tier": "T5",
+   "name": "of the Crab",
+   "display": "+{v}% to all Resistances",
+   "stat": "all_res_flat_pct",
+   "roll_min": 3,
+   "roll_max": 5,
+   "ilvl_req": 1,
+   "weight": 1000,
+   "slots": [
+    "chest",
+    "amulet",
+    "ring",
+    "shield"
+   ]
+  },
+  {
+   "id": "all_res_t4",
+   "family": "all_res",
+   "type": "suffix",
+   "tier": "T4",
+   "name": "of the Turtle",
+   "display": "+{v}% to all Resistances",
+   "stat": "all_res_flat_pct",
+   "roll_min": 6,
+   "roll_max": 8,
+   "ilvl_req": 15,
+   "weight": 600,
+   "slots": [
+    "chest",
+    "amulet",
+    "ring",
+    "shield"
+   ]
+  },
+  {
+   "id": "all_res_t3",
+   "family": "all_res",
+   "type": "suffix",
+   "tier": "T3",
+   "name": "of the Bulwark",
+   "display": "+{v}% to all Resistances",
+   "stat": "all_res_flat_pct",
+   "roll_min": 9,
+   "roll_max": 11,
+   "ilvl_req": 30,
+   "weight": 350,
+   "slots": [
+    "chest",
+    "amulet",
+    "ring",
+    "shield"
+   ]
+  },
+  {
+   "id": "all_res_t2",
+   "family": "all_res",
+   "type": "suffix",
+   "tier": "T2",
+   "name": "of the Aegis",
+   "display": "+{v}% to all Resistances",
+   "stat": "all_res_flat_pct",
+   "roll_min": 12,
+   "roll_max": 15,
+   "ilvl_req": 45,
+   "weight": 180,
+   "slots": [
+    "chest",
+    "amulet",
+    "ring",
+    "shield"
+   ]
+  },
+  {
+   "id": "all_res_t1",
+   "family": "all_res",
+   "type": "suffix",
+   "tier": "T1",
+   "name": "of the Rainbow",
+   "display": "+{v}% to all Resistances",
+   "stat": "all_res_flat_pct",
+   "roll_min": 16,
+   "roll_max": 20,
+   "ilvl_req": 60,
+   "weight": 80,
+   "slots": [
+    "chest",
+    "amulet",
+    "ring",
+    "shield"
+   ]
+  },
+  {
+   "id": "life_on_kill_t5",
+   "family": "life_on_kill",
+   "type": "suffix",
+   "tier": "T5",
+   "name": "of Feasting",
+   "display": "Gain {v} Life on Kill",
+   "stat": "life_on_kill_flat",
+   "roll_min": 1,
+   "roll_max": 2,
+   "ilvl_req": 1,
+   "weight": 1000,
+   "slots": [
+    "weapon",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "life_on_kill_t4",
+   "family": "life_on_kill",
+   "type": "suffix",
+   "tier": "T4",
+   "name": "of Reaping",
+   "display": "Gain {v} Life on Kill",
+   "stat": "life_on_kill_flat",
+   "roll_min": 3,
+   "roll_max": 5,
+   "ilvl_req": 15,
+   "weight": 600,
+   "slots": [
+    "weapon",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "life_on_kill_t3",
+   "family": "life_on_kill",
+   "type": "suffix",
+   "tier": "T3",
+   "name": "of Harvest",
+   "display": "Gain {v} Life on Kill",
+   "stat": "life_on_kill_flat",
+   "roll_min": 6,
+   "roll_max": 9,
+   "ilvl_req": 30,
+   "weight": 350,
+   "slots": [
+    "weapon",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "life_on_kill_t2",
+   "family": "life_on_kill",
+   "type": "suffix",
+   "tier": "T2",
+   "name": "of Consumption",
+   "display": "Gain {v} Life on Kill",
+   "stat": "life_on_kill_flat",
+   "roll_min": 10,
+   "roll_max": 14,
+   "ilvl_req": 45,
+   "weight": 180,
+   "slots": [
+    "weapon",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "life_on_kill_t1",
+   "family": "life_on_kill",
+   "type": "suffix",
+   "tier": "T1",
+   "name": "of the Vampire",
+   "display": "Gain {v} Life on Kill",
+   "stat": "life_on_kill_flat",
+   "roll_min": 15,
+   "roll_max": 22,
+   "ilvl_req": 60,
+   "weight": 80,
+   "slots": [
+    "weapon",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "life_leech_t5",
+   "family": "life_leech",
+   "type": "suffix",
+   "tier": "T5",
+   "name": "of the Leech",
+   "display": "{v}% of Damage Leeched as Life",
+   "stat": "life_leech_pct",
+   "roll_min": 1,
+   "roll_max": 1,
+   "ilvl_req": 1,
+   "weight": 1000,
+   "slots": [
+    "weapon",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "life_leech_t4",
+   "family": "life_leech",
+   "type": "suffix",
+   "tier": "T4",
+   "name": "of the Lamprey",
+   "display": "{v}% of Damage Leeched as Life",
+   "stat": "life_leech_pct",
+   "roll_min": 1,
+   "roll_max": 2,
+   "ilvl_req": 15,
+   "weight": 600,
+   "slots": [
+    "weapon",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "life_leech_t3",
+   "family": "life_leech",
+   "type": "suffix",
+   "tier": "T3",
+   "name": "of Thirst",
+   "display": "{v}% of Damage Leeched as Life",
+   "stat": "life_leech_pct",
+   "roll_min": 2,
+   "roll_max": 3,
+   "ilvl_req": 30,
+   "weight": 350,
+   "slots": [
+    "weapon",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "life_leech_t2",
+   "family": "life_leech",
+   "type": "suffix",
+   "tier": "T2",
+   "name": "of Hunger",
+   "display": "{v}% of Damage Leeched as Life",
+   "stat": "life_leech_pct",
+   "roll_min": 3,
+   "roll_max": 4,
+   "ilvl_req": 45,
+   "weight": 180,
+   "slots": [
+    "weapon",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "life_leech_t1",
+   "family": "life_leech",
+   "type": "suffix",
+   "tier": "T1",
+   "name": "of the Wraith",
+   "display": "{v}% of Damage Leeched as Life",
+   "stat": "life_leech_pct",
+   "roll_min": 4,
+   "roll_max": 6,
+   "ilvl_req": 60,
+   "weight": 80,
+   "slots": [
+    "weapon",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "aoe_dmg_inc_t5",
+   "family": "aoe_dmg_inc",
+   "type": "prefix",
+   "tier": "T5",
+   "name": "Broad",
+   "display": "{v}% increased Area Damage",
+   "stat": "aoe_damage_inc_pct",
+   "roll_min": 5,
+   "roll_max": 10,
+   "ilvl_req": 1,
+   "weight": 1000,
+   "slots": [
+    "weapon",
+    "gloves",
+    "amulet"
+   ]
+  },
+  {
+   "id": "aoe_dmg_inc_t4",
+   "family": "aoe_dmg_inc",
+   "type": "prefix",
+   "tier": "T4",
+   "name": "Sweeping",
+   "display": "{v}% increased Area Damage",
+   "stat": "aoe_damage_inc_pct",
+   "roll_min": 11,
+   "roll_max": 18,
+   "ilvl_req": 15,
+   "weight": 600,
+   "slots": [
+    "weapon",
+    "gloves",
+    "amulet"
+   ]
+  },
+  {
+   "id": "aoe_dmg_inc_t3",
+   "family": "aoe_dmg_inc",
+   "type": "prefix",
+   "tier": "T3",
+   "name": "Engulfing",
+   "display": "{v}% increased Area Damage",
+   "stat": "aoe_damage_inc_pct",
+   "roll_min": 19,
+   "roll_max": 28,
+   "ilvl_req": 30,
+   "weight": 350,
+   "slots": [
+    "weapon",
+    "gloves",
+    "amulet"
+   ]
+  },
+  {
+   "id": "aoe_dmg_inc_t2",
+   "family": "aoe_dmg_inc",
+   "type": "prefix",
+   "tier": "T2",
+   "name": "Cataclysmic",
+   "display": "{v}% increased Area Damage",
+   "stat": "aoe_damage_inc_pct",
+   "roll_min": 29,
+   "roll_max": 40,
+   "ilvl_req": 45,
+   "weight": 180,
+   "slots": [
+    "weapon",
+    "gloves",
+    "amulet"
+   ]
+  },
+  {
+   "id": "aoe_dmg_inc_t1",
+   "family": "aoe_dmg_inc",
+   "type": "prefix",
+   "tier": "T1",
+   "name": "Apocalyptic",
+   "display": "{v}% increased Area Damage",
+   "stat": "aoe_damage_inc_pct",
+   "roll_min": 41,
+   "roll_max": 55,
+   "ilvl_req": 60,
+   "weight": 80,
+   "slots": [
+    "weapon",
+    "gloves",
+    "amulet"
+   ]
+  },
+  {
+   "id": "boss_dmg_inc_t5",
+   "family": "boss_dmg_inc",
+   "type": "prefix",
+   "tier": "T5",
+   "name": "Bold",
+   "display": "{v}% increased Damage to Bosses",
+   "stat": "boss_damage_inc_pct",
+   "roll_min": 5,
+   "roll_max": 10,
+   "ilvl_req": 1,
+   "weight": 1000,
+   "slots": [
+    "weapon",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "boss_dmg_inc_t4",
+   "family": "boss_dmg_inc",
+   "type": "prefix",
+   "tier": "T4",
+   "name": "Daring",
+   "display": "{v}% increased Damage to Bosses",
+   "stat": "boss_damage_inc_pct",
+   "roll_min": 11,
+   "roll_max": 18,
+   "ilvl_req": 15,
+   "weight": 600,
+   "slots": [
+    "weapon",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "boss_dmg_inc_t3",
+   "family": "boss_dmg_inc",
+   "type": "prefix",
+   "tier": "T3",
+   "name": "Slayer's",
+   "display": "{v}% increased Damage to Bosses",
+   "stat": "boss_damage_inc_pct",
+   "roll_min": 19,
+   "roll_max": 28,
+   "ilvl_req": 30,
+   "weight": 350,
+   "slots": [
+    "weapon",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "boss_dmg_inc_t2",
+   "family": "boss_dmg_inc",
+   "type": "prefix",
+   "tier": "T2",
+   "name": "Giantfelling",
+   "display": "{v}% increased Damage to Bosses",
+   "stat": "boss_damage_inc_pct",
+   "roll_min": 29,
+   "roll_max": 40,
+   "ilvl_req": 45,
+   "weight": 180,
+   "slots": [
+    "weapon",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "boss_dmg_inc_t1",
+   "family": "boss_dmg_inc",
+   "type": "prefix",
+   "tier": "T1",
+   "name": "Godslaying",
+   "display": "{v}% increased Damage to Bosses",
+   "stat": "boss_damage_inc_pct",
+   "roll_min": 41,
+   "roll_max": 55,
+   "ilvl_req": 60,
+   "weight": 80,
+   "slots": [
+    "weapon",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "global_dmg_inc_t5",
+   "family": "global_dmg_inc",
+   "type": "prefix",
+   "tier": "T5",
+   "name": "Honed",
+   "display": "{v}% increased Damage",
+   "stat": "damage_inc_pct",
+   "roll_min": 2,
+   "roll_max": 3,
+   "ilvl_req": 1,
+   "weight": 1000,
+   "slots": [
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "global_dmg_inc_t4",
+   "family": "global_dmg_inc",
+   "type": "prefix",
+   "tier": "T4",
+   "name": "Fierce",
+   "display": "{v}% increased Damage",
+   "stat": "damage_inc_pct",
+   "roll_min": 3,
+   "roll_max": 5,
+   "ilvl_req": 15,
+   "weight": 600,
+   "slots": [
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "global_dmg_inc_t3",
+   "family": "global_dmg_inc",
+   "type": "prefix",
+   "tier": "T3",
+   "name": "Savage",
+   "display": "{v}% increased Damage",
+   "stat": "damage_inc_pct",
+   "roll_min": 5,
+   "roll_max": 8,
+   "ilvl_req": 30,
+   "weight": 350,
+   "slots": [
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "global_dmg_inc_t2",
+   "family": "global_dmg_inc",
+   "type": "prefix",
+   "tier": "T2",
+   "name": "Merciless",
+   "display": "{v}% increased Damage",
+   "stat": "damage_inc_pct",
+   "roll_min": 8,
+   "roll_max": 11,
+   "ilvl_req": 45,
+   "weight": 180,
+   "slots": [
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "global_dmg_inc_t1",
+   "family": "global_dmg_inc",
+   "type": "prefix",
+   "tier": "T1",
+   "name": "Transcendent",
+   "display": "{v}% increased Damage",
+   "stat": "damage_inc_pct",
+   "roll_min": 11,
+   "roll_max": 15,
+   "ilvl_req": 60,
+   "weight": 80,
+   "slots": [
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "cdr_t5",
+   "family": "cdr",
+   "type": "suffix",
+   "tier": "T5",
+   "name": "Brisk",
+   "display": "{v}% increased Cooldown Recovery",
+   "stat": "cooldown_reduction_pct",
+   "roll_min": 1,
+   "roll_max": 2,
+   "ilvl_req": 1,
+   "weight": 1000,
+   "slots": [
+    "helmet",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "cdr_t4",
+   "family": "cdr",
+   "type": "suffix",
+   "tier": "T4",
+   "name": "Swift",
+   "display": "{v}% increased Cooldown Recovery",
+   "stat": "cooldown_reduction_pct",
+   "roll_min": 2,
+   "roll_max": 3,
+   "ilvl_req": 15,
+   "weight": 600,
+   "slots": [
+    "helmet",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "cdr_t3",
+   "family": "cdr",
+   "type": "suffix",
+   "tier": "T3",
+   "name": "Fleet",
+   "display": "{v}% increased Cooldown Recovery",
+   "stat": "cooldown_reduction_pct",
+   "roll_min": 3,
+   "roll_max": 4,
+   "ilvl_req": 30,
+   "weight": 350,
+   "slots": [
+    "helmet",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "cdr_t2",
+   "family": "cdr",
+   "type": "suffix",
+   "tier": "T2",
+   "name": "Hurried",
+   "display": "{v}% increased Cooldown Recovery",
+   "stat": "cooldown_reduction_pct",
+   "roll_min": 4,
+   "roll_max": 6,
+   "ilvl_req": 45,
+   "weight": 180,
+   "slots": [
+    "helmet",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "cdr_t1",
+   "family": "cdr",
+   "type": "suffix",
+   "tier": "T1",
+   "name": "Timeless",
+   "display": "{v}% increased Cooldown Recovery",
+   "stat": "cooldown_reduction_pct",
+   "roll_min": 6,
+   "roll_max": 8,
+   "ilvl_req": 60,
+   "weight": 80,
+   "slots": [
+    "helmet",
+    "ring",
+    "amulet"
+   ]
+  },
+  {
+   "id": "xp_gain_t5",
+   "family": "xp_gain",
+   "type": "suffix",
+   "tier": "T5",
+   "name": "Learner's",
+   "display": "{v}% increased Experience Gained",
+   "stat": "xp_gain_inc_pct",
+   "roll_min": 2,
+   "roll_max": 3,
+   "ilvl_req": 1,
+   "weight": 1000,
+   "slots": [
+    "helmet",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "xp_gain_t4",
+   "family": "xp_gain",
+   "type": "suffix",
+   "tier": "T4",
+   "name": "Student's",
+   "display": "{v}% increased Experience Gained",
+   "stat": "xp_gain_inc_pct",
+   "roll_min": 3,
+   "roll_max": 5,
+   "ilvl_req": 15,
+   "weight": 600,
+   "slots": [
+    "helmet",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "xp_gain_t3",
+   "family": "xp_gain",
+   "type": "suffix",
+   "tier": "T3",
+   "name": "Scholar's",
+   "display": "{v}% increased Experience Gained",
+   "stat": "xp_gain_inc_pct",
+   "roll_min": 5,
+   "roll_max": 7,
+   "ilvl_req": 30,
+   "weight": 350,
+   "slots": [
+    "helmet",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "xp_gain_t2",
+   "family": "xp_gain",
+   "type": "suffix",
+   "tier": "T2",
+   "name": "Sage's",
+   "display": "{v}% increased Experience Gained",
+   "stat": "xp_gain_inc_pct",
+   "roll_min": 7,
+   "roll_max": 9,
+   "ilvl_req": 45,
+   "weight": 180,
+   "slots": [
+    "helmet",
+    "amulet",
+    "ring"
+   ]
+  },
+  {
+   "id": "xp_gain_t1",
+   "family": "xp_gain",
+   "type": "suffix",
+   "tier": "T1",
+   "name": "Enlightened",
+   "display": "{v}% increased Experience Gained",
+   "stat": "xp_gain_inc_pct",
+   "roll_min": 9,
+   "roll_max": 12,
+   "ilvl_req": 60,
+   "weight": 80,
+   "slots": [
+    "helmet",
+    "amulet",
+    "ring"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,40 @@
+{
+  "character": "temple_golem",
+  "note": "flip horizontally in engine for opposite facing",
+  "walk": {
+    "frames": 9,
+    "frame_w": 256,
+    "frame_h": 273,
+    "fps": 12,
+    "loop": true,
+    "sheet": "walk.png",
+    "render_scale": 1.0
+  },
+  "walk_alt": {
+    "frames": 9,
+    "frame_w": 266,
+    "frame_h": 269,
+    "fps": 12,
+    "loop": true,
+    "sheet": "walk_alt.png",
+    "render_scale": 1.0
+  },
+  "attack": {
+    "frames": 8,
+    "frame_w": 290,
+    "frame_h": 324,
+    "fps": 14,
+    "loop": false,
+    "sheet": "attack.png",
+    "render_scale": 1.0
+  },
+  "special": {
+    "frames": 8,
+    "frame_w": 344,
+    "frame_h": 268,
+    "fps": 14,
+    "loop": false,
+    "sheet": "special.png",
+    "render_scale": 1.0
+  }
+}

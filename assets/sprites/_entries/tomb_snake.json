@@ -1,0 +1,18 @@
+{
+ "walk": [
+  "walk_00.png",
+  "walk_01.png",
+  "walk_02.png",
+  "walk_03.png",
+  "walk_04.png",
+  "walk_05.png"
+ ],
+ "attack": [
+  "atk_00.png",
+  "atk_01.png",
+  "atk_02.png",
+  "atk_03.png",
+  "atk_04.png"
+ ],
+ "h": 38
+}

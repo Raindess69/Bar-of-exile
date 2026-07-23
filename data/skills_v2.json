@@ -1,0 +1,2022 @@
+{
+ "meta": {
+  "kind": "skills_v2",
+  "game": "Bar of Exile",
+  "version": 1,
+  "source": "новый приколы/SKILLS_MECHANICS_V2.md §6",
+  "total_skills": 80,
+  "per_class": 16,
+  "unlock_ladder": [
+   1,
+   2,
+   4,
+   6,
+   8,
+   11,
+   14,
+   17,
+   20,
+   24,
+   28,
+   32,
+   36,
+   42,
+   48,
+   55
+  ],
+  "sxp_need_formula": "floor(40 * rank^1.7)",
+  "rank_cap": 20,
+  "per_rank_more_pct": 4,
+  "sxp_per_kill_equipped": 0.6,
+  "sxp_leech_unequipped": 0.25,
+  "loadout_slots": {
+   "primary": 1,
+   "actives": [
+    5,
+    12,
+    20
+   ],
+   "aura": 16,
+   "utility": 9,
+   "ultimate": 30
+  },
+  "ranges_px": {
+   "melee": 48,
+   "medium": 140,
+   "ranged": 260
+  },
+  "tome": {
+   "base_drop_rate": 0.004545454545454545,
+   "pity_safe": true,
+   "unlock_max_over_hero": 10,
+   "dup_to_sxp_base": 500
+  },
+  "awakening": {
+   "req_rank": 20,
+   "req_hero_level": 60,
+   "gold_cost_base": 25000,
+   "extra_ranks": 5,
+   "more_per_rank_pct": 4,
+   "extra_talent_tier_rank": 25
+  },
+  "damage": "(base+Σflat) × (1+Σinc/100) × Π(1+more/100)"
+ },
+ "skills": [
+  {
+   "id": "slash",
+   "name": "Slash",
+   "class": "warrior",
+   "type": "primary",
+   "tags": [
+    "phys",
+    "melee"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 1,
+   "cooldown_s": 0,
+   "base_damage_pct": 100,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "melee",
+   "range_px": 48,
+   "effect": "100% weapon damage.",
+   "params": {}
+  },
+  {
+   "id": "cleave",
+   "name": "Cleave",
+   "class": "warrior",
+   "type": "spender",
+   "tags": [
+    "phys",
+    "melee",
+    "aoe"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 2,
+   "cooldown_s": 6,
+   "base_damage_pct": 170,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "melee",
+   "range_px": 48,
+   "effect": "Hits enemies in a frontal arc (up to 3).",
+   "params": {
+    "aoe": true,
+    "max_targets": 3,
+    "shape": "arc"
+   }
+  },
+  {
+   "id": "war_cry",
+   "name": "War Cry",
+   "class": "warrior",
+   "type": "utility",
+   "tags": [
+    "buff"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 4,
+   "cooldown_s": 20,
+   "base_damage_pct": 0,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "melee",
+   "range_px": 48,
+   "effect": "Battle shout: +20% damage for 8s.",
+   "params": {
+    "buff_dmg_pct": 20,
+    "duration_s": 8
+   }
+  },
+  {
+   "id": "shield_bash",
+   "name": "Shield Bash",
+   "class": "warrior",
+   "type": "spender",
+   "tags": [
+    "phys",
+    "stun"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 6,
+   "cooldown_s": 8,
+   "base_damage_pct": 140,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "melee",
+   "range_px": 48,
+   "effect": "140% damage, stuns for 1.5s.",
+   "params": {
+    "stun_s": 1.5
+   }
+  },
+  {
+   "id": "precise_strike",
+   "name": "Precise Strike",
+   "class": "warrior",
+   "type": "spender",
+   "tags": [
+    "phys",
+    "crit"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 8,
+   "cooldown_s": 5,
+   "base_damage_pct": 90,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "melee",
+   "range_px": 48,
+   "effect": "90% damage with +15% crit chance.",
+   "params": {
+    "crit_chance_pct": 15
+   }
+  },
+  {
+   "id": "shockwave",
+   "name": "Shockwave",
+   "class": "warrior",
+   "type": "spender",
+   "tags": [
+    "phys",
+    "aoe"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 11,
+   "cooldown_s": 10,
+   "base_damage_pct": 200,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "melee",
+   "range_px": 48,
+   "effect": "200% damage in a line.",
+   "params": {
+    "aoe": true,
+    "shape": "line"
+   }
+  },
+  {
+   "id": "defiance",
+   "name": "Defiance",
+   "class": "warrior",
+   "type": "aura",
+   "tags": [
+    "armor"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 14,
+   "cooldown_s": 0,
+   "base_damage_pct": 0,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "melee",
+   "range_px": 48,
+   "effect": "Aura: +25% armor.",
+   "params": {
+    "reserve_pct": 25,
+    "armor_pct": 25
+   }
+  },
+  {
+   "id": "sunder",
+   "name": "Sunder",
+   "class": "warrior",
+   "type": "spender",
+   "tags": [
+    "phys",
+    "bleed"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 17,
+   "cooldown_s": 4,
+   "base_damage_pct": 85,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "melee",
+   "range_px": 48,
+   "effect": "85% damage, bleeds for 40% over 4s.",
+   "params": {
+    "bleed_pct": 40,
+    "bleed_s": 4
+   }
+  },
+  {
+   "id": "blade_storm",
+   "name": "Blade Storm",
+   "class": "warrior",
+   "type": "spender",
+   "tags": [
+    "phys",
+    "aoe"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 20,
+   "cooldown_s": 12,
+   "base_damage_pct": 45,
+   "hits": 6,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "melee",
+   "range_px": 48,
+   "effect": "Spin: 6x45% to all nearby.",
+   "params": {
+    "aoe": true
+   }
+  },
+  {
+   "id": "second_wind",
+   "name": "Second Wind",
+   "class": "warrior",
+   "type": "utility",
+   "tags": [
+    "heal"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 24,
+   "cooldown_s": 30,
+   "base_damage_pct": 0,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "melee",
+   "range_px": 48,
+   "effect": "Heal 25% of max life.",
+   "params": {
+    "heal_pct": 25
+   }
+  },
+  {
+   "id": "executioners_swing",
+   "name": "Executioner's Swing",
+   "class": "warrior",
+   "type": "spender",
+   "tags": [
+    "phys",
+    "cull"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 28,
+   "cooldown_s": 6,
+   "base_damage_pct": 110,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "melee",
+   "range_px": 48,
+   "effect": "110% damage, +50% vs enemies below 30% HP.",
+   "params": {
+    "cull_bonus_pct": 50,
+    "cull_threshold": 30
+   }
+  },
+  {
+   "id": "earthquake",
+   "name": "Earthquake",
+   "class": "warrior",
+   "type": "spender",
+   "tags": [
+    "phys",
+    "aoe",
+    "dot"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 32,
+   "cooldown_s": 14,
+   "base_damage_pct": 240,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "melee",
+   "range_px": 48,
+   "effect": "240% damage, leaves burning ground.",
+   "params": {
+    "aoe": true,
+    "ground_dot": true
+   }
+  },
+  {
+   "id": "battle_standard",
+   "name": "Battle Standard",
+   "class": "warrior",
+   "type": "aura",
+   "tags": [
+    "buff"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 36,
+   "cooldown_s": 0,
+   "base_damage_pct": 0,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "melee",
+   "range_px": 48,
+   "effect": "Aura: +15% damage, +10% attack speed.",
+   "params": {
+    "reserve_pct": 25,
+    "buff_dmg_pct": 15,
+    "buff_as_pct": 10
+   }
+  },
+  {
+   "id": "rupture",
+   "name": "Rupture",
+   "class": "warrior",
+   "type": "spender",
+   "tags": [
+    "bleed"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 42,
+   "cooldown_s": 9,
+   "base_damage_pct": 150,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "melee",
+   "range_px": 48,
+   "effect": "150% damage, bleeds stack up to 3x.",
+   "params": {
+    "bleed_stacks": 3
+   }
+  },
+  {
+   "id": "avatar_of_war",
+   "name": "Avatar of War",
+   "class": "warrior",
+   "type": "ultimate",
+   "tags": [
+    "phys"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 48,
+   "cooldown_s": 75,
+   "base_damage_pct": 0,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "melee",
+   "range_px": 48,
+   "effect": "10s: +60% more damage, immune to stun.",
+   "params": {
+    "duration_s": 10,
+    "more_dmg_pct": 60,
+    "immune_stun": true
+   }
+  },
+  {
+   "id": "undying_rage",
+   "name": "Undying Rage",
+   "class": "warrior",
+   "type": "ultimate",
+   "tags": [
+    "phys"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 55,
+   "cooldown_s": 90,
+   "base_damage_pct": 0,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "melee",
+   "range_px": 48,
+   "effect": "8s: cannot die, +40% attack speed.",
+   "params": {
+    "duration_s": 8,
+    "cannot_die": true,
+    "buff_as_pct": 40
+   }
+  },
+  {
+   "id": "savage_chop",
+   "name": "Savage Chop",
+   "class": "barbarian",
+   "type": "primary",
+   "tags": [
+    "phys",
+    "melee"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 1,
+   "cooldown_s": 0,
+   "base_damage_pct": 105,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "melee",
+   "range_px": 48,
+   "effect": "105% weapon damage.",
+   "params": {}
+  },
+  {
+   "id": "leap_slam",
+   "name": "Leap Slam",
+   "class": "barbarian",
+   "type": "spender",
+   "tags": [
+    "phys",
+    "move",
+    "aoe"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 2,
+   "cooldown_s": 8,
+   "base_damage_pct": 160,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "melee",
+   "range_px": 48,
+   "effect": "Leap to target, 160% AoE on landing.",
+   "params": {
+    "aoe": true,
+    "movement": true
+   }
+  },
+  {
+   "id": "battle_roar",
+   "name": "Battle Roar",
+   "class": "barbarian",
+   "type": "utility",
+   "tags": [
+    "buff"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 4,
+   "cooldown_s": 18,
+   "base_damage_pct": 0,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "melee",
+   "range_px": 48,
+   "effect": "Fear nearby foes, +15% damage.",
+   "params": {
+    "buff_dmg_pct": 15,
+    "duration_s": 8,
+    "fear": true
+   }
+  },
+  {
+   "id": "whirlwind",
+   "name": "Whirlwind",
+   "class": "barbarian",
+   "type": "spender",
+   "tags": [
+    "phys",
+    "aoe"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 6,
+   "cooldown_s": 10,
+   "base_damage_pct": 55,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "melee",
+   "range_px": 48,
+   "effect": "Spin 3s: 55% per hit to all nearby.",
+   "params": {
+    "aoe": true,
+    "channel_s": 3
+   }
+  },
+  {
+   "id": "frenzy",
+   "name": "Frenzy",
+   "class": "barbarian",
+   "type": "spender",
+   "tags": [
+    "phys",
+    "melee"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 8,
+   "cooldown_s": 5,
+   "base_damage_pct": 100,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "melee",
+   "range_px": 48,
+   "effect": "Builds Frenzy: +4% attack speed per stack (max 5).",
+   "params": {
+    "stack_as_pct": 4,
+    "max_stacks": 5
+   }
+  },
+  {
+   "id": "bloodthirst",
+   "name": "Bloodthirst",
+   "class": "barbarian",
+   "type": "spender",
+   "tags": [
+    "phys",
+    "leech"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 11,
+   "cooldown_s": 9,
+   "base_damage_pct": 180,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "melee",
+   "range_px": 48,
+   "effect": "180% damage, heal 30% of damage dealt.",
+   "params": {
+    "leech_of_hit_pct": 30
+   }
+  },
+  {
+   "id": "berserker_rage",
+   "name": "Berserker Rage",
+   "class": "barbarian",
+   "type": "aura",
+   "tags": [
+    "buff"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 14,
+   "cooldown_s": 0,
+   "base_damage_pct": 0,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "melee",
+   "range_px": 48,
+   "effect": "Aura: +20% attack speed, -10% armor.",
+   "params": {
+    "reserve_pct": 25,
+    "buff_as_pct": 20,
+    "armor_pct": -10
+   }
+  },
+  {
+   "id": "rampage",
+   "name": "Rampage",
+   "class": "barbarian",
+   "type": "spender",
+   "tags": [
+    "phys"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 17,
+   "cooldown_s": 5,
+   "base_damage_pct": 95,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "melee",
+   "range_px": 48,
+   "effect": "95% damage; kills grant +10% move/attack speed 4s.",
+   "params": {
+    "on_kill_as_pct": 10,
+    "on_kill_ms_pct": 10,
+    "duration_s": 4
+   }
+  },
+  {
+   "id": "seismic_slam",
+   "name": "Seismic Slam",
+   "class": "barbarian",
+   "type": "spender",
+   "tags": [
+    "phys",
+    "aoe"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 20,
+   "cooldown_s": 11,
+   "base_damage_pct": 220,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "melee",
+   "range_px": 48,
+   "effect": "220% damage in a cone.",
+   "params": {
+    "aoe": true,
+    "shape": "cone"
+   }
+  },
+  {
+   "id": "ancestral_spirit",
+   "name": "Ancestral Spirit",
+   "class": "barbarian",
+   "type": "utility",
+   "tags": [
+    "buff"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 24,
+   "cooldown_s": 25,
+   "base_damage_pct": 0,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "melee",
+   "range_px": 48,
+   "effect": "A ghost copies your next spender.",
+   "params": {
+    "echo_next": true
+   }
+  },
+  {
+   "id": "skullsplitter",
+   "name": "Skullsplitter",
+   "class": "barbarian",
+   "type": "spender",
+   "tags": [
+    "phys",
+    "crit"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 28,
+   "cooldown_s": 7,
+   "base_damage_pct": 130,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "melee",
+   "range_px": 48,
+   "effect": "130% slow swing, +30% crit multi.",
+   "params": {
+    "crit_multi_pct": 30
+   }
+  },
+  {
+   "id": "ancient_fury",
+   "name": "Ancient Fury",
+   "class": "barbarian",
+   "type": "spender",
+   "tags": [
+    "phys",
+    "aoe"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 32,
+   "cooldown_s": 13,
+   "base_damage_pct": 50,
+   "hits": 6,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "melee",
+   "range_px": 48,
+   "effect": "6x50% to random nearby targets.",
+   "params": {
+    "aoe": true,
+    "random": true
+   }
+  },
+  {
+   "id": "bloodlust",
+   "name": "Bloodlust",
+   "class": "barbarian",
+   "type": "aura",
+   "tags": [
+    "leech"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 36,
+   "cooldown_s": 0,
+   "base_damage_pct": 0,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "melee",
+   "range_px": 48,
+   "effect": "Aura: 8% lifesteal.",
+   "params": {
+    "reserve_pct": 25,
+    "lifesteal_pct": 8
+   }
+  },
+  {
+   "id": "decapitate",
+   "name": "Decapitate",
+   "class": "barbarian",
+   "type": "spender",
+   "tags": [
+    "phys"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 42,
+   "cooldown_s": 15,
+   "base_damage_pct": 320,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "melee",
+   "range_px": 48,
+   "effect": "320% damage to a single target.",
+   "params": {}
+  },
+  {
+   "id": "wrath_of_the_ancients",
+   "name": "Wrath of the Ancients",
+   "class": "barbarian",
+   "type": "ultimate",
+   "tags": [
+    "phys"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 48,
+   "cooldown_s": 80,
+   "base_damage_pct": 0,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "melee",
+   "range_px": 48,
+   "effect": "Summon 3 ancestors for 12s.",
+   "params": {
+    "duration_s": 12,
+    "summon": 3
+   }
+  },
+  {
+   "id": "undying_fury",
+   "name": "Undying Fury",
+   "class": "barbarian",
+   "type": "ultimate",
+   "tags": [
+    "phys",
+    "aoe"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 55,
+   "cooldown_s": 90,
+   "base_damage_pct": 0,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "melee",
+   "range_px": 48,
+   "effect": "10s: free Whirlwind, +30% more damage.",
+   "params": {
+    "duration_s": 10,
+    "more_dmg_pct": 30
+   }
+  },
+  {
+   "id": "quick_shot",
+   "name": "Quick Shot",
+   "class": "archer",
+   "type": "primary",
+   "tags": [
+    "phys",
+    "proj"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 1,
+   "cooldown_s": 0,
+   "base_damage_pct": 95,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "ranged",
+   "range_px": 260,
+   "effect": "95% weapon damage.",
+   "params": {
+    "projectile": true
+   }
+  },
+  {
+   "id": "poison_arrow",
+   "name": "Poison Arrow",
+   "class": "archer",
+   "type": "spender",
+   "tags": [
+    "proj",
+    "dot",
+    "poison"
+   ],
+   "damage_type": "chaos",
+   "unlock_level": 2,
+   "cooldown_s": 7,
+   "base_damage_pct": 120,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "ranged",
+   "range_px": 260,
+   "effect": "120% + 60% poison over 5s.",
+   "params": {
+    "projectile": true,
+    "poison_pct": 60,
+    "poison_s": 5
+   }
+  },
+  {
+   "id": "mark_for_death",
+   "name": "Mark for Death",
+   "class": "archer",
+   "type": "utility",
+   "tags": [
+    "debuff"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 4,
+   "cooldown_s": 15,
+   "base_damage_pct": 0,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "ranged",
+   "range_px": 260,
+   "effect": "Target takes +25% damage for 10s.",
+   "params": {
+    "debuff_taken_pct": 25,
+    "duration_s": 10
+   }
+  },
+  {
+   "id": "split_arrow",
+   "name": "Split Arrow",
+   "class": "archer",
+   "type": "spender",
+   "tags": [
+    "phys",
+    "proj",
+    "aoe"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 6,
+   "cooldown_s": 4,
+   "base_damage_pct": 70,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "ranged",
+   "range_px": 260,
+   "effect": "70% to 3 targets.",
+   "params": {
+    "projectile": true,
+    "aoe": true,
+    "max_targets": 3
+   }
+  },
+  {
+   "id": "rain_of_arrows",
+   "name": "Rain of Arrows",
+   "class": "archer",
+   "type": "spender",
+   "tags": [
+    "phys",
+    "proj",
+    "aoe"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 8,
+   "cooldown_s": 10,
+   "base_damage_pct": 30,
+   "hits": 8,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "ranged",
+   "range_px": 260,
+   "effect": "30% x8 over an area.",
+   "params": {
+    "projectile": true,
+    "aoe": true
+   }
+  },
+  {
+   "id": "explosive_arrow",
+   "name": "Explosive Arrow",
+   "class": "archer",
+   "type": "spender",
+   "tags": [
+    "phys",
+    "proj",
+    "aoe"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 11,
+   "cooldown_s": 9,
+   "base_damage_pct": 190,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "ranged",
+   "range_px": 260,
+   "effect": "190% blast.",
+   "params": {
+    "projectile": true,
+    "aoe": true
+   }
+  },
+  {
+   "id": "hawk_eye",
+   "name": "Hawk Eye",
+   "class": "archer",
+   "type": "aura",
+   "tags": [
+    "crit"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 14,
+   "cooldown_s": 0,
+   "base_damage_pct": 0,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "ranged",
+   "range_px": 260,
+   "effect": "Aura: +20% crit chance.",
+   "params": {
+    "reserve_pct": 25,
+    "crit_chance_pct": 20
+   }
+  },
+  {
+   "id": "piercing_shot",
+   "name": "Piercing Shot",
+   "class": "archer",
+   "type": "spender",
+   "tags": [
+    "phys",
+    "proj"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 17,
+   "cooldown_s": 5,
+   "base_damage_pct": 100,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "ranged",
+   "range_px": 260,
+   "effect": "100% damage, pierces 2 targets.",
+   "params": {
+    "projectile": true,
+    "pierce": 2
+   }
+  },
+  {
+   "id": "barrage",
+   "name": "Barrage",
+   "class": "archer",
+   "type": "spender",
+   "tags": [
+    "phys",
+    "proj"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 20,
+   "cooldown_s": 8,
+   "base_damage_pct": 45,
+   "hits": 5,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "ranged",
+   "range_px": 260,
+   "effect": "45% x5 rapid shots.",
+   "params": {
+    "projectile": true
+   }
+  },
+  {
+   "id": "caltrops",
+   "name": "Caltrops",
+   "class": "archer",
+   "type": "utility",
+   "tags": [
+    "trap",
+    "dot"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 24,
+   "cooldown_s": 20,
+   "base_damage_pct": 0,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "ranged",
+   "range_px": 260,
+   "effect": "Trap: slows and damages over time.",
+   "params": {
+    "trap": true,
+    "slow": true
+   }
+  },
+  {
+   "id": "lightning_arrow",
+   "name": "Lightning Arrow",
+   "class": "archer",
+   "type": "spender",
+   "tags": [
+    "proj",
+    "light"
+   ],
+   "damage_type": "lightning",
+   "unlock_level": 28,
+   "cooldown_s": 5,
+   "base_damage_pct": 90,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "ranged",
+   "range_px": 260,
+   "effect": "90% + chains to 1 target.",
+   "params": {
+    "projectile": true,
+    "chain": 1
+   }
+  },
+  {
+   "id": "snipe",
+   "name": "Snipe",
+   "class": "archer",
+   "type": "spender",
+   "tags": [
+    "phys",
+    "proj"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 32,
+   "cooldown_s": 14,
+   "base_damage_pct": 350,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "ranged",
+   "range_px": 260,
+   "effect": "350% charged single shot.",
+   "params": {
+    "projectile": true
+   }
+  },
+  {
+   "id": "wind_dancer",
+   "name": "Wind Dancer",
+   "class": "archer",
+   "type": "aura",
+   "tags": [
+    "buff"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 36,
+   "cooldown_s": 0,
+   "base_damage_pct": 0,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "ranged",
+   "range_px": 260,
+   "effect": "Aura: +15% attack speed, +10% evade.",
+   "params": {
+    "reserve_pct": 25,
+    "buff_as_pct": 15,
+    "evade_pct": 10
+   }
+  },
+  {
+   "id": "toxic_volley",
+   "name": "Toxic Volley",
+   "class": "archer",
+   "type": "spender",
+   "tags": [
+    "proj",
+    "dot",
+    "poison",
+    "aoe"
+   ],
+   "damage_type": "chaos",
+   "unlock_level": 42,
+   "cooldown_s": 12,
+   "base_damage_pct": 110,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "ranged",
+   "range_px": 260,
+   "effect": "Poison AoE, stacks up to 3x.",
+   "params": {
+    "projectile": true,
+    "aoe": true,
+    "poison_stacks": 3
+   }
+  },
+  {
+   "id": "arrow_storm",
+   "name": "Arrow Storm",
+   "class": "archer",
+   "type": "ultimate",
+   "tags": [
+    "phys",
+    "proj",
+    "aoe"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 48,
+   "cooldown_s": 75,
+   "base_damage_pct": 25,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "ranged",
+   "range_px": 260,
+   "effect": "8s: rain 25% x many over the field.",
+   "params": {
+    "projectile": true,
+    "aoe": true,
+    "duration_s": 8
+   }
+  },
+  {
+   "id": "phantom_volley",
+   "name": "Phantom Volley",
+   "class": "archer",
+   "type": "ultimate",
+   "tags": [
+    "phys",
+    "proj"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 55,
+   "cooldown_s": 90,
+   "base_damage_pct": 0,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "ranged",
+   "range_px": 260,
+   "effect": "10s: clones fire alongside you.",
+   "params": {
+    "projectile": true,
+    "duration_s": 10,
+    "clones": true
+   }
+  },
+  {
+   "id": "fire_bolt",
+   "name": "Fire Bolt",
+   "class": "mage",
+   "type": "primary",
+   "tags": [
+    "fire",
+    "proj"
+   ],
+   "damage_type": "fire",
+   "unlock_level": 1,
+   "cooldown_s": 0,
+   "base_damage_pct": 100,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "ranged",
+   "range_px": 260,
+   "effect": "100% fire damage.",
+   "params": {
+    "projectile": true
+   }
+  },
+  {
+   "id": "ice_nova",
+   "name": "Ice Nova",
+   "class": "mage",
+   "type": "spender",
+   "tags": [
+    "cold",
+    "aoe"
+   ],
+   "damage_type": "cold",
+   "unlock_level": 2,
+   "cooldown_s": 8,
+   "base_damage_pct": 150,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "ranged",
+   "range_px": 260,
+   "effect": "150% AoE, chills enemies.",
+   "params": {
+    "aoe": true,
+    "chill": true
+   }
+  },
+  {
+   "id": "frost_ward",
+   "name": "Frost Ward",
+   "class": "mage",
+   "type": "utility",
+   "tags": [
+    "buff"
+   ],
+   "damage_type": "cold",
+   "unlock_level": 4,
+   "cooldown_s": 25,
+   "base_damage_pct": 0,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "ranged",
+   "range_px": 260,
+   "effect": "12s: +60% armour.",
+   "params": {
+    "duration_s": 12,
+    "buff_armor_inc": 60
+   }
+  },
+  {
+   "id": "spark",
+   "name": "Spark",
+   "class": "mage",
+   "type": "spender",
+   "tags": [
+    "light",
+    "proj"
+   ],
+   "damage_type": "lightning",
+   "unlock_level": 6,
+   "cooldown_s": 4,
+   "base_damage_pct": 80,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "ranged",
+   "range_px": 260,
+   "effect": "80% + 5% shock chance.",
+   "params": {
+    "projectile": true,
+    "shock_pct": 5
+   }
+  },
+  {
+   "id": "fireball",
+   "name": "Fireball",
+   "class": "mage",
+   "type": "spender",
+   "tags": [
+    "fire",
+    "aoe",
+    "proj"
+   ],
+   "damage_type": "fire",
+   "unlock_level": 8,
+   "cooldown_s": 7,
+   "base_damage_pct": 200,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "ranged",
+   "range_px": 260,
+   "effect": "200% fire blast.",
+   "params": {
+    "projectile": true,
+    "aoe": true
+   }
+  },
+  {
+   "id": "chain_lightning",
+   "name": "Chain Lightning",
+   "class": "mage",
+   "type": "spender",
+   "tags": [
+    "light",
+    "proj"
+   ],
+   "damage_type": "lightning",
+   "unlock_level": 11,
+   "cooldown_s": 9,
+   "base_damage_pct": 130,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "ranged",
+   "range_px": 260,
+   "effect": "130%, chains to 3 targets.",
+   "params": {
+    "projectile": true,
+    "chain": 3
+   }
+  },
+  {
+   "id": "elemental_attunement",
+   "name": "Elemental Attunement",
+   "class": "mage",
+   "type": "aura",
+   "tags": [
+    "buff"
+   ],
+   "damage_type": "fire",
+   "unlock_level": 14,
+   "cooldown_s": 0,
+   "base_damage_pct": 0,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "ranged",
+   "range_px": 260,
+   "effect": "Aura: +15% elemental damage.",
+   "params": {
+    "reserve_pct": 25,
+    "ele_dmg_pct": 15
+   }
+  },
+  {
+   "id": "frost_bolt",
+   "name": "Frost Bolt",
+   "class": "mage",
+   "type": "spender",
+   "tags": [
+    "cold",
+    "proj"
+   ],
+   "damage_type": "cold",
+   "unlock_level": 17,
+   "cooldown_s": 5,
+   "base_damage_pct": 95,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "ranged",
+   "range_px": 260,
+   "effect": "95% + slow.",
+   "params": {
+    "projectile": true,
+    "slow": true
+   }
+  },
+  {
+   "id": "meteor",
+   "name": "Meteor",
+   "class": "mage",
+   "type": "spender",
+   "tags": [
+    "fire",
+    "aoe"
+   ],
+   "damage_type": "fire",
+   "unlock_level": 20,
+   "cooldown_s": 13,
+   "base_damage_pct": 300,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "ranged",
+   "range_px": 260,
+   "effect": "300% delayed impact.",
+   "params": {
+    "aoe": true,
+    "delayed": true
+   }
+  },
+  {
+   "id": "time_warp",
+   "name": "Time Warp",
+   "class": "mage",
+   "type": "utility",
+   "tags": [
+    "buff"
+   ],
+   "damage_type": "cold",
+   "unlock_level": 24,
+   "cooldown_s": 22,
+   "base_damage_pct": 0,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "ranged",
+   "range_px": 260,
+   "effect": "8s: +25% cast speed.",
+   "params": {
+    "duration_s": 8,
+    "buff_as_pct": 25
+   }
+  },
+  {
+   "id": "arcane_missile",
+   "name": "Arcane Missile",
+   "class": "mage",
+   "type": "spender",
+   "tags": [
+    "arcane",
+    "proj"
+   ],
+   "damage_type": "chaos",
+   "unlock_level": 28,
+   "cooldown_s": 4,
+   "base_damage_pct": 85,
+   "hits": 2,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "ranged",
+   "range_px": 260,
+   "effect": "85% x2 arcane bolts.",
+   "params": {
+    "projectile": true
+   }
+  },
+  {
+   "id": "frost_beam",
+   "name": "Frost Beam",
+   "class": "mage",
+   "type": "spender",
+   "tags": [
+    "cold"
+   ],
+   "damage_type": "cold",
+   "unlock_level": 32,
+   "cooldown_s": 12,
+   "base_damage_pct": 60,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "ranged",
+   "range_px": 260,
+   "effect": "Channel 3s: 60% per tick.",
+   "params": {
+    "channel_s": 3
+   }
+  },
+  {
+   "id": "archmage",
+   "name": "Archmage",
+   "class": "mage",
+   "type": "aura",
+   "tags": [
+    "buff"
+   ],
+   "damage_type": "fire",
+   "unlock_level": 36,
+   "cooldown_s": 0,
+   "base_damage_pct": 0,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "ranged",
+   "range_px": 260,
+   "effect": "Aura: +25% increased damage.",
+   "params": {
+    "aura": true,
+    "buff_damage_inc": 25
+   }
+  },
+  {
+   "id": "arcane_orb",
+   "name": "Arcane Orb",
+   "class": "mage",
+   "type": "spender",
+   "tags": [
+    "arcane",
+    "aoe"
+   ],
+   "damage_type": "chaos",
+   "unlock_level": 42,
+   "cooldown_s": 11,
+   "base_damage_pct": 180,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "ranged",
+   "range_px": 260,
+   "effect": "180% + pulses.",
+   "params": {
+    "aoe": true,
+    "pulses": true
+   }
+  },
+  {
+   "id": "cataclysm",
+   "name": "Cataclysm",
+   "class": "mage",
+   "type": "ultimate",
+   "tags": [
+    "fire",
+    "aoe"
+   ],
+   "damage_type": "fire",
+   "unlock_level": 48,
+   "cooldown_s": 85,
+   "base_damage_pct": 0,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "ranged",
+   "range_px": 260,
+   "effect": "10s: meteors rain down.",
+   "params": {
+    "duration_s": 10,
+    "aoe": true
+   }
+  },
+  {
+   "id": "mirror_image",
+   "name": "Mirror Image",
+   "class": "mage",
+   "type": "ultimate",
+   "tags": [
+    "arcane"
+   ],
+   "damage_type": "chaos",
+   "unlock_level": 55,
+   "cooldown_s": 90,
+   "base_damage_pct": 0,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "ranged",
+   "range_px": 260,
+   "effect": "12s: 2 clones cast your primary.",
+   "params": {
+    "duration_s": 12,
+    "clones": 2
+   }
+  },
+  {
+   "id": "holy_bolt",
+   "name": "Holy Bolt",
+   "class": "cleric",
+   "type": "primary",
+   "tags": [
+    "holy",
+    "proj"
+   ],
+   "damage_type": "fire",
+   "unlock_level": 1,
+   "cooldown_s": 0,
+   "base_damage_pct": 95,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "medium",
+   "range_px": 140,
+   "effect": "95% holy damage.",
+   "params": {
+    "projectile": true
+   }
+  },
+  {
+   "id": "consecration",
+   "name": "Consecration",
+   "class": "cleric",
+   "type": "spender",
+   "tags": [
+    "holy",
+    "aoe",
+    "dot"
+   ],
+   "damage_type": "fire",
+   "unlock_level": 2,
+   "cooldown_s": 10,
+   "base_damage_pct": 70,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "medium",
+   "range_px": 140,
+   "effect": "Holy ground: 70%/s for 5s.",
+   "params": {
+    "aoe": true,
+    "ground_dot": true,
+    "dot_s": 5
+   }
+  },
+  {
+   "id": "heal",
+   "name": "Heal",
+   "class": "cleric",
+   "type": "utility",
+   "tags": [
+    "heal"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 4,
+   "cooldown_s": 18,
+   "base_damage_pct": 0,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "medium",
+   "range_px": 140,
+   "effect": "Heal 30% of max life.",
+   "params": {
+    "heal_pct": 30
+   }
+  },
+  {
+   "id": "smite",
+   "name": "Smite",
+   "class": "cleric",
+   "type": "spender",
+   "tags": [
+    "holy"
+   ],
+   "damage_type": "fire",
+   "unlock_level": 6,
+   "cooldown_s": 6,
+   "base_damage_pct": 110,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "medium",
+   "range_px": 140,
+   "effect": "110% slow swing.",
+   "params": {}
+  },
+  {
+   "id": "holy_nova",
+   "name": "Holy Nova",
+   "class": "cleric",
+   "type": "spender",
+   "tags": [
+    "holy",
+    "aoe"
+   ],
+   "damage_type": "fire",
+   "unlock_level": 8,
+   "cooldown_s": 9,
+   "base_damage_pct": 160,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "medium",
+   "range_px": 140,
+   "effect": "160% burst around you.",
+   "params": {
+    "aoe": true
+   }
+  },
+  {
+   "id": "divine_hammer",
+   "name": "Divine Hammer",
+   "class": "cleric",
+   "type": "spender",
+   "tags": [
+    "holy",
+    "stun"
+   ],
+   "damage_type": "fire",
+   "unlock_level": 11,
+   "cooldown_s": 10,
+   "base_damage_pct": 190,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "medium",
+   "range_px": 140,
+   "effect": "190% + stun 1s.",
+   "params": {
+    "stun_s": 1
+   }
+  },
+  {
+   "id": "blessing_of_might",
+   "name": "Blessing of Might",
+   "class": "cleric",
+   "type": "aura",
+   "tags": [
+    "buff"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 14,
+   "cooldown_s": 0,
+   "base_damage_pct": 0,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "medium",
+   "range_px": 140,
+   "effect": "Aura: +12% damage, +8% attack speed.",
+   "params": {
+    "reserve_pct": 25,
+    "buff_dmg_pct": 12,
+    "buff_as_pct": 8
+   }
+  },
+  {
+   "id": "radiant_lance",
+   "name": "Radiant Lance",
+   "class": "cleric",
+   "type": "spender",
+   "tags": [
+    "holy"
+   ],
+   "damage_type": "fire",
+   "unlock_level": 17,
+   "cooldown_s": 5,
+   "base_damage_pct": 100,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "medium",
+   "range_px": 140,
+   "effect": "100% damage, pierces.",
+   "params": {
+    "pierce": 2
+   }
+  },
+  {
+   "id": "wrath_of_light",
+   "name": "Wrath of Light",
+   "class": "cleric",
+   "type": "spender",
+   "tags": [
+    "holy"
+   ],
+   "damage_type": "fire",
+   "unlock_level": 20,
+   "cooldown_s": 8,
+   "base_damage_pct": 90,
+   "hits": 3,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "medium",
+   "range_px": 140,
+   "effect": "90% x3 beams.",
+   "params": {}
+  },
+  {
+   "id": "divine_shield",
+   "name": "Divine Shield",
+   "class": "cleric",
+   "type": "utility",
+   "tags": [
+    "buff"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 24,
+   "cooldown_s": 28,
+   "base_damage_pct": 0,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "medium",
+   "range_px": 140,
+   "effect": "6s: absorb up to 40% max life.",
+   "params": {
+    "duration_s": 6,
+    "absorb_pct": 40
+   }
+  },
+  {
+   "id": "judgement",
+   "name": "Judgement",
+   "class": "cleric",
+   "type": "spender",
+   "tags": [
+    "holy"
+   ],
+   "damage_type": "fire",
+   "unlock_level": 28,
+   "cooldown_s": 5,
+   "base_damage_pct": 105,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "medium",
+   "range_px": 140,
+   "effect": "105%; every 4th hit deals +100%.",
+   "params": {
+    "combo_every": 4,
+    "combo_bonus_pct": 100
+   }
+  },
+  {
+   "id": "purifying_flame",
+   "name": "Purifying Flame",
+   "class": "cleric",
+   "type": "spender",
+   "tags": [
+    "holy",
+    "fire"
+   ],
+   "damage_type": "fire",
+   "unlock_level": 32,
+   "cooldown_s": 12,
+   "base_damage_pct": 220,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "medium",
+   "range_px": 140,
+   "effect": "220% holy fire.",
+   "params": {}
+  },
+  {
+   "id": "sanctuary",
+   "name": "Sanctuary",
+   "class": "cleric",
+   "type": "aura",
+   "tags": [
+    "buff"
+   ],
+   "damage_type": "phys",
+   "unlock_level": 36,
+   "cooldown_s": 0,
+   "base_damage_pct": 0,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "medium",
+   "range_px": 140,
+   "effect": "Aura: -12% damage taken, +1% life/s.",
+   "params": {
+    "reserve_pct": 25,
+    "dmg_taken_pct": -12,
+    "life_regen_pct": 1
+   }
+  },
+  {
+   "id": "celestial_strike",
+   "name": "Celestial Strike",
+   "class": "cleric",
+   "type": "spender",
+   "tags": [
+    "holy"
+   ],
+   "damage_type": "fire",
+   "unlock_level": 42,
+   "cooldown_s": 14,
+   "base_damage_pct": 280,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "medium",
+   "range_px": 140,
+   "effect": "280% to a single target.",
+   "params": {}
+  },
+  {
+   "id": "avatar_of_light",
+   "name": "Avatar of Light",
+   "class": "cleric",
+   "type": "ultimate",
+   "tags": [
+    "holy"
+   ],
+   "damage_type": "fire",
+   "unlock_level": 48,
+   "cooldown_s": 80,
+   "base_damage_pct": 0,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "medium",
+   "range_px": 140,
+   "effect": "10s: +50% more damage, heal on hit.",
+   "params": {
+    "duration_s": 10,
+    "more_dmg_pct": 50,
+    "heal_on_hit": true
+   }
+  },
+  {
+   "id": "last_rites",
+   "name": "Last Rites",
+   "class": "cleric",
+   "type": "ultimate",
+   "tags": [
+    "holy",
+    "aoe"
+   ],
+   "damage_type": "fire",
+   "unlock_level": 55,
+   "cooldown_s": 95,
+   "base_damage_pct": 500,
+   "hits": 1,
+   "per_rank_more_pct": 4,
+   "per_rank_secondary_pct": 2,
+   "rank_cap": 20,
+   "range_class": "medium",
+   "range_px": 140,
+   "effect": "Nuke: 500% to all on screen.",
+   "params": {
+    "aoe": true,
+    "all_screen": true
+   }
+  }
+ ]
+}

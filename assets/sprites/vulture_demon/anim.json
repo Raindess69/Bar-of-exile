@@ -1,0 +1,40 @@
+{
+  "character": "vulture_demon",
+  "note": "flip horizontally in engine for opposite facing",
+  "walk": {
+    "frames": 8,
+    "frame_w": 335,
+    "frame_h": 325,
+    "fps": 12,
+    "loop": true,
+    "sheet": "walk.png",
+    "render_scale": 1.0
+  },
+  "walk_alt": {
+    "frames": 8,
+    "frame_w": 311,
+    "frame_h": 314,
+    "fps": 12,
+    "loop": true,
+    "sheet": "walk_alt.png",
+    "render_scale": 1.0
+  },
+  "attack": {
+    "frames": 8,
+    "frame_w": 321,
+    "frame_h": 308,
+    "fps": 14,
+    "loop": false,
+    "sheet": "attack.png",
+    "render_scale": 1.0
+  },
+  "special": {
+    "frames": 8,
+    "frame_w": 341,
+    "frame_h": 325,
+    "fps": 14,
+    "loop": false,
+    "sheet": "special.png",
+    "render_scale": 1.0
+  }
+}

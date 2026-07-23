@@ -1,0 +1,23 @@
+{
+  "files": {
+    "btn_inventory.png": "inventory backpack, normal",
+    "btn_inventory_pressed.png": "inventory backpack, pressed",
+    "btn_character.png": "character winged helm, normal",
+    "btn_character_pressed.png": "character winged helm, pressed",
+    "btn_character_hover.png": "character helm, glowing eyes hover",
+    "btn_tree.png": "talent tree, normal",
+    "btn_tree_hover.png": "talent tree, golden glow hover",
+    "btn_tree_pressed.png": "talent tree, golden glow pressed",
+    "btn_cube.png": "transmutation cube, normal",
+    "btn_cube_pressed.png": "transmutation cube, pressed",
+    "btn_cube_hover.png": "transmutation cube, glowing hover",
+    "btn_gamble.png": "gamble purple dice (user's ДВЕ КНОПКИ.jpeg left), normal",
+    "btn_gamble_hover.png": "gamble purple dice, +25% brightness hover",
+    "btn_stats.png": "statistics bar chart + skull (user's ДВЕ КНОПКИ.jpeg right), normal",
+    "btn_stats_hover.png": "statistics bar chart + skull, +25% brightness hover",
+    "btn_minimize.png": "minimize dash button",
+    "btn_close.png": "exit horned skull, normal",
+    "btn_close_hover.png": "exit horned skull, red eyes hover",
+    "btn_close_pressed.png": "exit horned skull, pressed"
+  }
+}

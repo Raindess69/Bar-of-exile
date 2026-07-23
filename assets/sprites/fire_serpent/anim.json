@@ -1,0 +1,40 @@
+{
+  "character": "fire_serpent",
+  "note": "flip horizontally in engine for opposite facing",
+  "walk": {
+    "frames": 6,
+    "frame_w": 426,
+    "frame_h": 241,
+    "fps": 12,
+    "loop": true,
+    "sheet": "walk.png",
+    "render_scale": 1.0
+  },
+  "walk_alt": {
+    "frames": 6,
+    "frame_w": 424,
+    "frame_h": 240,
+    "fps": 12,
+    "loop": true,
+    "sheet": "walk_alt.png",
+    "render_scale": 1.0
+  },
+  "attack": {
+    "frames": 6,
+    "frame_w": 459,
+    "frame_h": 257,
+    "fps": 14,
+    "loop": false,
+    "sheet": "attack.png",
+    "render_scale": 1.0
+  },
+  "special": {
+    "frames": 6,
+    "frame_w": 467,
+    "frame_h": 285,
+    "fps": 14,
+    "loop": false,
+    "sheet": "special.png",
+    "render_scale": 1.0
+  }
+}

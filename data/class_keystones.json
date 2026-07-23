@@ -1,0 +1,930 @@
+{
+  "meta": {
+    "kind": "class_keystones",
+    "game": "Bar of Exile",
+    "version": 1,
+    "design_ref": "CLASS_KEYSTONES_TREE_REWORK.md §3",
+    "point_currency": "class_points",
+    "class_point_sources": {
+      "goblin_king": 2,
+      "lich_emperor": 2,
+      "lord_of_ash": 2,
+      "the_watcher": 1
+    },
+    "note": "Class ascendancy sub-trees merged onto passives_v2 by game.tree. Bought with Class Points (act-boss first kills). Positions fan inward from each class start; center of the main tree is empty."
+  },
+  "nodes": [
+    {
+      "id": "ck_warrior_1",
+      "class_req": "warrior",
+      "name": "Warpath",
+      "description": "+6% increased Damage, +6% increased Armour",
+      "x": 0.0,
+      "y": -120.0,
+      "level_req": 0,
+      "mods": [
+        {
+          "stat": "damage_inc",
+          "flat": 6
+        },
+        {
+          "stat": "armor",
+          "inc": 6
+        }
+      ]
+    },
+    {
+      "id": "ck_warrior_2",
+      "class_req": "warrior",
+      "name": "Bulwark",
+      "description": "+12% increased Armour, +5% increased Life",
+      "x": -38.64,
+      "y": -86.79,
+      "level_req": 0,
+      "mods": [
+        {
+          "stat": "armor",
+          "inc": 12
+        },
+        {
+          "stat": "life",
+          "inc": 5
+        }
+      ]
+    },
+    {
+      "id": "ck_warrior_3",
+      "class_req": "warrior",
+      "name": "Unbreakable",
+      "description": "+20% increased Armour, +30 to Armour",
+      "x": -28.47,
+      "y": -63.95,
+      "level_req": 0,
+      "mods": [
+        {
+          "stat": "armor",
+          "inc": 20
+        },
+        {
+          "stat": "armor",
+          "flat": 30
+        }
+      ]
+    },
+    {
+      "id": "ck_warrior_4",
+      "class_req": "warrior",
+      "name": "First Blood",
+      "description": "+10% increased Damage, +3% to Critical Strike Chance",
+      "x": 38.64,
+      "y": -86.79,
+      "level_req": 0,
+      "mods": [
+        {
+          "stat": "damage_inc",
+          "flat": 10
+        },
+        {
+          "stat": "crit_chance",
+          "flat": 3
+        }
+      ]
+    },
+    {
+      "id": "ck_warrior_5",
+      "class_req": "warrior",
+      "name": "Skullcracker",
+      "description": "+20 to Critical Strike Multiplier",
+      "x": 28.47,
+      "y": -63.95,
+      "level_req": 0,
+      "mods": [
+        {
+          "stat": "crit_multi",
+          "flat": 20
+        }
+      ]
+    },
+    {
+      "id": "ck_warrior_6",
+      "class_req": "warrior",
+      "name": "Executioner",
+      "description": "Enemies below 10% Life die instantly (bosses 5%)",
+      "x": 0.0,
+      "y": -70.0,
+      "level_req": 30,
+      "flags": [
+        "ck_cull_10"
+      ]
+    },
+    {
+      "id": "ck_warrior_7",
+      "class_req": "warrior",
+      "name": "Avatar of the Bastion",
+      "description": "+10% increased Life, +10% increased Damage, 5% more Damage",
+      "x": 0.0,
+      "y": -45.0,
+      "level_req": 50,
+      "mods": [
+        {
+          "stat": "life",
+          "inc": 10
+        },
+        {
+          "stat": "damage_inc",
+          "flat": 10
+        },
+        {
+          "stat": "damage_min",
+          "more": 5
+        },
+        {
+          "stat": "damage_max",
+          "more": 5
+        },
+        {
+          "stat": "added_fire",
+          "more": 5
+        },
+        {
+          "stat": "added_cold",
+          "more": 5
+        },
+        {
+          "stat": "added_lightning",
+          "more": 5
+        }
+      ]
+    },
+    {
+      "id": "ck_barbarian_1",
+      "class_req": "barbarian",
+      "name": "Bloodlust",
+      "description": "+8% increased Attack Speed, +4% increased Damage",
+      "x": 114.13,
+      "y": -37.08,
+      "level_req": 0,
+      "mods": [
+        {
+          "stat": "attack_speed",
+          "inc": 8
+        },
+        {
+          "stat": "damage_inc",
+          "flat": 4
+        }
+      ]
+    },
+    {
+      "id": "ck_barbarian_2",
+      "class_req": "barbarian",
+      "name": "Thick Skin",
+      "description": "+10% increased Life",
+      "x": 70.6,
+      "y": -63.57,
+      "level_req": 0,
+      "mods": [
+        {
+          "stat": "life",
+          "inc": 10
+        }
+      ]
+    },
+    {
+      "id": "ck_barbarian_3",
+      "class_req": "barbarian",
+      "name": "Carnage",
+      "description": "+2% Life Leech, +8% increased Damage",
+      "x": 52.02,
+      "y": -46.84,
+      "level_req": 0,
+      "mods": [
+        {
+          "stat": "life_leech",
+          "flat": 2
+        },
+        {
+          "stat": "damage_inc",
+          "flat": 8
+        }
+      ]
+    },
+    {
+      "id": "ck_barbarian_4",
+      "class_req": "barbarian",
+      "name": "Raging Torrent",
+      "description": "+10% increased Attack Speed, +5% increased Movement Speed",
+      "x": 94.48,
+      "y": 9.93,
+      "level_req": 0,
+      "mods": [
+        {
+          "stat": "attack_speed",
+          "inc": 10
+        },
+        {
+          "stat": "move_speed",
+          "inc": 5
+        }
+      ]
+    },
+    {
+      "id": "ck_barbarian_5",
+      "class_req": "barbarian",
+      "name": "Giant's Blows",
+      "description": "+25 to Critical Strike Multiplier",
+      "x": 69.62,
+      "y": 7.32,
+      "level_req": 0,
+      "mods": [
+        {
+          "stat": "crit_multi",
+          "flat": 25
+        }
+      ]
+    },
+    {
+      "id": "ck_barbarian_6",
+      "class_req": "barbarian",
+      "name": "Blood Frenzy",
+      "description": "Life leech overhealing grants temporary Life",
+      "x": 66.57,
+      "y": -21.63,
+      "level_req": 30,
+      "flags": [
+        "ck_overheal"
+      ]
+    },
+    {
+      "id": "ck_barbarian_7",
+      "class_req": "barbarian",
+      "name": "Warlord",
+      "description": "+12% increased Damage, +8% increased Life, 5% more Damage",
+      "x": 42.8,
+      "y": -13.91,
+      "level_req": 50,
+      "mods": [
+        {
+          "stat": "damage_inc",
+          "flat": 12
+        },
+        {
+          "stat": "life",
+          "inc": 8
+        },
+        {
+          "stat": "damage_min",
+          "more": 5
+        },
+        {
+          "stat": "damage_max",
+          "more": 5
+        },
+        {
+          "stat": "added_fire",
+          "more": 5
+        },
+        {
+          "stat": "added_cold",
+          "more": 5
+        },
+        {
+          "stat": "added_lightning",
+          "more": 5
+        }
+      ]
+    },
+    {
+      "id": "ck_archer_1",
+      "class_req": "archer",
+      "name": "Keen Eye",
+      "description": "+3% to Critical Strike Chance",
+      "x": 70.53,
+      "y": 97.08,
+      "level_req": 0,
+      "mods": [
+        {
+          "stat": "crit_chance",
+          "flat": 3
+        }
+      ]
+    },
+    {
+      "id": "ck_archer_2",
+      "class_req": "archer",
+      "name": "Light Feet",
+      "description": "+10% increased Evasion, +5% increased Movement Speed",
+      "x": 82.27,
+      "y": 47.5,
+      "level_req": 0,
+      "mods": [
+        {
+          "stat": "evasion",
+          "inc": 10
+        },
+        {
+          "stat": "move_speed",
+          "inc": 5
+        }
+      ]
+    },
+    {
+      "id": "ck_archer_3",
+      "class_req": "archer",
+      "name": "Wind Reader",
+      "description": "+10% increased Attack Speed",
+      "x": 60.62,
+      "y": 35.0,
+      "level_req": 0,
+      "mods": [
+        {
+          "stat": "attack_speed",
+          "inc": 10
+        }
+      ]
+    },
+    {
+      "id": "ck_archer_4",
+      "class_req": "archer",
+      "name": "Deadly Precision",
+      "description": "+30 to Critical Strike Multiplier",
+      "x": 19.75,
+      "y": 92.92,
+      "level_req": 0,
+      "mods": [
+        {
+          "stat": "crit_multi",
+          "flat": 30
+        }
+      ]
+    },
+    {
+      "id": "ck_archer_5",
+      "class_req": "archer",
+      "name": "Serrated Tips",
+      "description": "+12% increased Damage",
+      "x": 14.55,
+      "y": 68.47,
+      "level_req": 0,
+      "mods": [
+        {
+          "stat": "damage_inc",
+          "flat": 12
+        }
+      ]
+    },
+    {
+      "id": "ck_archer_6",
+      "class_req": "archer",
+      "name": "Marked Rhythm",
+      "description": "Every 5th hit is a guaranteed Critical Strike",
+      "x": 41.14,
+      "y": 56.63,
+      "level_req": 30,
+      "flags": [
+        "ck_fifth_shot"
+      ]
+    },
+    {
+      "id": "ck_archer_7",
+      "class_req": "archer",
+      "name": "Windborne Executioner",
+      "description": "+10% increased Damage, +5% increased Attack Speed, 5% more Damage",
+      "x": 26.45,
+      "y": 36.41,
+      "level_req": 50,
+      "mods": [
+        {
+          "stat": "damage_inc",
+          "flat": 10
+        },
+        {
+          "stat": "attack_speed",
+          "inc": 5
+        },
+        {
+          "stat": "damage_min",
+          "more": 5
+        },
+        {
+          "stat": "damage_max",
+          "more": 5
+        },
+        {
+          "stat": "added_fire",
+          "more": 5
+        },
+        {
+          "stat": "added_cold",
+          "more": 5
+        },
+        {
+          "stat": "added_lightning",
+          "more": 5
+        }
+      ]
+    },
+    {
+      "id": "ck_cleric_1",
+      "class_req": "cleric",
+      "name": "Devotion",
+      "description": "+6% increased Damage, +6% increased Life",
+      "x": -114.13,
+      "y": -37.08,
+      "level_req": 0,
+      "mods": [
+        {
+          "stat": "damage_inc",
+          "flat": 6
+        },
+        {
+          "stat": "life",
+          "inc": 6
+        }
+      ]
+    },
+    {
+      "id": "ck_cleric_2",
+      "class_req": "cleric",
+      "name": "Sacred Bulwark",
+      "description": "+12% increased Armour",
+      "x": -94.48,
+      "y": 9.93,
+      "level_req": 0,
+      "mods": [
+        {
+          "stat": "armor",
+          "inc": 12
+        }
+      ]
+    },
+    {
+      "id": "ck_cleric_3",
+      "class_req": "cleric",
+      "name": "Aegis",
+      "description": "+10% increased Armour, +5% increased Life",
+      "x": -69.62,
+      "y": 7.32,
+      "level_req": 0,
+      "mods": [
+        {
+          "stat": "armor",
+          "inc": 10
+        },
+        {
+          "stat": "life",
+          "inc": 5
+        }
+      ]
+    },
+    {
+      "id": "ck_cleric_4",
+      "class_req": "cleric",
+      "name": "Zealotry",
+      "description": "+8% increased Cast Speed",
+      "x": -70.6,
+      "y": -63.57,
+      "level_req": 0,
+      "mods": [
+        {
+          "stat": "cast_speed_inc",
+          "flat": 8
+        }
+      ]
+    },
+    {
+      "id": "ck_cleric_5",
+      "class_req": "cleric",
+      "name": "Righteous Might",
+      "description": "+12% increased Damage",
+      "x": -52.02,
+      "y": -46.84,
+      "level_req": 0,
+      "mods": [
+        {
+          "stat": "damage_inc",
+          "flat": 12
+        }
+      ]
+    },
+    {
+      "id": "ck_cleric_6",
+      "class_req": "cleric",
+      "name": "Light's Harvest",
+      "description": "Killing an enemy restores 2% of maximum Life",
+      "x": -66.57,
+      "y": -21.63,
+      "level_req": 30,
+      "flags": [
+        "ck_kill_heal"
+      ]
+    },
+    {
+      "id": "ck_cleric_7",
+      "class_req": "cleric",
+      "name": "Ascendant",
+      "description": "+10% increased Life, +10% increased Damage, 5% more Damage",
+      "x": -42.8,
+      "y": -13.91,
+      "level_req": 50,
+      "mods": [
+        {
+          "stat": "life",
+          "inc": 10
+        },
+        {
+          "stat": "damage_inc",
+          "flat": 10
+        },
+        {
+          "stat": "damage_min",
+          "more": 5
+        },
+        {
+          "stat": "damage_max",
+          "more": 5
+        },
+        {
+          "stat": "added_fire",
+          "more": 5
+        },
+        {
+          "stat": "added_cold",
+          "more": 5
+        },
+        {
+          "stat": "added_lightning",
+          "more": 5
+        }
+      ]
+    },
+    {
+      "id": "ck_mage_1",
+      "class_req": "mage",
+      "name": "Arcane Font",
+      "description": "+6% increased Damage, +5% increased Cast Speed",
+      "x": -70.53,
+      "y": 97.08,
+      "level_req": 0,
+      "mods": [
+        {
+          "stat": "damage_inc",
+          "flat": 6
+        },
+        {
+          "stat": "cast_speed_inc",
+          "flat": 5
+        }
+      ]
+    },
+    {
+      "id": "ck_mage_2",
+      "class_req": "mage",
+      "name": "Deep Reserves",
+      "description": "+8% increased Damage, +4% increased Cast Speed",
+      "x": -19.75,
+      "y": 92.92,
+      "level_req": 0,
+      "mods": [
+        {
+          "stat": "damage_inc",
+          "flat": 8
+        },
+        {
+          "stat": "cast_speed_inc",
+          "flat": 4
+        }
+      ]
+    },
+    {
+      "id": "ck_mage_3",
+      "class_req": "mage",
+      "name": "Quickening",
+      "description": "+10% increased Cast Speed",
+      "x": -14.55,
+      "y": 68.47,
+      "level_req": 0,
+      "mods": [
+        {
+          "stat": "cast_speed_inc",
+          "flat": 10
+        }
+      ]
+    },
+    {
+      "id": "ck_mage_4",
+      "class_req": "mage",
+      "name": "Elemental Focus",
+      "description": "+12% increased Damage",
+      "x": -82.27,
+      "y": 47.5,
+      "level_req": 0,
+      "mods": [
+        {
+          "stat": "damage_inc",
+          "flat": 12
+        }
+      ]
+    },
+    {
+      "id": "ck_mage_5",
+      "class_req": "mage",
+      "name": "Overcharged",
+      "description": "+25 to Critical Strike Multiplier",
+      "x": -60.62,
+      "y": 35.0,
+      "level_req": 0,
+      "mods": [
+        {
+          "stat": "crit_multi",
+          "flat": 25
+        }
+      ]
+    },
+    {
+      "id": "ck_mage_6",
+      "class_req": "mage",
+      "name": "Lock: Flame",
+      "description": "+20% increased Damage (Flame attunement)",
+      "x": -28.47,
+      "y": 63.95,
+      "level_req": 30,
+      "exclusive_group": "mage_lock",
+      "mods": [
+        {
+          "stat": "damage_inc",
+          "flat": 20
+        }
+      ]
+    },
+    {
+      "id": "ck_mage_7",
+      "class_req": "mage",
+      "name": "Lock: Frost",
+      "description": "+20% increased Damage (Frost attunement)",
+      "x": -41.14,
+      "y": 56.63,
+      "level_req": 30,
+      "exclusive_group": "mage_lock",
+      "mods": [
+        {
+          "stat": "damage_inc",
+          "flat": 20
+        }
+      ]
+    },
+    {
+      "id": "ck_mage_8",
+      "class_req": "mage",
+      "name": "Lock: Storm",
+      "description": "+20% increased Damage (Storm attunement)",
+      "x": -52.02,
+      "y": 46.84,
+      "level_req": 30,
+      "exclusive_group": "mage_lock",
+      "mods": [
+        {
+          "stat": "damage_inc",
+          "flat": 20
+        }
+      ]
+    },
+    {
+      "id": "ck_mage_9",
+      "class_req": "mage",
+      "name": "Archon",
+      "description": "+10% increased Cast Speed, +10% increased Damage, 5% more Damage",
+      "x": -26.45,
+      "y": 36.41,
+      "level_req": 50,
+      "mods": [
+        {
+          "stat": "cast_speed_inc",
+          "flat": 10
+        },
+        {
+          "stat": "damage_inc",
+          "flat": 10
+        },
+        {
+          "stat": "damage_min",
+          "more": 5
+        },
+        {
+          "stat": "damage_max",
+          "more": 5
+        },
+        {
+          "stat": "added_fire",
+          "more": 5
+        },
+        {
+          "stat": "added_cold",
+          "more": 5
+        },
+        {
+          "stat": "added_lightning",
+          "more": 5
+        }
+      ]
+    }
+  ],
+  "edges": [
+    [
+      "n0000",
+      "ck_warrior_1"
+    ],
+    [
+      "ck_warrior_1",
+      "ck_warrior_2"
+    ],
+    [
+      "ck_warrior_1",
+      "ck_warrior_4"
+    ],
+    [
+      "ck_warrior_2",
+      "ck_warrior_3"
+    ],
+    [
+      "ck_warrior_4",
+      "ck_warrior_5"
+    ],
+    [
+      "ck_warrior_1",
+      "ck_warrior_6"
+    ],
+    [
+      "ck_warrior_6",
+      "ck_warrior_7"
+    ],
+    [
+      "ck_warrior_3",
+      "ck_warrior_7"
+    ],
+    [
+      "ck_warrior_5",
+      "ck_warrior_7"
+    ],
+    [
+      "n0004",
+      "ck_barbarian_1"
+    ],
+    [
+      "ck_barbarian_1",
+      "ck_barbarian_2"
+    ],
+    [
+      "ck_barbarian_1",
+      "ck_barbarian_4"
+    ],
+    [
+      "ck_barbarian_2",
+      "ck_barbarian_3"
+    ],
+    [
+      "ck_barbarian_4",
+      "ck_barbarian_5"
+    ],
+    [
+      "ck_barbarian_1",
+      "ck_barbarian_6"
+    ],
+    [
+      "ck_barbarian_6",
+      "ck_barbarian_7"
+    ],
+    [
+      "ck_barbarian_3",
+      "ck_barbarian_7"
+    ],
+    [
+      "ck_barbarian_5",
+      "ck_barbarian_7"
+    ],
+    [
+      "n0008",
+      "ck_archer_1"
+    ],
+    [
+      "ck_archer_1",
+      "ck_archer_2"
+    ],
+    [
+      "ck_archer_1",
+      "ck_archer_4"
+    ],
+    [
+      "ck_archer_2",
+      "ck_archer_3"
+    ],
+    [
+      "ck_archer_4",
+      "ck_archer_5"
+    ],
+    [
+      "ck_archer_1",
+      "ck_archer_6"
+    ],
+    [
+      "ck_archer_6",
+      "ck_archer_7"
+    ],
+    [
+      "ck_archer_3",
+      "ck_archer_7"
+    ],
+    [
+      "ck_archer_5",
+      "ck_archer_7"
+    ],
+    [
+      "n0016",
+      "ck_cleric_1"
+    ],
+    [
+      "ck_cleric_1",
+      "ck_cleric_2"
+    ],
+    [
+      "ck_cleric_1",
+      "ck_cleric_4"
+    ],
+    [
+      "ck_cleric_2",
+      "ck_cleric_3"
+    ],
+    [
+      "ck_cleric_4",
+      "ck_cleric_5"
+    ],
+    [
+      "ck_cleric_1",
+      "ck_cleric_6"
+    ],
+    [
+      "ck_cleric_6",
+      "ck_cleric_7"
+    ],
+    [
+      "ck_cleric_3",
+      "ck_cleric_7"
+    ],
+    [
+      "ck_cleric_5",
+      "ck_cleric_7"
+    ],
+    [
+      "n0012",
+      "ck_mage_1"
+    ],
+    [
+      "ck_mage_1",
+      "ck_mage_2"
+    ],
+    [
+      "ck_mage_1",
+      "ck_mage_4"
+    ],
+    [
+      "ck_mage_2",
+      "ck_mage_3"
+    ],
+    [
+      "ck_mage_4",
+      "ck_mage_5"
+    ],
+    [
+      "ck_mage_1",
+      "ck_mage_6"
+    ],
+    [
+      "ck_mage_1",
+      "ck_mage_7"
+    ],
+    [
+      "ck_mage_1",
+      "ck_mage_8"
+    ],
+    [
+      "ck_mage_6",
+      "ck_mage_9"
+    ],
+    [
+      "ck_mage_7",
+      "ck_mage_9"
+    ],
+    [
+      "ck_mage_8",
+      "ck_mage_9"
+    ],
+    [
+      "ck_mage_3",
+      "ck_mage_9"
+    ],
+    [
+      "ck_mage_5",
+      "ck_mage_9"
+    ]
+  ]
+}

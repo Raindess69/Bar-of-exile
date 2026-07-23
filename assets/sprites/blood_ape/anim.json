@@ -1,0 +1,31 @@
+{
+  "character": "blood_ape",
+  "note": "flip horizontally in engine for opposite facing",
+  "walk": {
+    "frames": 8,
+    "frame_w": 351,
+    "frame_h": 315,
+    "fps": 12,
+    "loop": true,
+    "sheet": "walk.png",
+    "render_scale": 1.0
+  },
+  "attack": {
+    "frames": 8,
+    "frame_w": 340,
+    "frame_h": 314,
+    "fps": 14,
+    "loop": false,
+    "sheet": "attack.png",
+    "render_scale": 1.0
+  },
+  "special": {
+    "frames": 16,
+    "frame_w": 392,
+    "frame_h": 378,
+    "fps": 14,
+    "loop": false,
+    "sheet": "special.png",
+    "render_scale": 1.0
+  }
+}

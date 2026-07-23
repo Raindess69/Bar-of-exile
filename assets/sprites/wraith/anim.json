@@ -1,0 +1,31 @@
+{
+  "character": "wraith",
+  "note": "flip horizontally in engine for opposite facing",
+  "walk": {
+    "frames": 11,
+    "frame_w": 298,
+    "frame_h": 319,
+    "fps": 12,
+    "loop": true,
+    "sheet": "walk.png",
+    "render_scale": 1.0
+  },
+  "attack": {
+    "frames": 10,
+    "frame_w": 364,
+    "frame_h": 268,
+    "fps": 14,
+    "loop": false,
+    "sheet": "attack.png",
+    "render_scale": 1.0
+  },
+  "special": {
+    "frames": 4,
+    "frame_w": 264,
+    "frame_h": 261,
+    "fps": 14,
+    "loop": false,
+    "sheet": "special.png",
+    "render_scale": 1.0
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "tiers": [15, 30, 45],
+  "classes": {
+    "warrior": [
+      {
+        "tier": 1, "level": 15, "choices": [
+          {"id": "w_t1_cleave_chain", "name": "Cleaving Sweep", "desc": "Cleave hits +2 additional targets"},
+          {"id": "w_t1_fortify", "name": "Fortify", "desc": "+15% damage reduction for 3s after using a skill"},
+          {"id": "w_t1_bleed", "name": "Deep Wounds", "desc": "Attacks inflict Bleed for 40% of hit damage over 4s"}
+        ]
+      },
+      {
+        "tier": 2, "level": 30, "choices": [
+          {"id": "w_t2_war_cry_aoe", "name": "Rallying Cry", "desc": "War Cry also deals 80% weapon damage to nearby enemies"},
+          {"id": "w_t2_crit", "name": "Precision Strikes", "desc": "+25% critical strike chance"},
+          {"id": "w_t2_leech", "name": "Blood Drinker", "desc": "Heal 5% of damage dealt"}
+        ]
+      },
+      {
+        "tier": 3, "level": 45, "choices": [
+          {"id": "w_t3_avatar", "name": "Undying Warrior", "desc": "Prevent lethal damage once per 60s, heal to 30% life"},
+          {"id": "w_t3_sunder", "name": "Tectonic Slam", "desc": "Sunder deals 50% more damage and shocks"},
+          {"id": "w_t3_iron_will", "name": "Iron Will", "desc": "+30% increased damage, +20% max life"}
+        ]
+      }
+    ],
+    "barbarian": [
+      {
+        "tier": 1, "level": 15, "choices": [
+          {"id": "b_t1_frenzy", "name": "Bloodrage", "desc": "+10% attack speed per recent kill (max 3 stacks)"},
+          {"id": "b_t1_roar", "name": "Terrifying Roar", "desc": "Blood Roar also reduces enemy damage by 20% for 4s"},
+          {"id": "b_t1_cleave", "name": "Brutal Cleave", "desc": "Savage Strike hits all enemies in melee range"}
+        ]
+      },
+      {
+        "tier": 2, "level": 30, "choices": [
+          {"id": "b_t2_spin", "name": "Cyclone Master", "desc": "Whirlwind deals 25% more damage, +20% move speed"},
+          {"id": "b_t2_rage", "name": "Undying Rage", "desc": "Cannot die for 3s when reaching 1 HP (60s cooldown)"},
+          {"id": "b_t2_armor_shred", "name": "Armor Shred", "desc": "Attacks reduce enemy armor by 15% for 5s"}
+        ]
+      },
+      {
+        "tier": 3, "level": 45, "choices": [
+          {"id": "b_t3_bloodstorm", "name": "Blood Tornado", "desc": "Bloodstorm hits 50% harder and leeches 8% as life"},
+          {"id": "b_t3_titan", "name": "Titan's Grip", "desc": "+40% increased damage, attacks are 15% slower"},
+          {"id": "b_t3_rampage", "name": "Endless Rampage", "desc": "Rampage refreshes on kill, no cooldown while active"}
+        ]
+      }
+    ],
+    "archer": [
+      {
+        "tier": 1, "level": 15, "choices": [
+          {"id": "a_t1_multi", "name": "Barrage", "desc": "Multishot fires +2 additional arrows"},
+          {"id": "a_t1_poison", "name": "Venom Tips", "desc": "All arrows apply Poison (30% over 3s)"},
+          {"id": "a_t1_speed", "name": "Rapid Fire", "desc": "+20% attack speed"}
+        ]
+      },
+      {
+        "tier": 2, "level": 30, "choices": [
+          {"id": "a_t2_crit", "name": "Deadeye", "desc": "+30% crit chance against distant targets"},
+          {"id": "a_t2_pierce", "name": "Piercing Shots", "desc": "Arrows pierce through first target (70% to next)"},
+          {"id": "a_t2_evasion", "name": "Wind Runner", "desc": "+25% evasion, +15% move speed"}
+        ]
+      },
+      {
+        "tier": 3, "level": 45, "choices": [
+          {"id": "a_t3_rain", "name": "Arrow Storm", "desc": "Rain of Barbs hits 40% harder, wider area"},
+          {"id": "a_t3_phantom", "name": "Ghost Volley", "desc": "Phantom Volley chains to 3 additional targets"},
+          {"id": "a_t3_mark", "name": "Hunter's Mark", "desc": "Marked enemies take 25% more damage from all sources"}
+        ]
+      }
+    ],
+    "mage": [
+      {
+        "tier": 1, "level": 15, "choices": [
+          {"id": "m_t1_fire", "name": "Pyromaniac", "desc": "Fire skills deal 25% more damage"},
+          {"id": "m_t1_cold", "name": "Glacial Adept", "desc": "Cold skills have 30% chance to Freeze for 1s"},
+          {"id": "m_t1_lightning", "name": "Storm Weaver", "desc": "Lightning skills chain to 1 additional target"}
+        ]
+      },
+      {
+        "tier": 2, "level": 30, "choices": [
+          {"id": "m_t2_cast_speed", "name": "Arcane Haste", "desc": "Skill cooldowns reduced by 20%"},
+          {"id": "m_t2_aoe", "name": "Spell Echo", "desc": "AoE skills hit 30% wider area"},
+          {"id": "m_t2_mana", "name": "Mana Shield", "desc": "30% of damage taken from mana before life"}
+        ]
+      },
+      {
+        "tier": 3, "level": 45, "choices": [
+          {"id": "m_t3_meteor", "name": "Cataclysm", "desc": "Meteor deals 60% more damage, leaves burning ground"},
+          {"id": "m_t3_nova", "name": "Supernova", "desc": "Chain Nova explodes twice, second hit deals 50% damage"},
+          {"id": "m_t3_archmage", "name": "Archmage", "desc": "+40% all elemental damage, +30 max mana"}
+        ]
+      }
+    ],
+    "cleric": [
+      {
+        "tier": 1, "level": 15, "choices": [
+          {"id": "c_t1_heal", "name": "Blessed Healer", "desc": "Mending Light heals 50% more"},
+          {"id": "c_t1_smite", "name": "Holy Fire", "desc": "Smite also deals 30% as fire damage"},
+          {"id": "c_t1_armor", "name": "Divine Shield", "desc": "+20% armor, +10% all resistances"}
+        ]
+      },
+      {
+        "tier": 2, "level": 30, "choices": [
+          {"id": "c_t2_consecration", "name": "Sacred Ground", "desc": "Consecration lasts 50% longer, heals while standing in it"},
+          {"id": "c_t2_wrath", "name": "Righteous Fury", "desc": "Wrath of Dawn deals 30% more damage"},
+          {"id": "c_t2_regen", "name": "Undying Faith", "desc": "+100% life regeneration"}
+        ]
+      },
+      {
+        "tier": 3, "level": 45, "choices": [
+          {"id": "c_t3_sanctuary", "name": "Aegis of Light", "desc": "Sanctuary also makes you immune to damage for 2s"},
+          {"id": "c_t3_judgement", "name": "Final Judgement", "desc": "Judgement deals 60% more damage to low-life enemies"},
+          {"id": "c_t3_martyr", "name": "Martyr", "desc": "When you heal, deal 50% of heal amount as holy damage to all nearby enemies"}
+        ]
+      }
+    ]
+  }
+}

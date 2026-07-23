@@ -1,0 +1,13 @@
+{
+  "character": "sand_leaper",
+  "note": "flip horizontally in engine for opposite facing",
+  "walk": {
+    "frames": 10,
+    "frame_w": 295,
+    "frame_h": 371,
+    "fps": 12,
+    "loop": true,
+    "sheet": "walk.png",
+    "render_scale": 1.0
+  }
+}

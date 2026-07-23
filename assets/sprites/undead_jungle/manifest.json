@@ -1,0 +1,197 @@
+{
+ "source": "undead_jungle.jpeg",
+ "rows": [
+  {
+   "mob": "skeleton_warrior",
+   "y": [
+    11,
+    112
+   ],
+   "anims": {
+    "all": {
+     "frames": 34,
+     "canvas": [
+      87,
+      101
+     ]
+    }
+   }
+  },
+  {
+   "mob": "skeleton_archer",
+   "y": [
+    152,
+    241
+   ],
+   "anims": {
+    "all": {
+     "frames": 34,
+     "canvas": [
+      63,
+      88
+     ]
+    }
+   }
+  },
+  {
+   "mob": "skeleton_mage",
+   "y": [
+    275,
+    370
+   ],
+   "anims": {
+    "all": {
+     "frames": 36,
+     "canvas": [
+      78,
+      95
+     ]
+    }
+   }
+  },
+  {
+   "mob": "rotting_zombie",
+   "y": [
+    412,
+    499
+   ],
+   "anims": {
+    "all": {
+     "frames": 34,
+     "canvas": [
+      65,
+      86
+     ]
+    }
+   }
+  },
+  {
+   "mob": "armored_zombie",
+   "y": [
+    539,
+    626
+   ],
+   "anims": {
+    "all": {
+     "frames": 34,
+     "canvas": [
+      64,
+      87
+     ]
+    }
+   }
+  },
+  {
+   "mob": "jungle_stalker",
+   "y": [
+    670,
+    754
+   ],
+   "anims": {
+    "all": {
+     "frames": 20,
+     "canvas": [
+      132,
+      84
+     ]
+    }
+   }
+  },
+  {
+   "mob": "blood_ape",
+   "y": [
+    762,
+    884
+   ],
+   "anims": {
+    "all": {
+     "frames": 33,
+     "canvas": [
+      89,
+      121
+     ]
+    }
+   }
+  },
+  {
+   "mob": "venom_toad",
+   "y": [
+    935,
+    1012
+   ],
+   "anims": {
+    "all": {
+     "frames": 29,
+     "canvas": [
+      69,
+      76
+     ]
+    }
+   }
+  },
+  {
+   "mob": "undead_jaguar",
+   "y": [
+    1059,
+    1139
+   ],
+   "anims": {
+    "all": {
+     "frames": 22,
+     "canvas": [
+      128,
+      80
+     ]
+    }
+   }
+  },
+  {
+   "mob": "vinespawn",
+   "y": [
+    1175,
+    1266
+   ],
+   "anims": {
+    "all": {
+     "frames": 30,
+     "canvas": [
+      102,
+      90
+     ]
+    }
+   }
+  },
+  {
+   "mob": "cannibal_shaman",
+   "y": [
+    1299,
+    1393
+   ],
+   "anims": {
+    "all": {
+     "frames": 31,
+     "canvas": [
+      78,
+      94
+     ]
+    }
+   }
+  },
+  {
+   "mob": "skeleton_chieftain",
+   "y": [
+    1401,
+    1521
+   ],
+   "anims": {
+    "all": {
+     "frames": 34,
+     "canvas": [
+      83,
+      119
+     ]
+    }
+   }
+  }
+ ]
+}

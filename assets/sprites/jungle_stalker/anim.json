@@ -1,0 +1,40 @@
+{
+  "character": "jungle_stalker",
+  "note": "flip horizontally in engine for opposite facing",
+  "walk": {
+    "frames": 6,
+    "frame_w": 470,
+    "frame_h": 215,
+    "fps": 12,
+    "loop": true,
+    "sheet": "walk.png",
+    "render_scale": 1.0
+  },
+  "walk_alt": {
+    "frames": 6,
+    "frame_w": 471,
+    "frame_h": 216,
+    "fps": 12,
+    "loop": true,
+    "sheet": "walk_alt.png",
+    "render_scale": 1.0
+  },
+  "attack": {
+    "frames": 7,
+    "frame_w": 454,
+    "frame_h": 268,
+    "fps": 14,
+    "loop": false,
+    "sheet": "attack.png",
+    "render_scale": 1.0
+  },
+  "special": {
+    "frames": 7,
+    "frame_w": 460,
+    "frame_h": 325,
+    "fps": 14,
+    "loop": false,
+    "sheet": "special.png",
+    "render_scale": 1.0
+  }
+}

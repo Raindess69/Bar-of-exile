@@ -1,0 +1,19 @@
+{
+  "mf_applies_from": "rare",
+  "mob_rarity_floor": {"magic_mob": "normal", "rare_mob": "magic", "act_boss": "rare"},
+  "relic_roll": 0.04,
+  "primal_roll": 0.006,
+  "scrap_share_decay": {"per_act_mult": 0.85, "floor": 40},
+  "tiers": [
+    {"id": "scrap",   "color": "#6b6b6b", "affixes": 0,            "stat_mult": 0.7, "base_weight": 220, "mf": false, "vendor_mult": 0.25, "salvage": "scrap_metal", "corrupt": false},
+    {"id": "normal",  "color": "#e8e8e8", "affixes": 0,            "base_weight": 300, "mf": false, "vendor_mult": 1.0},
+    {"id": "magic",   "color": "#4f8ff7", "affixes": [1, 2],       "base_weight": 300, "mf": false, "vendor_mult": 2.0},
+    {"id": "rare",    "color": "#f0d24a", "affixes": [3, 6], "affix_weights": [40, 35, 18, 7], "base_weight": 120, "mf": true, "vendor_mult": 5.0},
+    {"id": "exalted", "color": "#b06af5", "affixes": [4, 6], "affix_tier_floor": 3, "implicit": 1, "base_weight": 22, "mf": true, "vendor_mult": 15.0, "min_ilvl": 30},
+    {"id": "set",     "color": "#5fce62", "affixes": "fixed", "set_bonuses_at": [2, 3, 4], "base_weight": 5, "mf": true, "vendor_mult": 20.0, "min_ilvl": 25},
+    {"id": "unique",  "color": "#e07b2a", "affixes": "fixed", "base_weight": 2.5, "mf": true, "vendor_mult": 40.0},
+    {"id": "relic",   "color": "#e07b2a", "frame": "holo_foil", "base": "unique", "roll_mult": [1.15, 1.30], "extra_rare_affix": 1, "base_weight": 0.4, "mf": true, "vendor_mult": 150.0, "min_ilvl": 45},
+    {"id": "mythic",  "color": "#e0483a", "affixes": "fixed_uber", "extra_unique_mod": 1, "drop_sources": ["act_boss", "rift_boss"], "base_weight": 0.08, "mf": true, "vendor_mult": 500.0, "min_ilvl": 60},
+    {"id": "primal",  "frame": "rainbow_cycle", "base": ["unique", "mythic"], "all_rolls": "max", "star_floor": 3, "base_weight": 0.015, "mf": true, "vendor_mult": 2000.0, "min_ilvl": 75}
+  ]
+}

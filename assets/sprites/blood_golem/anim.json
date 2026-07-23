@@ -1,0 +1,31 @@
+{
+  "character": "blood_golem",
+  "note": "flip horizontally in engine for opposite facing",
+  "walk": {
+    "frames": 10,
+    "frame_w": 284,
+    "frame_h": 348,
+    "fps": 12,
+    "loop": true,
+    "sheet": "walk.png",
+    "render_scale": 1.0
+  },
+  "attack": {
+    "frames": 9,
+    "frame_w": 564,
+    "frame_h": 333,
+    "fps": 14,
+    "loop": false,
+    "sheet": "attack.png",
+    "render_scale": 1.0
+  },
+  "special": {
+    "frames": 6,
+    "frame_w": 565,
+    "frame_h": 324,
+    "fps": 14,
+    "loop": false,
+    "sheet": "special.png",
+    "render_scale": 1.0
+  }
+}

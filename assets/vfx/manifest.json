@@ -1,0 +1,374 @@
+{
+ "proj_mage": {
+  "frames": 16,
+  "fps": 22
+ },
+ "proj_arrow": {
+  "frames": 13,
+  "fps": 26
+ },
+ "levelup": {
+  "frames": 12,
+  "fps": 14
+ },
+ "blood_splatter": {
+  "frames": 8,
+  "fps": 16
+ },
+ "bright_sparks": {
+  "frames": 8,
+  "fps": 16
+ },
+ "dark_magic_explosion": {
+  "frames": 8,
+  "fps": 16
+ },
+ "holy_light_burst": {
+  "frames": 8,
+  "fps": 16
+ },
+ "poison_cloud": {
+  "frames": 9,
+  "fps": 14
+ },
+ "skill_cleave": {
+  "frames": 20,
+  "fps": 11
+ },
+ "skill_shield_slam": {
+  "frames": 16,
+  "fps": 14
+ },
+ "skill_war_cry": {
+  "frames": 22,
+  "fps": 14
+ },
+ "skill_ground_slam": {
+  "frames": 14,
+  "fps": 14
+ },
+ "skill_iron_will": {
+  "frames": 15,
+  "fps": 14
+ },
+ "skill_frenzy": {
+  "frames": 16,
+  "fps": 14
+ },
+ "skill_whirlwind": {
+  "frames": 14,
+  "fps": 14
+ },
+ "skill_rampage": {
+  "frames": 19,
+  "fps": 14
+ },
+ "skill_blood_thirst": {
+  "frames": 13,
+  "fps": 13
+ },
+ "skill_earthquake": {
+  "frames": 14,
+  "fps": 14
+ },
+ "skill_rain_of_arrows": {
+  "frames": 16,
+  "fps": 14
+ },
+ "skill_poison_arrow": {
+  "frames": 10,
+  "fps": 10
+ },
+ "skill_evasive_roll": {
+  "frames": 16,
+  "fps": 14
+ },
+ "skill_piercing_shot": {
+  "frames": 6,
+  "fps": 10
+ },
+ "skill_hunters_mark": {
+  "frames": 17,
+  "fps": 14
+ },
+ "skill_fireball": {
+  "frames": 19,
+  "fps": 14
+ },
+ "skill_chain_lightning": {
+  "frames": 20,
+  "fps": 14
+ },
+ "skill_frost_nova": {
+  "frames": 20,
+  "fps": 14
+ },
+ "skill_meteor": {
+  "frames": 20,
+  "fps": 14
+ },
+ "skill_ice_storm": {
+  "frames": 20,
+  "fps": 14
+ },
+ "skill_smite": {
+  "frames": 17,
+  "fps": 14
+ },
+ "skill_healing_prayer": {
+  "frames": 16,
+  "fps": 14
+ },
+ "skill_holy_nova": {
+  "frames": 6,
+  "fps": 11
+ },
+ "skill_consecration": {
+  "frames": 10,
+  "fps": 10
+ },
+ "skill_divine_shield": {
+  "frames": 9,
+  "fps": 10
+ },
+ "skill_ancestral_spirit": {
+  "frames": 8,
+  "fps": 11
+ },
+ "skill_arcane_orb": {
+  "frames": 17,
+  "fps": 11
+ },
+ "skill_avatar_of_war": {
+  "frames": 17,
+  "fps": 11
+ },
+ "skill_battle_roar": {
+  "frames": 19,
+  "fps": 11
+ },
+ "skill_blade_storm": {
+  "frames": 14,
+  "fps": 11
+ },
+ "skill_bloodthirst": {
+  "frames": 15,
+  "fps": 11
+ },
+ "skill_caltrops": {
+  "frames": 12,
+  "fps": 11
+ },
+ "skill_cataclysm": {
+  "frames": 6,
+  "fps": 11
+ },
+ "skill_executioners_swing": {
+  "frames": 14,
+  "fps": 11
+ },
+ "skill_explosive_arrow": {
+  "frames": 8,
+  "fps": 11
+ },
+ "skill_fire_bolt": {
+  "frames": 9,
+  "fps": 11
+ },
+ "skill_frost_bolt": {
+  "frames": 9,
+  "fps": 11
+ },
+ "skill_hawk_eye": {
+  "frames": 15,
+  "fps": 11
+ },
+ "skill_heal": {
+  "frames": 5,
+  "fps": 11
+ },
+ "skill_ice_nova": {
+  "frames": 15,
+  "fps": 11
+ },
+ "skill_lightning_arrow": {
+  "frames": 7,
+  "fps": 11
+ },
+ "skill_purifying_flame": {
+  "frames": 14,
+  "fps": 11
+ },
+ "skill_rupture": {
+  "frames": 13,
+  "fps": 11
+ },
+ "skill_sanctuary": {
+  "frames": 17,
+  "fps": 11
+ },
+ "skill_skullsplitter": {
+  "frames": 17,
+  "fps": 11
+ },
+ "skill_snipe": {
+  "frames": 9,
+  "fps": 11
+ },
+ "skill_split_arrow": {
+  "frames": 10,
+  "fps": 11
+ },
+ "skill_wind_dancer": {
+  "frames": 14,
+  "fps": 11
+ },
+ "skill_battle_standard": {
+  "frames": 27,
+  "fps": 11
+ },
+ "skill_frost_ward": {
+  "frames": 18,
+  "fps": 11
+ },
+ "skill_phantom_volley": {
+  "frames": 12,
+  "fps": 11
+ },
+ "skill_barrage": {
+  "frames": 7,
+  "fps": 11
+ },
+ "skill_celestial_strike": {
+  "frames": 14,
+  "fps": 11
+ },
+ "skill_bloodlust": {
+  "frames": 16,
+  "fps": 11
+ },
+ "skill_defiance": {
+  "frames": 16,
+  "fps": 11
+ },
+ "skill_wrath_of_the_ancients": {
+  "frames": 17,
+  "fps": 11
+ },
+ "skill_blessing_of_might": {
+  "frames": 6,
+  "fps": 11
+ },
+ "skill_arcane_missile": {
+  "frames": 5,
+  "fps": 11
+ },
+ "skill_archmage": {
+  "frames": 17,
+  "fps": 11
+ },
+ "skill_arrow_storm": {
+  "frames": 20,
+  "fps": 11
+ },
+ "skill_avatar_of_light": {
+  "frames": 4,
+  "fps": 11
+ },
+ "skill_berserker_rage": {
+  "frames": 16,
+  "fps": 11
+ },
+ "skill_decapitate": {
+  "frames": 12,
+  "fps": 11
+ },
+ "skill_divine_hammer": {
+  "frames": 5,
+  "fps": 11
+ },
+ "skill_elemental_attunement": {
+  "frames": 17,
+  "fps": 11
+ },
+ "skill_frost_beam": {
+  "frames": 24,
+  "fps": 11
+ },
+ "skill_holy_bolt": {
+  "frames": 8,
+  "fps": 11
+ },
+ "skill_leap_slam": {
+  "frames": 15,
+  "fps": 11
+ },
+ "skill_mark_for_death": {
+  "frames": 17,
+  "fps": 11
+ },
+ "skill_mirror_image": {
+  "frames": 16,
+  "fps": 11
+ },
+ "skill_precise_strike": {
+  "frames": 6,
+  "fps": 11
+ },
+ "skill_radiant_lance": {
+  "frames": 12,
+  "fps": 11
+ },
+ "skill_savage_chop": {
+  "frames": 4,
+  "fps": 11
+ },
+ "skill_seismic_slam": {
+  "frames": 13,
+  "fps": 11
+ },
+ "skill_shield_bash": {
+  "frames": 9,
+  "fps": 11
+ },
+ "skill_shockwave": {
+  "frames": 16,
+  "fps": 11
+ },
+ "skill_slash": {
+  "frames": 13,
+  "fps": 11
+ },
+ "skill_spark": {
+  "frames": 10,
+  "fps": 11
+ },
+ "skill_time_warp": {
+  "frames": 13,
+  "fps": 11
+ },
+ "skill_toxic_volley": {
+  "frames": 15,
+  "fps": 11
+ },
+ "skill_wrath_of_light": {
+  "frames": 15,
+  "fps": 11
+ },
+ "skill_judgement": {
+  "frames": 10,
+  "fps": 11
+ },
+ "skill_last_rites": {
+  "frames": 4,
+  "fps": 11
+ },
+ "skill_ancient_fury": {
+  "frames": 8,
+  "fps": 11
+ },
+ "skill_undying_rage": {
+  "frames": 15,
+  "fps": 11
+ }
+}

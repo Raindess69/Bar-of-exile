@@ -1,0 +1,40 @@
+{
+  "character": "giant_spider",
+  "note": "flip horizontally in engine for opposite facing",
+  "walk": {
+    "frames": 8,
+    "frame_w": 357,
+    "frame_h": 169,
+    "fps": 12,
+    "loop": true,
+    "sheet": "walk.png",
+    "render_scale": 1.0
+  },
+  "walk_alt": {
+    "frames": 8,
+    "frame_w": 357,
+    "frame_h": 168,
+    "fps": 12,
+    "loop": true,
+    "sheet": "walk_alt.png",
+    "render_scale": 1.0
+  },
+  "attack": {
+    "frames": 8,
+    "frame_w": 358,
+    "frame_h": 222,
+    "fps": 14,
+    "loop": false,
+    "sheet": "attack.png",
+    "render_scale": 1.0
+  },
+  "special": {
+    "frames": 6,
+    "frame_w": 358,
+    "frame_h": 249,
+    "fps": 14,
+    "loop": false,
+    "sheet": "special.png",
+    "render_scale": 0.76
+  }
+}

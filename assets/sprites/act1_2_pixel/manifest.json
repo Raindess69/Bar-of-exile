@@ -1,0 +1,264 @@
+{
+ "source": "act1_2_pixel.jpeg",
+ "rows": [
+  {
+   "mob": "row_00",
+   "y": [
+    13,
+    52
+   ],
+   "anims": {
+    "all": {
+     "frames": 27,
+     "canvas": [
+      38,
+      39
+     ]
+    }
+   }
+  },
+  {
+   "mob": "row_01",
+   "y": [
+    60,
+    108
+   ],
+   "anims": {
+    "walk": {
+     "frames": 11,
+     "canvas": [
+      18,
+      23
+     ]
+    },
+    "attack": {
+     "frames": 35,
+     "canvas": [
+      26,
+      34
+     ]
+    }
+   }
+  },
+  {
+   "mob": "row_02",
+   "y": [
+    123,
+    194
+   ],
+   "anims": {
+    "all": {
+     "frames": 32,
+     "canvas": [
+      69,
+      71
+     ]
+    }
+   }
+  },
+  {
+   "mob": "row_03",
+   "y": [
+    204,
+    313
+   ],
+   "anims": {
+    "walk": {
+     "frames": 19,
+     "canvas": [
+      62,
+      108
+     ]
+    },
+    "attack": {
+     "frames": 16,
+     "canvas": [
+      62,
+      92
+     ]
+    }
+   }
+  },
+  {
+   "mob": "row_04",
+   "y": [
+    322,
+    431
+   ],
+   "anims": {
+    "all": {
+     "frames": 36,
+     "canvas": [
+      79,
+      109
+     ]
+    }
+   }
+  },
+  {
+   "mob": "row_05",
+   "y": [
+    473,
+    548
+   ],
+   "anims": {
+    "walk": {
+     "frames": 16,
+     "canvas": [
+      70,
+      53
+     ]
+    },
+    "attack": {
+     "frames": 16,
+     "canvas": [
+      75,
+      73
+     ]
+    }
+   }
+  },
+  {
+   "mob": "row_06",
+   "y": [
+    593,
+    663
+   ],
+   "anims": {
+    "all": {
+     "frames": 32,
+     "canvas": [
+      72,
+      70
+     ]
+    }
+   }
+  },
+  {
+   "mob": "row_07",
+   "y": [
+    699,
+    785
+   ],
+   "anims": {
+    "all": {
+     "frames": 32,
+     "canvas": [
+      65,
+      86
+     ]
+    }
+   }
+  },
+  {
+   "mob": "row_08",
+   "y": [
+    819,
+    913
+   ],
+   "anims": {
+    "all": {
+     "frames": 32,
+     "canvas": [
+      66,
+      93
+     ]
+    }
+   }
+  },
+  {
+   "mob": "row_09",
+   "y": [
+    922,
+    1026
+   ],
+   "anims": {
+    "all": {
+     "frames": 32,
+     "canvas": [
+      83,
+      100
+     ]
+    }
+   }
+  },
+  {
+   "mob": "row_10",
+   "y": [
+    1079,
+    1151
+   ],
+   "anims": {
+    "walk": {
+     "frames": 16,
+     "canvas": [
+      80,
+      64
+     ]
+    },
+    "attack": {
+     "frames": 16,
+     "canvas": [
+      82,
+      72
+     ]
+    }
+   }
+  },
+  {
+   "mob": "row_11",
+   "y": [
+    1187,
+    1271
+   ],
+   "anims": {
+    "walk": {
+     "frames": 16,
+     "canvas": [
+      72,
+      74
+     ]
+    },
+    "attack": {
+     "frames": 16,
+     "canvas": [
+      76,
+      84
+     ]
+    }
+   }
+  },
+  {
+   "mob": "row_12",
+   "y": [
+    1278,
+    1395
+   ],
+   "anims": {
+    "all": {
+     "frames": 32,
+     "canvas": [
+      77,
+      116
+     ]
+    }
+   }
+  },
+  {
+   "mob": "row_13",
+   "y": [
+    1433,
+    1521
+   ],
+   "anims": {
+    "all": {
+     "frames": 32,
+     "canvas": [
+      79,
+      87
+     ]
+    }
+   }
+  }
+ ]
+}

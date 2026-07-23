@@ -1,0 +1,31 @@
+{
+  "character": "sand_leaper_v2",
+  "note": "flip horizontally in engine for opposite facing",
+  "walk": {
+    "frames": 16,
+    "frame_w": 339,
+    "frame_h": 154,
+    "fps": 12,
+    "loop": true,
+    "sheet": "walk.png",
+    "render_scale": 1.0
+  },
+  "attack": {
+    "frames": 16,
+    "frame_w": 340,
+    "frame_h": 148,
+    "fps": 14,
+    "loop": false,
+    "sheet": "attack.png",
+    "render_scale": 1.0
+  },
+  "special": {
+    "frames": 7,
+    "frame_w": 780,
+    "frame_h": 422,
+    "fps": 14,
+    "loop": false,
+    "sheet": "special.png",
+    "render_scale": 0.42
+  }
+}

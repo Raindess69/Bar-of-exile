@@ -1,0 +1,22 @@
+{
+  "character": "living_armor",
+  "note": "flip horizontally in engine for opposite facing",
+  "walk": {
+    "frames": 10,
+    "frame_w": 249,
+    "frame_h": 423,
+    "fps": 12,
+    "loop": true,
+    "sheet": "walk.png",
+    "render_scale": 1.0
+  },
+  "attack": {
+    "frames": 10,
+    "frame_w": 414,
+    "frame_h": 612,
+    "fps": 14,
+    "loop": false,
+    "sheet": "attack.png",
+    "render_scale": 1.0
+  }
+}

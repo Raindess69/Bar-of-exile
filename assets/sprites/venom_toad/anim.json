@@ -1,0 +1,31 @@
+{
+  "character": "venom_toad",
+  "note": "flip horizontally in engine for opposite facing",
+  "walk": {
+    "frames": 15,
+    "frame_w": 277,
+    "frame_h": 285,
+    "fps": 12,
+    "loop": true,
+    "sheet": "walk.png",
+    "render_scale": 1.0
+  },
+  "attack": {
+    "frames": 6,
+    "frame_w": 566,
+    "frame_h": 201,
+    "fps": 14,
+    "loop": false,
+    "sheet": "attack.png",
+    "render_scale": 1.0
+  },
+  "special": {
+    "frames": 9,
+    "frame_w": 559,
+    "frame_h": 199,
+    "fps": 14,
+    "loop": false,
+    "sheet": "special.png",
+    "render_scale": 1.0
+  }
+}

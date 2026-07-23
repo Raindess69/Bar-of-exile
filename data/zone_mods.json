@@ -1,0 +1,127 @@
+{
+  "_comment": "Bar of Exile 6.5 zone auto-mods pool v1. danger_pct feeds the one-line UI summary (DANGER +X% -> REWARD +Y%). effects = per-spawn danger applied by zone_mods.apply_to_monster; reward = zone-local rider (xp/drop_qty/gold ONLY, never global stats). Numbers are canon from BALANCE_PASS_STAGE6 6.5.",
+  "version": 1,
+  "mods": [
+    {
+      "id": "ferocity",
+      "name": "Ferocious",
+      "danger_desc": "Monsters deal 30% increased damage",
+      "danger_pct": 30,
+      "effects": [
+        {"kind": "stat_mult", "stat": "damage_min", "mult": 1.30},
+        {"kind": "stat_mult", "stat": "damage_max", "mult": 1.30}
+      ],
+      "reward": {"kind": "xp", "pct": 14}
+    },
+    {
+      "id": "vitality",
+      "name": "Vigorous",
+      "danger_desc": "Monsters have 40% increased life",
+      "danger_pct": 40,
+      "effects": [
+        {"kind": "stat_mult", "stat": "life", "mult": 1.40}
+      ],
+      "reward": {"kind": "xp", "pct": 14}
+    },
+    {
+      "id": "horde",
+      "name": "Teeming",
+      "danger_desc": "Packs are 30% larger",
+      "danger_pct": 30,
+      "effects": [
+        {"kind": "spawn", "flag": "zm_horde", "attr": "zm_pack_mult", "value": 1.30}
+      ],
+      "reward": {"kind": "drop_qty", "pct": 12}
+    },
+    {
+      "id": "swiftness",
+      "name": "Swift",
+      "danger_desc": "Monsters move 15% faster",
+      "danger_pct": 15,
+      "effects": [
+        {"kind": "stat_mult", "stat": "move_speed", "mult": 1.15}
+      ],
+      "reward": {"kind": "xp", "pct": 8}
+    },
+    {
+      "id": "champions",
+      "name": "Warband",
+      "danger_desc": "Contains 2 additional champion packs",
+      "danger_pct": 40,
+      "effects": [
+        {"kind": "spawn", "flag": "zm_champions", "attr": "zm_extra_champ_packs", "value": 2}
+      ],
+      "reward": {"kind": "drop_qty", "pct": 15}
+    },
+    {
+      "id": "deadly",
+      "name": "Deadly",
+      "danger_desc": "Monsters have +10% critical strike chance",
+      "danger_pct": 10,
+      "effects": [
+        {"kind": "stat_add", "stat": "crit_chance", "add": 10.0}
+      ],
+      "reward": {"kind": "xp", "pct": 10}
+    },
+    {
+      "id": "burning",
+      "name": "Smouldering",
+      "danger_desc": "Monsters deal 20% of their damage as extra fire",
+      "danger_pct": 20,
+      "effects": [
+        {"kind": "flag", "flag": "zm_burning", "attr": "zm_fire_pct", "value": 0.20}
+      ],
+      "reward": {"kind": "gold", "pct": 10}
+    },
+    {
+      "id": "toxic",
+      "name": "Toxic",
+      "danger_desc": "Monster hits apply poison",
+      "danger_pct": 15,
+      "effects": [
+        {"kind": "flag", "flag": "zm_toxic", "attr": "zm_poison", "value": true}
+      ],
+      "reward": {"kind": "gold", "pct": 10}
+    },
+    {
+      "id": "draining",
+      "name": "Draining",
+      "danger_desc": "Hero life leech is 30% less effective",
+      "danger_pct": 30,
+      "effects": [
+        {"kind": "hero", "flag": "zm_draining", "stat": "life_leech", "mult": 0.70}
+      ],
+      "reward": {"kind": "xp", "pct": 12}
+    },
+    {
+      "id": "armored",
+      "name": "Ironclad",
+      "danger_desc": "Monsters have 50% increased armour",
+      "danger_pct": 50,
+      "effects": [
+        {"kind": "stat_mult", "stat": "armor", "mult": 1.50}
+      ],
+      "reward": {"kind": "drop_qty", "pct": 10}
+    },
+    {
+      "id": "frenzied",
+      "name": "Frenzied",
+      "danger_desc": "Monsters attack 20% faster",
+      "danger_pct": 20,
+      "effects": [
+        {"kind": "stat_mult", "stat": "attack_speed", "mult": 1.20}
+      ],
+      "reward": {"kind": "xp", "pct": 12}
+    },
+    {
+      "id": "unstable",
+      "name": "Volatile",
+      "danger_desc": "Monsters explode on death for 30% of their damage",
+      "danger_pct": 30,
+      "effects": [
+        {"kind": "flag", "flag": "zm_unstable", "attr": "zm_explode_pct", "value": 0.30}
+      ],
+      "reward": {"kind": "gold", "pct": 18}
+    }
+  ]
+}

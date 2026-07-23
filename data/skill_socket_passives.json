@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "kind": "skill_socket_passives",
+    "game": "Bar of Exile",
+    "rules": "Each skill unlocks 1 socket per 10 hero levels (cap 3). Each socket holds one passive. The same passive cannot be slotted twice in one skill. Future: swap these for runes."
+  },
+  "passives": [
+    {"id": "sp_power", "name": "Power", "desc": "+25% skill damage", "damage_inc": 25},
+    {"id": "sp_swift", "name": "Swiftness", "desc": "-20% cooldown", "cooldown_mult": 0.80},
+    {"id": "sp_focus", "name": "Focus", "desc": "+15% damage, -10% cooldown", "damage_inc": 15, "cooldown_mult": 0.90},
+    {"id": "sp_savage", "name": "Savagery", "desc": "+40% damage, +15% cooldown", "damage_inc": 40, "cooldown_mult": 1.15},
+    {"id": "sp_leech", "name": "Siphon", "desc": "Heal 3% of skill damage dealt", "leech_pct": 0.03}
+  ]
+}

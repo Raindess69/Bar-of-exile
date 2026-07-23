@@ -1,0 +1,59 @@
+# ── Python ─────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# ── Build output ───────────────────────────────────────
+dist/
+build/
+build_work/
+
+# ── Editor / OS ────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# ── Player saves (local user data) ─────────────────────
+saves/
+
+# ── Dev-only source material (not shipped) ─────────────
+new assets/
+_source/
+memory/
+
+# ── Root: dev logs / screenshots / one-off scripts ─────
+/_*.log
+/_*.png
+/_*.txt
+/_*.py
+
+# ── Root: dev journals (kept locally) ──────────────────
+/AUDIT_*.md
+/FIXLOG.md
+/ROADMAP.md
+/CLAUDE.md
+/CUBE_CORRUPTION_SPEC.md
+/ECONOMY_IDLE_SPEC.md
+
+# ── docs/: keep only GAME_BIBLE.md; the rest is sim/dev output ─
+docs/_*
+docs/sim_*
+docs/sweep_*
+docs/xpa_*
+docs/tree_preview.png
+
+# ── ui/: dev screenshots ───────────────────────────────
+ui/_*.png
+
+# ── tools/: dev probes (real tools have no leading underscore) ─
+tools/_*.py
+tools/_*.txt
+
+# ── assets/: temp backups (spec already skips these) ───
+assets/**/_tmp_*

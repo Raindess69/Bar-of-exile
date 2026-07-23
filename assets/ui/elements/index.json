@@ -1,0 +1,26 @@
+{
+  "files": {
+    "orb_health_full.png": "health orb 100%",
+    "orb_health_85.png": "health orb 85%",
+    "orb_health_70.png": "health orb 70%",
+    "orb_health_55.png": "health orb 55%",
+    "orb_health_40.png": "health orb 40%",
+    "orb_health_25.png": "health orb 25%",
+    "orb_health_10.png": "health orb 10%",
+    "orb_health_empty.png": "health orb empty",
+    "orb_mana_full.png": "mana orb 100%",
+    "orb_mana_85.png": "mana orb 85%",
+    "orb_mana_70.png": "mana orb 70%",
+    "orb_mana_55.png": "mana orb 55%",
+    "orb_mana_40.png": "mana orb 40%",
+    "orb_mana_25.png": "mana orb 25%",
+    "orb_mana_10.png": "mana orb 10%",
+    "orb_mana_empty.png": "mana orb empty",
+    "status_poison.png": "poison status, green drop",
+    "status_freeze.png": "freeze status, snowflake",
+    "status_stun.png": "stun status, circling stars",
+    "status_burn.png": "burn status, flame",
+    "status_bleed.png": "bleed status, blood drop",
+    "status_curse.png": "curse status, purple skull"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "character": "slime",
+  "note": "flip horizontally in engine for opposite facing",
+  "walk": {
+    "frames": 7,
+    "frame_w": 525,
+    "frame_h": 187,
+    "fps": 12,
+    "loop": true,
+    "sheet": "walk.png",
+    "render_scale": 1.0
+  },
+  "attack": {
+    "frames": 8,
+    "frame_w": 375,
+    "frame_h": 234,
+    "fps": 14,
+    "loop": false,
+    "sheet": "attack.png",
+    "render_scale": 0.682
+  },
+  "special": {
+    "frames": 9,
+    "frame_w": 403,
+    "frame_h": 325,
+    "fps": 14,
+    "loop": false,
+    "sheet": "special.png",
+    "render_scale": 0.628
+  }
+}

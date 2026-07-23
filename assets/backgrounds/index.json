@@ -1,0 +1,18 @@
+{
+  "themes": {
+    "beach": ["strip_00.png"],
+    "cave": ["strip_09.png", "strip_08.png", "strip_12.png"],
+    "desert": ["strip_04.png"],
+    "forest": ["strip_02.png"],
+    "jungle": ["strip_06.png", "strip_14.png"],
+    "ruins": ["strip_03.png", "strip_16.png"],
+    "swamp": ["strip_01.png"],
+    "temple": ["strip_15.png"],
+    "tomb": ["strip_13.png", "strip_05.png"]
+  },
+  "extra": {
+    "camp": ["strip_07.png"],
+    "lava": ["strip_10.png"],
+    "wasteland": ["strip_11.png"]
+  }
+}

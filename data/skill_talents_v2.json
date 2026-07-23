@@ -1,0 +1,166 @@
+{
+ "meta": {
+  "kind": "skill_talents_v2",
+  "game": "Bar of Exile",
+  "version": 1,
+  "source": "новый приколы/SKILLS_MECHANICS_V2.md §3",
+  "rule": "Per skill, each tier offers 3 options drawn from its pool, filtered by the skill's tags (tags_any). Rank-20 tier serves 1.5x juiced values. Pick 1 of 3.",
+  "respec_gold": "100 * hero_level"
+ },
+ "tiers": [
+  {
+   "rank": 5,
+   "pool": "offense",
+   "juice": 1.0
+  },
+  {
+   "rank": 10,
+   "pool": "tempo",
+   "juice": 1.0
+  },
+  {
+   "rank": 15,
+   "pool": "utility",
+   "juice": 1.0
+  },
+  {
+   "rank": 20,
+   "pool": "offense",
+   "juice": 1.5
+  }
+ ],
+ "pools": {
+  "offense": [
+   {
+    "id": "off_more",
+    "name": "Overpower",
+    "desc": "+10% more damage",
+    "mods": {
+     "more_dmg_pct": 10
+    }
+   },
+   {
+    "id": "off_as",
+    "name": "Frenzied",
+    "desc": "+12% attack speed",
+    "mods": {
+     "attack_speed_pct": 12
+    }
+   },
+   {
+    "id": "off_cc",
+    "name": "Deadly Aim",
+    "desc": "+20% crit chance",
+    "mods": {
+     "crit_chance_pct": 20
+    }
+   },
+   {
+    "id": "off_cm",
+    "name": "Brutality",
+    "desc": "+30% crit multiplier",
+    "mods": {
+     "crit_multi_pct": 30
+    }
+   }
+  ],
+  "tempo": [
+   {
+    "id": "tmp_cd",
+    "name": "Quickened",
+    "desc": "-25% cooldown",
+    "mods": {
+     "cooldown_pct": -25
+    }
+   },
+   {
+    "id": "tmp_extra",
+    "name": "Ricochet",
+    "desc": "+1 chain / pierce / target",
+    "mods": {
+     "extra_targets": 1
+    },
+    "tags_any": [
+     "aoe",
+     "proj",
+     "melee"
+    ]
+   },
+   {
+    "id": "tmp_inc",
+    "name": "Amplify",
+    "desc": "+15% increased damage",
+    "mods": {
+     "inc_dmg_pct": 15
+    }
+   },
+   {
+    "id": "tmp_mana",
+    "name": "Efficient",
+    "desc": "-8% skill cooldown",
+    "mods": {
+     "cooldown_pct": -8
+    }
+   }
+  ],
+  "utility": [
+   {
+    "id": "utl_dur",
+    "name": "Lingering",
+    "desc": "+20% effect duration",
+    "mods": {
+     "duration_pct": 20
+    }
+   },
+   {
+    "id": "utl_leech",
+    "name": "Bloodthirsty",
+    "desc": "+10% lifesteal",
+    "mods": {
+     "lifesteal_pct": 10
+    },
+    "tags_any": [
+     "melee"
+    ]
+   },
+   {
+    "id": "utl_projspd",
+    "name": "Swift Shot",
+    "desc": "+15% projectile speed",
+    "mods": {
+     "proj_speed_pct": 15
+    },
+    "tags_any": [
+     "proj"
+    ]
+   },
+   {
+    "id": "utl_radius",
+    "name": "Expansive",
+    "desc": "+25% radius",
+    "mods": {
+     "radius_pct": 25
+    },
+    "tags_any": [
+     "aoe"
+    ]
+   },
+   {
+    "id": "utl_ailment",
+    "name": "Virulent",
+    "desc": "+15% ailment chance",
+    "mods": {
+     "ailment_chance_pct": 15
+    },
+    "tags_any": [
+     "dot",
+     "bleed",
+     "poison",
+     "fire",
+     "cold",
+     "light"
+    ]
+   }
+  ]
+ }
+}

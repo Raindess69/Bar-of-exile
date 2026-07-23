@@ -1,0 +1,52 @@
+{
+  "mage_bolt": {
+    "frames": [
+      "frame_00.png",
+      "frame_01.png",
+      "frame_02.png",
+      "frame_03.png",
+      "frame_04.png",
+      "frame_05.png",
+      "frame_06.png",
+      "frame_07.png",
+      "frame_08.png",
+      "frame_09.png"
+    ],
+    "w": 334,
+    "h": 108,
+    "loop": true
+  },
+  "mage_impact": {
+    "frames": [
+      "frame_00.png",
+      "frame_01.png",
+      "frame_02.png",
+      "frame_03.png",
+      "frame_04.png",
+      "frame_05.png"
+    ],
+    "w": 978,
+    "h": 582,
+    "loop": false
+  },
+  "arrow": {
+    "frames": [
+      "frame_00.png",
+      "frame_01.png",
+      "frame_02.png",
+      "frame_03.png",
+      "frame_04.png",
+      "frame_05.png",
+      "frame_06.png",
+      "frame_07.png",
+      "frame_08.png",
+      "frame_09.png",
+      "frame_10.png",
+      "frame_11.png",
+      "frame_12.png"
+    ],
+    "w": 250,
+    "h": 115,
+    "loop": true
+  }
+}

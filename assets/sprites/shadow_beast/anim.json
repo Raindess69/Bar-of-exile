@@ -1,0 +1,40 @@
+{
+  "character": "shadow_beast",
+  "note": "flip horizontally in engine for opposite facing",
+  "walk": {
+    "frames": 6,
+    "frame_w": 465,
+    "frame_h": 216,
+    "fps": 12,
+    "loop": true,
+    "sheet": "walk.png",
+    "render_scale": 1.0
+  },
+  "walk_alt": {
+    "frames": 6,
+    "frame_w": 462,
+    "frame_h": 217,
+    "fps": 12,
+    "loop": true,
+    "sheet": "walk_alt.png",
+    "render_scale": 1.0
+  },
+  "attack": {
+    "frames": 7,
+    "frame_w": 503,
+    "frame_h": 251,
+    "fps": 14,
+    "loop": false,
+    "sheet": "attack.png",
+    "render_scale": 1.0
+  },
+  "special": {
+    "frames": 7,
+    "frame_w": 723,
+    "frame_h": 267,
+    "fps": 14,
+    "loop": false,
+    "sheet": "special.png",
+    "render_scale": 1.0
+  }
+}

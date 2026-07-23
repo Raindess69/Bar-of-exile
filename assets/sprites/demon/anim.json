@@ -1,0 +1,31 @@
+{
+  "character": "demon",
+  "note": "flip horizontally in engine for opposite facing",
+  "walk": {
+    "frames": 10,
+    "frame_w": 300,
+    "frame_h": 337,
+    "fps": 12,
+    "loop": true,
+    "sheet": "walk.png",
+    "render_scale": 1.0
+  },
+  "attack": {
+    "frames": 10,
+    "frame_w": 300,
+    "frame_h": 304,
+    "fps": 14,
+    "loop": false,
+    "sheet": "attack.png",
+    "render_scale": 1.0
+  },
+  "special": {
+    "frames": 6,
+    "frame_w": 1251,
+    "frame_h": 360,
+    "fps": 14,
+    "loop": false,
+    "sheet": "special.png",
+    "render_scale": 1.0
+  }
+}

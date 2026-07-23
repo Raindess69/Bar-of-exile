@@ -1,0 +1,5 @@
+PyQt6>=6.5
+Pillow>=10.0
+
+# ── dev / testing ─────────────
+pytest>=7.4

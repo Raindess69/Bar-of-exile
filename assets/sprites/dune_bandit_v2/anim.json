@@ -1,0 +1,13 @@
+{
+  "character": "dune_bandit_v2",
+  "note": "flip horizontally in engine for opposite facing",
+  "walk": {
+    "frames": 10,
+    "frame_w": 333,
+    "frame_h": 548,
+    "fps": 12,
+    "loop": true,
+    "sheet": "walk.png",
+    "render_scale": 1.0
+  }
+}

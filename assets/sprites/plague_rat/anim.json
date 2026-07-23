@@ -1,0 +1,40 @@
+{
+  "character": "plague_rat",
+  "note": "flip horizontally in engine for opposite facing",
+  "walk": {
+    "frames": 5,
+    "frame_w": 668,
+    "frame_h": 263,
+    "fps": 12,
+    "loop": true,
+    "sheet": "walk.png",
+    "render_scale": 1.0
+  },
+  "walk_alt": {
+    "frames": 10,
+    "frame_w": 633,
+    "frame_h": 228,
+    "fps": 12,
+    "loop": true,
+    "sheet": "walk_alt.png",
+    "render_scale": 1.96
+  },
+  "attack": {
+    "frames": 6,
+    "frame_w": 597,
+    "frame_h": 285,
+    "fps": 14,
+    "loop": false,
+    "sheet": "attack.png",
+    "render_scale": 1.0
+  },
+  "special": {
+    "frames": 6,
+    "frame_w": 1103,
+    "frame_h": 291,
+    "fps": 14,
+    "loop": false,
+    "sheet": "special.png",
+    "render_scale": 1.0
+  }
+}

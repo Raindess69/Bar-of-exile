@@ -1,0 +1,14 @@
+{
+  "world": "world.png",
+  "themes": {
+    "beach": "thumb_beach.png",
+    "swamp": "thumb_swamp.png",
+    "forest": "thumb_forest.png",
+    "cave": "thumb_cave.png",
+    "ruins": "thumb_ruins.png",
+    "desert": "thumb_desert.png",
+    "tomb": "thumb_tomb.png",
+    "temple": "thumb_temple.png",
+    "jungle": "thumb_jungle.png"
+  }
+}

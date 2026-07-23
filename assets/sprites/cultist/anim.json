@@ -1,0 +1,22 @@
+{
+  "character": "cultist",
+  "note": "flip horizontally in engine for opposite facing",
+  "walk": {
+    "frames": 12,
+    "frame_w": 210,
+    "frame_h": 360,
+    "fps": 12,
+    "loop": true,
+    "sheet": "walk.png",
+    "render_scale": 1.0
+  },
+  "attack": {
+    "frames": 12,
+    "frame_w": 345,
+    "frame_h": 343,
+    "fps": 14,
+    "loop": false,
+    "sheet": "attack.png",
+    "render_scale": 1.0
+  }
+}

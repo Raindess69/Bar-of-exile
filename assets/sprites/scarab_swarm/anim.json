@@ -1,0 +1,40 @@
+{
+  "character": "scarab_swarm",
+  "note": "flip horizontally in engine for opposite facing",
+  "walk": {
+    "frames": 7,
+    "frame_w": 374,
+    "frame_h": 203,
+    "fps": 12,
+    "loop": true,
+    "sheet": "walk.png",
+    "render_scale": 1.0
+  },
+  "walk_alt": {
+    "frames": 6,
+    "frame_w": 401,
+    "frame_h": 211,
+    "fps": 12,
+    "loop": true,
+    "sheet": "walk_alt.png",
+    "render_scale": 1.0
+  },
+  "attack": {
+    "frames": 7,
+    "frame_w": 426,
+    "frame_h": 263,
+    "fps": 14,
+    "loop": false,
+    "sheet": "attack.png",
+    "render_scale": 1.0
+  },
+  "special": {
+    "frames": 6,
+    "frame_w": 377,
+    "frame_h": 257,
+    "fps": 14,
+    "loop": false,
+    "sheet": "special.png",
+    "render_scale": 1.0
+  }
+}

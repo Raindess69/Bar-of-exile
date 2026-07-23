@@ -1,0 +1,40 @@
+{
+  "character": "tomb_serpent",
+  "note": "flip horizontally in engine for opposite facing",
+  "walk": {
+    "frames": 6,
+    "frame_w": 471,
+    "frame_h": 261,
+    "fps": 12,
+    "loop": true,
+    "sheet": "walk.png",
+    "render_scale": 1.0
+  },
+  "walk_alt": {
+    "frames": 6,
+    "frame_w": 462,
+    "frame_h": 261,
+    "fps": 12,
+    "loop": true,
+    "sheet": "walk_alt.png",
+    "render_scale": 1.0
+  },
+  "attack": {
+    "frames": 6,
+    "frame_w": 544,
+    "frame_h": 250,
+    "fps": 14,
+    "loop": false,
+    "sheet": "attack.png",
+    "render_scale": 1.0
+  },
+  "special": {
+    "frames": 5,
+    "frame_w": 540,
+    "frame_h": 252,
+    "fps": 14,
+    "loop": false,
+    "sheet": "special.png",
+    "render_scale": 0.794
+  }
+}

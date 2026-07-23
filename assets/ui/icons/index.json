@@ -1,0 +1,8 @@
+{
+  "files": {
+    "marker_quest.png": "gold exclamation quest marker",
+    "marker_waypoint.png": "blue waypoint pin",
+    "marker_boss.png": "red horned skull boss marker",
+    "marker_portal.png": "green swirl portal marker"
+  }
+}

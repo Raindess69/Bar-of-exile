@@ -1,0 +1,31 @@
+{
+  "character": "abomination",
+  "note": "flip horizontally in engine for opposite facing",
+  "walk": {
+    "frames": 16,
+    "frame_w": 387,
+    "frame_h": 384,
+    "fps": 12,
+    "loop": true,
+    "sheet": "walk.png",
+    "render_scale": 1.0
+  },
+  "attack": {
+    "frames": 8,
+    "frame_w": 364,
+    "frame_h": 296,
+    "fps": 14,
+    "loop": false,
+    "sheet": "attack.png",
+    "render_scale": 1.407
+  },
+  "special": {
+    "frames": 8,
+    "frame_w": 363,
+    "frame_h": 337,
+    "fps": 14,
+    "loop": false,
+    "sheet": "special.png",
+    "render_scale": 1.0
+  }
+}

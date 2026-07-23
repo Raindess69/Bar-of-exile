@@ -1,0 +1,22 @@
+{
+  "character": "fallen_shaman",
+  "note": "flip horizontally in engine for opposite facing",
+  "walk": {
+    "frames": 10,
+    "frame_w": 294,
+    "frame_h": 411,
+    "fps": 12,
+    "loop": true,
+    "sheet": "walk.png",
+    "render_scale": 1.0
+  },
+  "attack": {
+    "frames": 6,
+    "frame_w": 1044,
+    "frame_h": 584,
+    "fps": 14,
+    "loop": false,
+    "sheet": "attack.png",
+    "render_scale": 1.0
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "files": {
+    "frame_slot.png": "dark item slot",
+    "frame_slot_magic.png": "blue-rimmed item slot (magic)",
+    "frame_slot_rare.png": "gold-rimmed item slot (rare)",
+    "frame_slot_unique.png": "dark ornate item slot (unique)",
+    "frame_slot_stone.png": "large stone slot",
+    "frame_corner.png": "stone panel corner piece",
+    "frame_tooltip.png": "item-name tooltip plaque",
+    "frame_panel_paper.png": "paper panel background"
+  }
+}
