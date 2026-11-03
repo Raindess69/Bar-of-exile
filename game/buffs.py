@@ -32,7 +32,7 @@ Notes:
 """
 from __future__ import annotations
 
-from game.core import Hero, StatMod
+from game.core import StatMod
 
 # param key -> (Stats field, bucket). "inc" = percent-increase bucket, "flat" =
 # flat add. Percent-damage buffs all funnel into the additive damage_inc bucket.

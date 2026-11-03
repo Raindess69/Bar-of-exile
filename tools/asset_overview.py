@@ -2,9 +2,7 @@
 One representative (middle) frame per folder, downscaled, labelled with the
 folder name and whether a matching vfx already exists. No game files touched.
 """
-import json
 import os
-import sys
 
 from PIL import Image, ImageDraw, ImageFont
 

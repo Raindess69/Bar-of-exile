@@ -17,7 +17,7 @@ import random
 from dataclasses import dataclass
 
 from game import statmap
-from game.core import Affix, Item, Rarity, Slot, StatMod
+from game.core import Affix, Item, Rarity, StatMod
 from game.items import BASES, make_base_item
 
 # spec: Mythics are a boss-only endgame chase; nothing below this ilvl may roll one.

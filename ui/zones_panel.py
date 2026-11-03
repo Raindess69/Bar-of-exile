@@ -10,7 +10,7 @@ from typing import Callable
 from PyQt6.QtCore import QSize, Qt
 from PyQt6.QtGui import QIcon, QPixmap
 from PyQt6.QtWidgets import (QFrame, QHBoxLayout, QLabel, QPushButton,
-                             QVBoxLayout, QWidget)
+                             QVBoxLayout)
 
 from ui.panels import PanelFrame
 

@@ -4,6 +4,7 @@ from __future__ import annotations
 import json
 import os
 import random
+import shutil
 import sys
 import time
 from dataclasses import fields as dataclass_fields
@@ -227,27 +228,78 @@ def save_game(path: str, hero: Hero, meta: dict) -> None:
     dirname = os.path.dirname(os.path.abspath(path))
     if dirname:
         os.makedirs(dirname, exist_ok=True)
+
+    # 1. Write the new save to a temp file and force it to disk. Without the
+    #    fsync, a power loss / BSOD right after os.replace can leave a
+    #    zero-length or garbage file under the real name, and the hero would
+    #    silently vanish from the load screen.
     tmp = path + ".tmp"
     with open(tmp, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=1)
+        f.flush()
+        os.fsync(f.fileno())
+
+    # 2. Keep the previous save as a rollback point - but only if it is itself
+    #    intact, so a corrupt main file can never overwrite a good backup.
+    if os.path.exists(path) and _is_valid_json(path):
+        _durable_copy(path, path + BACKUP_SUFFIX)
+
+    # 3. Atomically swap the new save in.
     os.replace(tmp, path)
+
+
+BACKUP_SUFFIX = ".bak"   # "<slot>.json.bak" - never matches the launcher's *.json scan
+
+
+def _is_valid_json(path: str) -> bool:
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            json.load(f)
+        return True
+    except (OSError, ValueError):
+        return False
+
+
+def _durable_copy(src: str, dst: str) -> None:
+    """Copy src -> dst atomically and flushed to disk."""
+    tmp = dst + ".tmp"
+    with open(src, "rb") as fin, open(tmp, "wb") as fout:
+        shutil.copyfileobj(fin, fout)
+        fout.flush()
+        os.fsync(fout.fileno())
+    os.replace(tmp, dst)
+
+
+def _read_save_file(path: str) -> tuple[Hero, dict]:
+    with open(path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    hero = hero_from_dict(data["hero"])
+    _migrate_affixes(hero)
+    meta = dict(data.get("meta", {}))
+    meta["saved_at"] = data.get("saved_at", time.time())
+    meta["version"] = data.get("version", 1)
+    return hero, meta
 
 
 def load_game(path: str) -> tuple[Hero, dict] | None:
     if not os.path.exists(path):
         return None
     try:
-        with open(path, "r", encoding="utf-8") as f:
-            data = json.load(f)
-        hero = hero_from_dict(data["hero"])
-        _migrate_affixes(hero)
-        meta = dict(data.get("meta", {}))
-        meta["saved_at"] = data.get("saved_at", time.time())
-        meta["version"] = data.get("version", 1)
-        return hero, meta
+        return _read_save_file(path)
     except Exception as e:
         print(f"[save] warning: failed to load '{path}': {e}")
-        return None
+
+    # Main file is corrupt (crash mid-write, disk error, bad manual edit...):
+    # fall back to the last known-good save instead of losing the hero.
+    backup = path + BACKUP_SUFFIX
+    if os.path.exists(backup):
+        try:
+            loaded = _read_save_file(backup)
+            print(f"[save] recovered '{path}' from backup")
+            return loaded
+        except Exception as e:
+            print(f"[save] warning: backup '{backup}' is unreadable too: {e}")
+    return None
 
 
 def _migrate_affixes(hero: Hero) -> None:

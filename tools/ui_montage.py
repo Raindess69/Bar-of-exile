@@ -1,5 +1,6 @@
 """Labeled montages of pre-cut UI pieces so filenames can be mapped to content."""
-import os, sys, math
+import os
+import math
 from PIL import Image, ImageDraw
 
 SRC = r"C:\Users\cubi7\Desktop\Claude\bar-of-exile\assets\icons"

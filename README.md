@@ -67,7 +67,7 @@ Plus a **★ Greater Affix system** (D4-style): 1★ 6.5% / 2★ 2% / 3★ 0.4% 
 - Pity: **0.006** base / soft cap on roll #73 (+12% per roll) / **hard cap 100% on #80**. No drop-only uniques.
 
 ### Economy (idle-friendly)
-- **Offline progress** with tier decay: 8h 60% / 24h 35% / 72h 15%, cap removed.
+- **Offline progress** with tier decay: first 8h at 60%, 8–24h at 35%, 24–72h at 15%; away-time beyond 72h earns nothing extra (no level cap on offline gains).
 - **Snapshot rates** — offline gold/XP is computed from the actual rates of your last session.
 - **Training upgrades** at the vendor (gold sinks for +XP / +gold / +skill XP / +offline efficiency, ~50M total).
 - **Stash: 40 slots × 10 tabs** — the main endgame gold sink (~220M to unlock the last tab).
@@ -101,9 +101,22 @@ Output: `dist/BarOfExile/BarOfExile.exe` + `_internal/` with all assets and data
 ## 🧪 Tests
 
 ```bash
-python -m pytest -q               # full suite (~200 tests)
+python -m pytest -q               # full suite (~220 tests)
 python tests/test_skills_v2.py    # single file
 ```
+
+The suite needs no display: Qt tests run with `QT_QPA_PLATFORM=offscreen`
+(set automatically where needed). On a headless **Linux** box PyQt6 also needs
+the system GL/EGL libraries (`libgl1 libegl1 libxkbcommon0` on Debian/Ubuntu,
+`mesa-libGL mesa-libEGL` on Fedora/Amazon Linux); without them every Qt test
+fails at import with `libGL.so.1: cannot open shared object file`.
+
+CI (`.github/workflows/tests.yml`) runs the full suite on Windows, the game's
+target platform, for every push to `main` and every pull request. It checks out
+code only (not the ~290 MB `assets/` folder), so runs stay fast.
+
+Balance harness: `python tools/sim.py --class warrior --hours 4 --offline 8`
+simulates online farming followed by an away session.
 
 ---
 
@@ -172,6 +185,24 @@ Everything that didn't fit in the README — mechanics deep dive, every one of t
 ## 🎨 Credits
 
 Art assets are a mix of open-source pixel-art packs and AI-generated content. Every sprite is normalized to a single style through `tools/convert_anim.py` (union-bbox slicing from bottom-center — zero jitter across animations).
+
+## 📝 Changelog
+
+**Durability & tooling pass (Nov 2026)**
+- **Save files survive crashes.** `save_game` now `fsync`s the new save before
+  atomically swapping it in. Previously a power loss / BSOD right after an
+  autosave could leave a zero-length slot file, and the hero would silently
+  disappear from the load screen.
+- **Automatic backup + recovery.** The previous *valid* save is kept as
+  `<slot>.json.bak`; if the main file is ever corrupt, `load_game` restores from
+  it. A corrupt main file is never rotated over a good backup. Cost: ~6 ms per
+  autosave on a worst-case 428 KB save. Covered by `tests/test_save_durability.py`.
+- **Fixed `tools/sim.py --offline`.** It was silently ignored: the harness
+  passed `saved_at=0.0`, which `offline_progress` read as ~56 years away, so
+  every offline-balance run reported the same capped result regardless of the
+  requested hours.
+- Removed dead code and unused imports; kept intentional re-exports explicit.
+- Added Windows CI.
 
 ## 📄 License
 

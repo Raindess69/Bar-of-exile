@@ -25,7 +25,7 @@ uniques.roll_unique for uniques).
 """
 import random
 
-from game.core import Item, Rarity, Slot
+from game.core import Rarity, Slot
 from game.item_roller import reroll_affixes
 from game.items import random_base
 from game.uniques import roll_unique
