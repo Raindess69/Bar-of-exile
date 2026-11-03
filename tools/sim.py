@@ -346,6 +346,10 @@ class Sim:
         hero = self.hero
         if item is None or item.req_level > hero.level:
             return False
+        # Class-locked bases (bows, staves, plate, ...) can't be worn by other
+        # classes in the game (ui.panels.can_equip) — the sim must not either.
+        if item.class_req and hero.class_id not in item.class_req:
+            return False
         slot = item.slot.value
         if slot not in hero.equipment:
             return False
