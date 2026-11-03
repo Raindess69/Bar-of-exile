@@ -741,7 +741,13 @@ class Game:
             self.meta["gamble"] = self.gamble_vendor.to_dict()
         if self.stats:
             self.meta["stats"] = self.stats.to_dict()
-        save_game(self.save_path, self.hero, self.meta)
+        try:
+            save_game(self.save_path, self.hero, self.meta)
+        except OSError as e:
+            # save() runs from the autosave QTimer and aboutToQuit: an unhandled
+            # exception in a Qt slot makes PyQt6 abort() the whole game. A locked
+            # file / full disk must not kill the session; the next save retries.
+            print(f"[save] warning: could not write '{self.save_path}': {e}")
 
 
 def _apply_offline(game: Game, saved_at: float) -> None:

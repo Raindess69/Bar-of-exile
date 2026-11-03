@@ -230,7 +230,25 @@ def save_game(path: str, hero: Hero, meta: dict) -> None:
     tmp = path + ".tmp"
     with open(tmp, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=1)
-    os.replace(tmp, path)
+        # Flush to disk before the rename: after a power cut / BSOD NTFS can keep
+        # the rename but not the data, leaving an empty or garbled save.
+        f.flush()
+        os.fsync(f.fileno())
+    _replace_with_retry(tmp, path)
+
+
+def _replace_with_retry(src: str, dst: str, attempts: int = 5, delay: float = 0.05) -> None:
+    """os.replace with a short retry. On Windows antivirus, the search indexer or
+    cloud sync (OneDrive) briefly lock a freshly written file and the rename fails
+    with PermissionError (WinError 5/32); a moment later it succeeds."""
+    for i in range(attempts):
+        try:
+            os.replace(src, dst)
+            return
+        except PermissionError:
+            if i == attempts - 1:
+                raise
+            time.sleep(delay * (i + 1))
 
 
 def load_game(path: str) -> tuple[Hero, dict] | None:
