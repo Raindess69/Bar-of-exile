@@ -46,7 +46,6 @@ def classify(path: Path) -> str | None:
     if cnt < 20:
         return None
     r, g, b = tr / cnt, tg / cnt, tb / cnt
-    mx = max(r, g, b)
     # normalized channel dominance
     warm = r - b            # >0 warm, <0 cool
     if g > r * 0.95 and g > b * 1.15 and r < g * 0.9:

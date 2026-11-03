@@ -3,7 +3,6 @@ from __future__ import annotations
 
 import random
 import sys
-import time
 
 from PyQt6.QtCore import Qt, QTimer
 from PyQt6.QtGui import QKeySequence, QShortcut
@@ -19,12 +18,12 @@ from game.save import load_game, offline_progress, save_game
 from game.skills_v2 import tick_skills_v2, ensure_skills_v2, grant_skill_xp
 from game import tomes
 from game import rifts
-from game.vendor import Vendor, vendor_from_dict, vendor_to_dict
+from game.vendor import vendor_from_dict, vendor_to_dict
 from ui.cube_panel import CubePanel
 from ui.panels import CharacterPanel, InventoryPanel, PanelManager, sell_price
 from ui.render import FlairSystem, GameRenderer
 from ui.stash_panel import StashPanel
-from ui.window import BTN_ZONE, TaskbarStrip
+from ui.window import TaskbarStrip
 from ui.zones_panel import ZonesPanel
 
 try:

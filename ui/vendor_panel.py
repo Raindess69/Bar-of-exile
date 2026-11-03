@@ -300,8 +300,6 @@ if __name__ == "__main__":
     assert panel.buyback_cells[0].item is None
 
     # bulk sell: below-threshold items and ALL normals go; rare/magic >= cap stay
-    from game.economy import bulk_sell_threshold
-
     hero.level = 20
     cap = bulk_sell_threshold(hero.level)
     assert cap == 15

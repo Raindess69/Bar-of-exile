@@ -20,7 +20,6 @@ Public contract (main.py depends on it, do not break):
 """
 from __future__ import annotations
 
-from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QIcon
 from PyQt6.QtWidgets import (
     QFrame, QGridLayout, QHBoxLayout, QLabel, QProgressBar,
@@ -241,7 +240,6 @@ class SkillsPanel(PanelFrame):
         sv = self.hero.skills_v2
         unlocked = set(sv.get("unlocked", []))
         equipped = set(SV._equipped_ids(sv))
-        skills = SV.load_skills_v2()
         cls_skills = SV._class_skills(self.hero.class_id)  # unlock order
         for i, sk in enumerate(cls_skills):
             btn = QPushButton()

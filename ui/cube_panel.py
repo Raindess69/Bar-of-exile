@@ -464,10 +464,9 @@ if __name__ == "__main__":
     os.environ.setdefault("QT_QPA_PLATFORM", "offscreen")
     app = QApplication(sys.argv)
 
-    from PyQt6.QtCore import Qt
     from PyQt6.QtTest import QTest
 
-    from game.core import Rarity, Stats
+    from game.core import Stats
     from game.affixes import roll_affixes
     from game.loot import make_item
     from ui.panels import panel_max_height

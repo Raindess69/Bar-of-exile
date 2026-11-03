@@ -38,7 +38,6 @@ if hasattr(sys.stdout, "reconfigure"):
 from game import classes, progression, tree, world
 from game.combat import CombatSystem
 from game.core import TICK_DT, CombatEvent, Item, Monster
-from game.item_roller import Rarity
 from game.loot import roll_boss_drops, roll_drop, roll_gold
 from game.skills_v2 import ensure_skills_v2, grant_skill_xp, tick_skills_v2
 
@@ -659,16 +658,19 @@ def run_offline(class_id: str, online_hours: float, offline_hours: float,
     from game import save
     sim = Sim(class_id, online_hours, seed)
     sim.run()
-    lvl_before, xp_before = sim.hero.level, sim.hero.xp
+    lvl_before = sim.hero.level
     online_xph = xp_lin(sim.hero) / online_hours if online_hours else 0.0
+    # offline_progress measures elapsed away-time as time.time() - saved_at.
+    # Passing saved_at=0.0 (as before) meant "away since 1970" (~56 years), so
+    # --offline was silently ignored and every run reported identical results.
     off = save.offline_progress(
-        saved_at=0.0, hero=sim.hero, zone_id=sim.zone.id,
+        saved_at=time.time() - offline_hours * 3600.0, hero=sim.hero, zone_id=sim.zone.id,
         rng=random.Random(seed))
-    # save.offline_progress reads elapsed from wall clock via saved_at=0; some
-    # builds take explicit hours — guard either shape.
     print(f"[offline] {class_id}: online {online_hours:g}h -> lvl {lvl_before} "
           f"(~{online_xph:.0f} xp/h online)")
-    print(f"          offline result: {off}")
+    summary = {k: v for k, v in off.items() if k != "items"}
+    summary["items"] = len(off.get("items", []))
+    print(f"          offline {offline_hours:g}h result: {summary}")
 
 
 def xp_lin(hero) -> float:

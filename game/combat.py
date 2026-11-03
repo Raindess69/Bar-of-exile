@@ -9,8 +9,12 @@ from game import skills_v2
 from game import unique_specials
 from game.combat_math import (
     crit_mult, apply_leech, kill_heal, rolls_dodge,
-    LEECH_CAP_PCT, OVERHEAL_CAP_FRAC, OVERHEAL_DECAY_FRAC,
-    KILL_HEAL_FRAC, CULL_FRAC, CULL_FRAC_BOSS,
+    LEECH_CAP_PCT, OVERHEAL_DECAY_FRAC, CULL_FRAC, CULL_FRAC_BOSS,
+)
+# Re-exported: callers (e.g. tests/test_class_keystones.py) import these tuning
+# constants from game.combat, so they stay part of this module's public surface.
+from game.combat_math import (  # noqa: F401
+    KILL_HEAL_FRAC, OVERHEAL_CAP_FRAC,
 )
 from game.core import (
     CombatEvent,
