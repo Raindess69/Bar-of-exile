@@ -1,10 +1,69 @@
-# Bar of Exile
+<div align="center">
+
+<img src="docs/assets/banner.png" alt="Bar of Exile: an idle ARPG that lives in a 64-pixel bar above your taskbar" width="100%">
+
+<br><br>
+
+[![Python](https://img.shields.io/badge/python-3.11%2B-3776AB?logo=python&logoColor=white)](#-quick-start)
+[![PyQt6](https://img.shields.io/badge/UI-PyQt6-41CD52?logo=qt&logoColor=white)](https://pypi.org/project/PyQt6/)
+[![Windows](https://img.shields.io/badge/platform-Windows-0078D6)](#-quick-start)
+[![tests](https://github.com/Raindess69/Bar-of-exile/actions/workflows/tests.yml/badge.svg)](https://github.com/Raindess69/Bar-of-exile/actions/workflows/tests.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
+
+**[Screenshots](#-screenshots) · [What's inside](#-whats-inside) · [Quick start](#-quick-start) · [Build .exe](#-building-a-standalone-exe) · [Tests](#-tests) · [Layout](#-project-layout) · [Full reference](#-full-reference)**
+
+</div>
+
+---
 
 > **An idle ARPG that lives in a thin bar above your Windows taskbar.** Runs in the background, but under the hood it's a full hack-and-slash with PoE / Diablo 2 depth.
+
+<p align="center">
+  <img src="docs/assets/gameplay.gif" alt="Animated capture of the 64-pixel bar: a level-69 Mage casting lightning and frost at a pack of demons in Ashen Sanctum" width="840">
+  <br>
+  <sub>The bar at <b>actual size</b>: a level-69 Mage clearing Ashen Sanctum (Act 3, Cruel). Blue outlines mark Magic mobs.</sub>
+</p>
 
 The format nods to *The Boring Hero* and tap-idle games: a narrow ~64px strip pinned above the taskbar. Behind the auto-combat: 5 classes, 80 data-driven skills, a 1002-node passive tree, 4 acts, a corruption-enabled crafting cube, a 10-tier rarity ladder, and endless endgame rifts.
 
 **Stack:** Python 3.11+ · PyQt6 · Windows
+
+---
+
+## 📸 Screenshots
+
+<p align="center">
+  <img src="docs/assets/launcher.png" alt="Launcher screens: main menu, character selection with the Mage picked, load screen listing two heroes, settings" width="100%">
+  <br>
+  <sub><b>Launcher</b>: main menu · character selection · per-hero save slots (level, zone, playtime) · settings.</sub>
+</p>
+
+<p align="center">
+  <img src="docs/assets/loot.png" alt="Vendor and inventory panels open above the bar, with a Unique amulet's tooltip next to the Shift-compare tooltip of the equipped amulet" width="100%">
+  <br>
+  <sub><b>Loot &amp; trading.</b> Panels pop up above the bar; the 6×2 menu grid sits at its right end. Hover an item to see its card, hold <kbd>Shift</kbd> to compare it with what you wear (★ marks a Greater Affix).</sub>
+</p>
+
+<p align="center">
+  <img src="docs/assets/passive-tree.png" alt="Passive tree panel: the shared 1002-node canvas with the Mage's allocated nodes highlighted in green" width="100%">
+  <br>
+  <sub><b>Passive tree</b>: one 1002-node canvas for every class (this Mage has 68 points spent). Click your class orb to unfold its ascendancy.</sub>
+</p>
+
+<p align="center">
+  <img src="docs/assets/panels.png" alt="Skills panel with loadout and talents, character sheet, Ferek's gamble shop, and the Waypoints map with the zone list" width="100%">
+  <br>
+  <sub><b>Skills V2</b> loadout with ranks and talents · <b>character sheet</b> · <b>Ferek's Game of Certainties</b> · <b>Waypoints</b> with difficulty tabs and idle auto-advance.</sub>
+</p>
+
+<p align="center">
+  <img src="docs/assets/crafting.png" alt="Transmutation cube on the Corruption tab with a Unique amulet loaded, above a 40-slot stash tab" width="82%">
+  <br>
+  <sub><b>Vessara's Cube</b> on the ☠ Corruption tab, with odds and cost shown before you commit · <b>stash</b> tab (40 slots, up to 10 tabs).</sub>
+</p>
+
+> [!NOTE]
+> Every image above is a real capture of the game's own UI: PyQt6 rendering offscreen at 1920×1080, using heroes that the bundled balance harness ([`tools/sim.py`](tools/sim.py)) played for 40 simulated hours. The game opens the panels in the last two images one at a time, so those two are collages.
 
 ---
 
@@ -86,7 +145,9 @@ pip install -r requirements.txt
 python main.py
 ```
 
-Requires **Python 3.11+** and **Windows** (the bar attaches to the taskbar via the Win32 API).
+Requires **Python 3.11+**. Made for **Windows**: the bar docks right above the taskbar, using the
+screen's available area as reported by Qt. Nothing in the code is Win32-only, so the same UI also
+runs on Linux, which is how the screenshots above were rendered.
 
 ## 📦 Building a standalone .exe
 
@@ -171,7 +232,7 @@ bar-of-exile/
 ├── data/*.json              # data: skills / passives / affixes / zone mods
 ├── assets/                  # sprites (~70 mobs), VFX, icons, backgrounds, UI kit
 ├── tools/                   # asset converters, data generators, sim harness
-├── tests/                   # ~200 unit tests
+├── tests/                   # ~220 unit tests
 ├── docs/GAME_BIBLE.md       # FULL reference: mechanics / lore / architecture
 └── bar_of_exile.spec        # PyInstaller — onedir, windowed, assets bundled
 ```
@@ -187,6 +248,15 @@ Everything that didn't fit in the README — mechanics deep dive, every one of t
 Art assets are a mix of open-source pixel-art packs and AI-generated content. Every sprite is normalized to a single style through `tools/convert_anim.py` (union-bbox slicing from bottom-center — zero jitter across animations).
 
 ## 📝 Changelog
+
+**README & sim fix (Nov 2026)**
+- New README with a banner, a gameplay GIF and screenshots, all captured from the game's own UI.
+- **Fixed `tools/sim.py` equipping other classes' gear.** The harness ignored `class_req`, so
+  simulated heroes wore items the game won't let them equip. The seed-11 Mage was wielding an
+  Archer-only bow. The sim now applies the same rule as the inventory (`ui.panels.can_equip`).
+  In a 40 h seed-11 run the Mage now finishes at level 69 on Cruel instead of level 80 on
+  Merciless, so re-check any balance numbers taken from earlier sim runs. Covered by
+  `tests/test_sim_harness.py`.
 
 **Durability & tooling pass (Nov 2026)**
 - **Save files survive crashes.** `save_game` now `fsync`s the new save before
